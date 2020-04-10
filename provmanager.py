@@ -152,6 +152,7 @@ class ProvManager():
         tp_cookies = self.all_tp_hosts[visit_id]
         self.cur.execute("select count(id) from javascript_cookies where visit_id=?", [str(visit_id)])
         cookies_num = self.cur.fetchone()[0]
+        tp_cookies_num = len(tp_cookies)
         print("\nVisit to %s (id: %d) resulted in %d cookies being recorded on your browser." % (site_url, visit_id, cookies_num))
         if len(tp_cookies) == 0:
             print("None of which are 3rd party")
@@ -160,11 +161,11 @@ class ProvManager():
             print("List of 3rd party trackers: ")
             print(set(tp_cookies), "\n")
             # self.cookie_pie(cookies_num, len(tp_cookies), site_url)
-        return cookies_num, len(tp_cookies)
+        return cookies_num, tp_cookies_num
             
     def all_cookie_stats(self, crawl_id):
-        cookie_nums = []
-        tp_cookies_len = []
+        cookies = []
+        tp_cookies = []
         site_urls = []
         # print(self.all_tp_hosts)
         for vid, cs in self.all_tp_hosts.items():
@@ -173,17 +174,17 @@ class ProvManager():
             site_url = self.cur.fetchone()[0][7:]
             # print("GOT %s"%site_url)
             # print("\nVisit %d to %s" % (vid, site_url), end='')
-            cnum, tplen = self.cookie_stats(vid, site_url=site_url)
-            cookie_nums.append(cnum)
-            tp_cookies_len.append(tplen)
+            cookies_num, tp_cookies_num = self.cookie_stats(vid, site_url=site_url)
+            cookies.append(cookies_num)
+            tp_cookies.append(tp_cookies_num)
             site_urls.append(site_url)
-        self.cookie_pie(cookie_nums, tplen, site_urls)
+        self.cookie_pie(cookies, tp_cookies, site_urls)
 
         input("Press enter to finish...")
 
 
     def cookie_pie(self, num_total, num_tp, site_urls):
-        for ind in range(len(site_urls)):
+        for site in range(len(site_urls)):
 
             color_palette_list = ['#009ACD', '#ADD8E6', '#63D1F4', '#0EBFE9',
                                   '#C1F0F6', '#0099CC']
