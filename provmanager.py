@@ -1,30 +1,25 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[191]:
 
 
 from prov.model import *
 import prov.model as prov
-from http import cookies
 import sqlite3 as lite
 from os import path
-import seaborn as sns
+import os
 import matplotlib.pyplot as plt
 from prov.dot import prov_to_dot
+from crawlmanager import CrawlManager
 import matplotlib.image as mpimg
 # from IPython.display import Image
 # import python_main_function 
 
-# if __main__ == "main":
-#     provman = ProvManager()
-#     provman.main()
-
 
 class ProvManager():
-    def __init__(self, output_fp=path.join(os.getcwd(), "Crawls", "results"), db_fp="/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite"):
+    def __init__(self, output_fp=path.join(os.getcwd(), "Crawls", "Results"), db_fp="/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite"):
         self.db_fp = db_fp
         self.output_fp = output_fp
+        # self.json_fp = path.join(output_fp, "")
+        self.crawls = {}
         self.documents = {}
         self.all_tp_hosts = {}
         self.cur = None
@@ -33,120 +28,134 @@ class ProvManager():
         
     def main(self):
         self.db_connect()
-        self.create_prov()
-        self.record_prov()
-        self.write_prov()
+
+        for crawl in self.cur.execute("select crawl_id from crawl"):
+            self.documents[crawl] = self.record_crawl(crawl[0])
+
+        # self.create_prov()
+        # self.record_prov()
+        # self.write_prov()
         # img = mpimg.imread(self.tester)
         # impgplot = plt.imshow(img)
         # plt.show()
         # input('...')
 
         # self.all_cookie_stats(self.last_crawl)
-    
+
+    def record_crawl(self, crawl):
+        crawlman = CrawlManager(crawl, self.output_fp, self.db_fp)
+        return crawlman.main()
+
     def db_connect(self):
         connection = lite.connect(self.db_fp)
         self.cur = connection.cursor()
-        self.cur.execute("select crawl_id from crawl")
-        self.last_crawl = max(self.cur.fetchall())[0] #TODO: Refactor the db calls and variables (eg last_crawl, visit_id)
-        self.output_fp = self.output_fp + str(self.last_crawl)
+        # self.cur.execute("select crawl_id from crawl")
+        # self.last_crawl = max(self.cur.fetchall())[0] #TODO: Refactor the db calls and variables (eg last_crawl, visit_id)
+        # self.output_fp = self.output_fp + str(self.last_crawl)
         date_time = self.cur.execute("select start_time from crawl where crawl_id=?", [str(self.last_crawl)]).fetchone()[0]
         date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
         print("Reading from: ", self.db_fp)
         print("Analysing crawl %d on %s at %s" % (self.last_crawl, date, time))
         # print(self.output_fp)
-            
 
 
-    def create_prov(self):
-        for visit_id in self.cur.execute("select visit_id from site_visits where crawl_id=?", [str(self.last_crawl)]):
-            document = ProvDocument()
-            document.set_default_namespace('http://danik.com')
-            self.documents[visit_id[0]] = document
-#         return document
+#     def create_prov(self):
+#         for visit_id in self.cur.execute("select visit_id from site_visits where crawl_id=?", [str(self.last_crawl)]):
+#             document = ProvDocument()
+#             document.set_default_namespace('http://danik.com')
+#             self.documents[visit_id[0]] = document
+# #         return document
     
-    def retrieve_tp_hosts(self, visit_id, site_url):
-        hosts = []
-        for h in self.cur.execute("select host from javascript_cookies where visit_id=?", [str(visit_id)]):
-            split = h[0].split('.')
-            if 'www' in split: split.remove('www')
-            host = split[1]
-            for el in split[2:]:
-                host += "." + el
-            if site_url.find(host) == -1:
-                hosts.append(h[0])
-        return hosts
-    
-    def record_prov(self):        
-        for visit, doc in self.documents.items():
-            tp_hosts = []
-            doc.agent('OpenWPM', {'prov:type': 'prov:SoftwareAgent'})
-            doc.agent('user')
-            doc.activity('performCrawl')
-            doc.entity('visit%d'%visit)
-            self.cur.execute("select site_url from site_visits where visit_id=?", [str(visit)])
-            site_url = self.cur.fetchone()[0][7:]
-            doc.entity(site_url)
-            doc.entity('syncing_algorithm')
-            doc.agent('tracker1')
-            doc.agent('tracker2')
-            doc.activity('syncCookies')
-            doc.activity('collectData')
-
-            tp_cookies = doc.collection('cookies%d'%visit)
-        #     tp_cookies.set_default_namespace('http://danik.com/bundles')
-#             sync_algorithm = doc.bundle('syncing_algorithm')
-        #     sync_algorithm.set_default_namespace('http://danik.com/syncing')
-
-
-            doc.actedOnBehalfOf('OpenWPM', 'user')
-            doc.wasAssociatedWith('performCrawl', 'OpenWPM')
-            doc.wasGeneratedBy('visit%d'%visit, 'performCrawl')
-            doc.wasDerivedFrom('visit%d'%visit, site_url, 'performCrawl')
-            doc.wasAttributedTo(site_url, 'tracker1')
-            doc.wasAssociatedWith('collectData', 'tracker1')
-            doc.wasGeneratedBy('cookies%d'%visit, 'collectData')
-            doc.actedOnBehalfOf('tracker2', 'tracker1', 'syncCookies')
-            doc.used('syncCookies', 'cookies%d'%visit)
-            doc.used('syncCookies', 'syncing_algorithm')
-            doc.used('performCrawl', site_url)
-            doc.used('collectData', site_url)
-
-#             for h in cur.execute("select host from javascript_cookies where visit_id=?", str(visit)):
-#                 split = h[0].split('.')
-#                 if 'www' in split: split.remove('www')
-#                 host = split[1]
-#                 for el in split[2:]:
-#                     host += "." + el
-#                 if site_url.find(host) == -1:
-#                     tp_hosts.append(h[0])
-            tp_hosts = self.retrieve_tp_hosts(visit, site_url)
-#             print(tp_hosts)
-        #         hosts.append(host)
-        #         if host in trackers:
-        #             hosts.append(host)
-            added_hosts = set()
-            for tp in tp_hosts:
-                if not tp in added_hosts:
-                    e = doc.entity(tp)
-                    doc.hadMember(tp_cookies, e)
-                    added_hosts.add(tp)
-            self.all_tp_hosts[visit] = tp_hosts
-        # print("finished record:")
-        # print(self.all_tp_hosts[2])
-            
-    def write_prov(self):
-        if not path.exists(self.output_fp):
-            os.mkdir(self.output_fp)
-        print("Writing to: ", self.output_fp, "\n")
-        for visit, document in self.documents.items():
-            dot = prov_to_dot(document)
-            dot.write_png(path.join(self.output_fp,'visit%d.png' %visit))
-            self.tester = path.join(self.output_fp,'visit%d.png' %visit)
-#             file = open(path.join(self.output_fp,'visit%d.png' %visit), 'w+')
-#             file.write(dot)
-#             file.close()
-            print("writing visit%d.png"%visit)
-#             dot.write_png('visit%d.png' %visit)
+#     def retrieve_tp_hosts(self, visit_id, site_url):
+#         hosts = []
+#         for h in self.cur.execute("select host from javascript_cookies where visit_id=?", [str(visit_id)]):
+#             split = h[0].split('.')
+#             if 'www' in split: split.remove('www')
+#             host = split[1]
+#             for el in split[2:]:
+#                 host += "." + el
+#             if site_url.find(host) == -1:
+#                 hosts.append(h[0])
+#         return hosts
+#
+#     def record_prov(self):
+#         for visit, doc in self.documents.items():
+#             tp_hosts = []
+#             doc.agent('OpenWPM', {'prov:type': 'prov:SoftwareAgent'})
+#             doc.agent('user')
+#             doc.activity('performCrawl')
+#             doc.entity('visit%d'%visit)
+#             self.cur.execute("select site_url from site_visits where visit_id=?", [str(visit)])
+#             site_url = self.cur.fetchone()[0][7:]
+#             doc.entity(site_url)
+#             doc.entity('syncing_algorithm')
+#             doc.agent('tracker1')
+#             doc.agent('tracker2')
+#             doc.activity('syncCookies')
+#             doc.activity('collectData')
+#
+#             tp_cookies = doc.collection('cookies%d'%visit)
+#         #     tp_cookies.set_default_namespace('http://danik.com/bundles')
+# #             sync_algorithm = doc.bundle('syncing_algorithm')
+#         #     sync_algorithm.set_default_namespace('http://danik.com/syncing')
+#
+#
+#             doc.actedOnBehalfOf('OpenWPM', 'user')
+#             doc.wasAssociatedWith('performCrawl', 'OpenWPM')
+#             doc.wasGeneratedBy('visit%d'%visit, 'performCrawl')
+#             doc.wasDerivedFrom('visit%d'%visit, site_url, 'performCrawl')
+#             doc.wasAttributedTo(site_url, 'tracker1')
+#             doc.wasAssociatedWith('collectData', 'tracker1')
+#             doc.wasGeneratedBy('cookies%d'%visit, 'collectData')
+#             doc.actedOnBehalfOf('tracker2', 'tracker1', 'syncCookies')
+#             doc.used('syncCookies', 'cookies%d'%visit)
+#             doc.used('syncCookies', 'syncing_algorithm')
+#             doc.used('performCrawl', site_url)
+#             doc.used('collectData', site_url)
+#
+# #             for h in cur.execute("select host from javascript_cookies where visit_id=?", str(visit)):
+# #                 split = h[0].split('.')
+# #                 if 'www' in split: split.remove('www')
+# #                 host = split[1]
+# #                 for el in split[2:]:
+# #                     host += "." + el
+# #                 if site_url.find(host) == -1:
+# #                     tp_hosts.append(h[0])
+#             tp_hosts = self.retrieve_tp_hosts(visit, site_url)
+# #             print(tp_hosts)
+#         #         hosts.append(host)
+#         #         if host in trackers:
+#         #             hosts.append(host)
+#             added_hosts = set()
+#             for tp in tp_hosts:
+#                 if not tp in added_hosts:
+#                     e = doc.entity(tp)
+#                     doc.hadMember(tp_cookies, e)
+#                     added_hosts.add(tp)
+#             self.all_tp_hosts[visit] = tp_hosts
+#         # print("finished record:")
+#         # print(self.all_tp_hosts[2])
+#
+#     def write_prov(self):
+#         if not path.exists(self.output_fp):
+#             os.mkdir(self.output_fp)
+#         print("Writing to: ", self.output_fp, "\n")
+#         for visit, document in self.documents.items():
+#
+#             crawl_fp = path.join(self.output_fp, "crawl%d"%visit)
+#             # json_fp = path.join(crawl_fp, "")
+#             os.mkdir(path.join(crawl_fp,"json"))
+#             os.mkdir(path.join(crawl_fp, "png"))
+#
+#             dot = prov_to_dot(document)
+#             dot.write_png(path.join(crawl_fp,'visit%d.png'%visit))
+#             document.serialize(self.output_fp)
+#             # self.tester = path.join(self.output_fp,'visit%d.png' %visit)
+# #             file = open(path.join(self.output_fp,'visit%d.png' %visit), 'w+')
+# #             file.write(dot)
+# #             file.close()
+#             print("writing visit%d.png"%visit)
+# #             dot.write_png('visit%d.png' %visit)
 #
 #     def cookie_stats(self, visit_id, site_url=""):
 #         tp_cookies = self.all_tp_hosts[visit_id]
