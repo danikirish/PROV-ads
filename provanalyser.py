@@ -1,14 +1,9 @@
 from prov.model import *
-import prov.model as prov
 import sqlite3 as lite
 from os import path
 import os
 import matplotlib.pyplot as plt
-from prov.dot import prov_to_dot
-# from crawlmanager import CrawlManager
 import matplotlib.image as mpimg
-# from IPython.display import Image
-# import python_main_function
 import json
 
 class ProvAnalyser():
@@ -18,24 +13,15 @@ class ProvAnalyser():
         self.output_fp = output_fp
         self.db_fp = db_fp
         self.db_cursor = lite.connect(db_fp).cursor()
-        # self.visits = {cr:[] for cr in self.crawls}
         self.visits = {}
-        # for site_visit, crawl_id in self.db_cursor.execute("select visit_id and crawl_id from site_visits"):
-        #     if site_visit not in self.visits[crawl_id]:
-        #         self.visits[crawl_id].append({site_visit:None})
         for crawl in crawls:
             self.visits[crawl] = {site_visit[0]: None for site_visit in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(crawl)])}
-            # self.visits[crawl_id[0]] = site_visit[0]
-        # self.documents = documents
-        # self.crawls = crawls_to_analyse
 
     def main(self):
         # print("Analysis for crawls")
         for crawl in self.crawls:
             self.load_data(crawl)
             self.analyse_crawl(crawl)
-        # print("Collected %d crawls" % len(self.visits.keys()))
-        # print(list(self.visits[2].keys()))
 
 
     def load_data(self, crawl):
@@ -45,16 +31,11 @@ class ProvAnalyser():
         print("\n\nLoading crawl %d" % crawl)
 
         for file, visit in zip(os.listdir(json_fp), visits_from_crawl):
-            # print("\nLoading visit %d" % visit)
-            # print("File: ", file)
-
             with open(path.join(json_fp,path.normpath(file))) as js:
                 visits_from_crawl[visit] = json.load(js)
-        # print(visits_from_crawl)
 
     def analyse_crawl(self, crawl_id):
         crawl = self.visits[crawl_id]
-        # print(list(crawl.keys()))
 
         date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(crawl_id)]).fetchone()[0]
         date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
@@ -98,4 +79,60 @@ class ProvAnalyser():
     #
     # def make_piechart(self):
 
+    # def cookie_stats(self, visit_id, site_url=""):
+#         tp_cookies = self.all_tp_hosts[visit_id]
+#         self.cur.execute("select count(id) from javascript_cookies where visit_id=?", [str(visit_id)])
+#         cookies_num = self.cur.fetchone()[0]
+#         print("\nVisit to %s (id: %d) resulted in %d cookies being recorded on your browser." % (site_url, visit_id, cookies_num))
+#         if len(tp_cookies) == 0:
+#             print("None of which are 3rd party")
+#         else:
+#             print("Of which %d are 3rd party."%len(tp_cookies))
+#             print("List of 3rd party trackers: ")
+#             print(set(tp_cookies), "\n")
+#             # self.cookie_pie(cookies_num, len(tp_cookies), site_url)
+#         return cookies_num, len(tp_cookies)
+
+    # def all_cookie_stats(self, crawl_id):
+    #     cookie_nums = []
+    #     tp_cookies_len = []
+    #     site_urls = []
+    #     # print(self.all_tp_hosts)
+    #     for vid, cs in self.all_tp_hosts.items():
+    #         # print("VISIT %d" %vid)
+    #         self.cur.execute("select site_url from site_visits where visit_id=?", [str(vid)]) #TODO: Refactor this
+    #         site_url = self.cur.fetchone()[0][7:]
+    #         # print("GOT %s"%site_url)
+    #         # print("\nVisit %d to %s" % (vid, site_url), end='')
+    #         cnum, tplen = self.cookie_stats(vid, site_url=site_url)
+    #         cookie_nums.append(cnum)
+    #         tp_cookies_len.append(tplen)
+    #         site_urls.append(site_url)
+    #     self.cookie_pie(cookie_nums, tplen, site_urls)
+    #
+    #     input("Press enter to finish...")
+    #
+    #
+    # def cookie_pie(self, num_total, num_tp, site_urls):
+    #     for ind in range(len(site_urls)):
+    #
+    #         color_palette_list = ['#009ACD', '#ADD8E6', '#63D1F4', '#0EBFE9',
+    #                               '#C1F0F6', '#0099CC']
+    #         labels = ['1st Party', '3rd Party']
+    #         plt.rcParams['font.sans-serif'] = 'Arial'
+    #         plt.rcParams['font.family'] = 'sans-serif'
+    #         plt.rcParams['text.color'] = '#e8001b'
+    #         plt.rcParams['axes.labelcolor']= '#e8001b'
+    #         plt.rcParams['xtick.color'] = '#e8001b'
+    #         plt.rcParams['ytick.color'] = '#e8001b'
+    #         plt.rcParams['font.size']=12
+    #         values = [len(num_total) - num_tp, num_tp]
+    #         explode = (0.1, 0)
+    #
+    #     fig, ax = plt.subplots()
+    #     ax.pie(values, labels=labels, explode=explode, colors=color_palette_list[0:2], autopct='%1.0f%%', shadow=False, startangle=90, pctdistance=0.8, labeldistance=1.1)
+    #     ax.axis('equal')
+    #     ax.set_title('Proportion of 3rd party cookies from %s\nTotal number of cookies: %d' %(site_urls[ind], len(num_total)))
+    #     ax.legend(frameon=False, bbox_to_anchor=(1.5, 0.8))
+    #     fig.show()
 
