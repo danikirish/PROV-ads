@@ -22,6 +22,7 @@ from provmanager import ProvManager
 
 
 
-print("STARTING ANALYSIS...")
+print("LAUNCHING...")
 provman = ProvManager()
-provman.main()
+# provman.main()
+provman.analyse_crawls([8,9])
