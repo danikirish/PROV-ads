@@ -35,13 +35,13 @@ class ProvManager():
                 recorded = True
                 crawls_queue.append(crawl[0])
 
-        self.record_crawls(crawls_queue)
+        params = self.record_crawls(crawls_queue)
         if not recorded:
             print("No crawls to record")
         else:
             print("Finished recording")
 
-        self.analyse_crawls(crawls_queue)
+        self.analyse_crawls(crawls_queue, params)
         # self.create_prov()
         # self.record_prov()
         # self.write_prov()
@@ -50,24 +50,29 @@ class ProvManager():
         # plt.show()
         # input('...')
 
-
     def record_crawls(self, crawls):
+        print("Writing to: ", self.output_fp)
+        all_params = []
         for crawl in crawls:
-            print("RECORDING CRAWL %d" % crawl)
+            print("\nRECORDING CRAWL %d" % crawl)
             crawlman = CrawlManager(crawl, self.output_fp, self.db_fp)
-            self.documents[crawl] = crawlman.main()
+            self.documents[crawl], params = crawlman.main()
+            all_params.append(params)
+        print("Finished recording.")
+        return all_params
 
-    def analyse_crawls(self, crawls):
-        print("Creating analyser...")
+    def analyse_crawls(self, crawls, params):
+        print("\n\nCreating analyser...")
         print("Crawls: ", crawls)
-        print("Output fp: ", self.output_fp)
-        analyser = ProvAnalyser(crawls, self.output_fp, self.db_fp)
+        # print("Output fp: ", self.output_fp)
+        analyser = ProvAnalyser(crawls, self.output_fp, self.db_fp, params)
         analyser.main()
+        print("Finished analysis.")
 
     def db_connect(self):
         connection = lite.connect(self.db_fp)
         cursor = connection.cursor()
-        print("Reading from: ", self.db_fp)
+        print("Reading data from: ", self.db_fp)
         return cursor
 
 

@@ -1,1 +1,126 @@
-{"prefix": {"default": "http://danik.com"}, "agent": {"OpenWPM": {"prov:type": "prov:SoftwareAgent"}, "user": {}, "publisher": {}, "doubleclick.net": {}}, "entity": {"visit": {"id": {"$": 21, "type": "xsd:int"}}, "/redhotchilipeppers.com/": {}, "crawl": {"id": {"$": 13, "type": "xsd:int"}, "DNT": false}, "Firefox": {}, "trackers": {"prov:type": {"$": "prov:Collection", "type": "prov:QUALIFIED_NAME"}}, "cookies": {"prov:type": {"$": "prov:Collection", "type": "prov:QUALIFIED_NAME"}}, "776": {}}, "activity": {"performCrawl": {}, "setCookies": {}, "visitSite": {}}, "actedOnBehalfOf": {"_:id1": {"prov:delegate": "OpenWPM", "prov:responsible": "user"}}, "wasAssociatedWith": {"_:id2": {"prov:activity": "performCrawl", "prov:agent": "OpenWPM"}, "_:id13": {"prov:activity": "setCookies", "prov:agent": "doubleclick.net"}}, "wasGeneratedBy": {"_:id3": {"prov:entity": "cookies", "prov:activity": "setCookies"}, "_:id4": {"prov:entity": "visit", "prov:activity": "visitSite"}, "_:id5": {"prov:entity": "crawl", "prov:activity": "performCrawl"}}, "wasDerivedFrom": {"_:id6": {"prov:generatedEntity": "visit", "prov:usedEntity": "/redhotchilipeppers.com/", "prov:activity": "visitSite"}}, "wasStartedBy": {"_:id7": {"prov:activity": "visitSite", "prov:trigger": "crawl", "prov:starter": "performCrawl"}}, "wasAttributedTo": {"_:id8": {"prov:entity": "/redhotchilipeppers.com/", "prov:agent": "publisher"}, "_:id14": {"prov:entity": "776", "prov:agent": "doubleclick.net"}}, "used": {"_:id9": {"prov:activity": "visitSite", "prov:entity": "/redhotchilipeppers.com/"}, "_:id10": {"prov:activity": "setCookies", "prov:entity": "/redhotchilipeppers.com/"}, "_:id11": {"prov:activity": "performCrawl", "prov:entity": "Firefox"}}, "hadMember": {"_:id12": {"prov:collection": "trackers", "prov:entity": "doubleclick.net"}, "_:id15": {"prov:collection": "cookies", "prov:entity": "776"}}}
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "doubleclick.net": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 21,
+                "type": "xsd:int"
+            }
+        },
+        "/redhotchilipeppers.com/": {},
+        "crawl": {
+            "id": {
+                "$": 13,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "776": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "doubleclick.net"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "/redhotchilipeppers.com/",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "/redhotchilipeppers.com/",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "776",
+            "prov:agent": "doubleclick.net"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "/redhotchilipeppers.com/"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "/redhotchilipeppers.com/"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "doubleclick.net"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "776"
+        }
+    }
+}

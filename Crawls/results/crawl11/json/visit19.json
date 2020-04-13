@@ -1,1 +1,106 @@
-{"prefix": {"default": "http://danik.com"}, "agent": {"OpenWPM": {"prov:type": "prov:SoftwareAgent"}, "user": {}, "publisher": {}}, "entity": {"visit": {"id": {"$": 19, "type": "xsd:int"}}, "/mirigrowth.com/": {}, "crawl": {"id": {"$": 11, "type": "xsd:int"}, "DNT": true}, "Firefox": {}, "trackers": {"prov:type": {"$": "prov:Collection", "type": "prov:QUALIFIED_NAME"}}, "cookies": {"prov:type": {"$": "prov:Collection", "type": "prov:QUALIFIED_NAME"}}}, "activity": {"performCrawl": {}, "setCookies": {}, "visitSite": {}}, "actedOnBehalfOf": {"_:id1": {"prov:delegate": "OpenWPM", "prov:responsible": "user"}}, "wasAssociatedWith": {"_:id2": {"prov:activity": "performCrawl", "prov:agent": "OpenWPM"}}, "wasGeneratedBy": {"_:id3": {"prov:entity": "cookies", "prov:activity": "setCookies"}, "_:id4": {"prov:entity": "visit", "prov:activity": "visitSite"}, "_:id5": {"prov:entity": "crawl", "prov:activity": "performCrawl"}}, "wasDerivedFrom": {"_:id6": {"prov:generatedEntity": "visit", "prov:usedEntity": "/mirigrowth.com/", "prov:activity": "visitSite"}}, "wasStartedBy": {"_:id7": {"prov:activity": "visitSite", "prov:trigger": "crawl", "prov:starter": "performCrawl"}}, "wasAttributedTo": {"_:id8": {"prov:entity": "/mirigrowth.com/", "prov:agent": "publisher"}}, "used": {"_:id9": {"prov:activity": "visitSite", "prov:entity": "/mirigrowth.com/"}, "_:id10": {"prov:activity": "setCookies", "prov:entity": "/mirigrowth.com/"}, "_:id11": {"prov:activity": "performCrawl", "prov:entity": "Firefox"}}}
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 19,
+                "type": "xsd:int"
+            }
+        },
+        "/mirigrowth.com/": {},
+        "crawl": {
+            "id": {
+                "$": 11,
+                "type": "xsd:int"
+            },
+            "DNT": true
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        }
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "/mirigrowth.com/",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "/mirigrowth.com/",
+            "prov:agent": "publisher"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "/mirigrowth.com/"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "/mirigrowth.com/"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    }
+}

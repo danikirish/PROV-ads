@@ -7,13 +7,13 @@ import matplotlib.image as mpimg
 import json
 
 class ProvAnalyser():
-
-    def __init__(self, crawls, output_fp, db_fp):
+    def __init__(self, crawls, output_fp, db_fp, params):
         self.crawls = crawls
         self.output_fp = output_fp
         self.db_fp = db_fp
         self.db_cursor = lite.connect(db_fp).cursor()
         self.visits = {}
+        self.params = params
         for crawl in crawls:
             self.visits[crawl] = {site_visit[0]: None for site_visit in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(crawl)])}
 
@@ -23,12 +23,11 @@ class ProvAnalyser():
             self.load_data(crawl)
             self.analyse_crawl(crawl)
 
-
     def load_data(self, crawl):
         visits_from_crawl = self.visits[crawl]
         json_fp = path.join(self.output_fp, "crawl%d" % crawl, "json")
         # print("\nFilepath: ", json_fp)
-        print("\n\nLoading crawl %d" % crawl)
+        # print("\n\nLoading crawl %d" % crawl)
 
         for file, visit in zip(os.listdir(json_fp), visits_from_crawl):
             with open(path.join(json_fp,path.normpath(file))) as js:
@@ -39,7 +38,7 @@ class ProvAnalyser():
 
         date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(crawl_id)]).fetchone()[0]
         date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
-        print("Analysing crawl %d on %s at %s" % (crawl_id, date, time))
+        print("\nAnalysing crawl %d on %s at %s" % (crawl_id, date, time))
         urls = []
 
         for site_url in self.db_cursor.execute("select site_url from site_visits where crawl_id=?", [str(crawl_id)]):
@@ -50,25 +49,39 @@ class ProvAnalyser():
         for (visit_id, visit_js), site_url in zip(crawl.items(), urls):
             self.analyse_visit(visit_id, visit_js, site_url)
 
-
-
     def analyse_visit(self, visit_id, visit_js, site_url):
         print("Analysing visit %d to %s " % (visit_id, site_url))
-        hosts = self.retrieve_hosts(visit_js)
-        if not hosts:
+        hosts_cookies = self.retrieve_hosts_cookies(visit_js)
+        if not hosts_cookies.keys():
             print("Visit had no third-party hosts!\n")
         else:
-            print("Visit %d resulted in %d third-party hosts: " % (visit_id, len(hosts)))
-            print(hosts, "\n")
+            cookies_num = 0
+            for val in hosts_cookies.values():
+                cookies_num += len(val)
+            print("Visit %d resulted in %d third-party trackers " % (visit_id, len(hosts_cookies.keys())))
+            print("And total %d third-party cookies " % cookies_num)
+            print("Number of cookies for every tracker: ")
+            most_cookies = 0
+            most_tracker = None
+            for tracker, cookies in hosts_cookies.items():
+                print("%s – %d" % (tracker, len(cookies)))
+                if len(cookies) > most_cookies:
+                    most_tracker = tracker
+                    most_cookies = len(cookies)
+            print("Tracker with most cookies – %s with %d cookies" % (most_tracker, most_cookies))
 
-
-    def retrieve_hosts(self, visit_js):
-        hosts = []
+    def retrieve_hosts_cookies(self, visit_js):
+        hosts_cookies = {}
+        # cookies = []
         try:
-            for k,v in visit_js['hadMember'].items():
-                hosts.append(v['prov:entity'])
+            for v in visit_js['hadMember'].values():
+                if v['prov:collection'] == 'trackers':
+                    hosts_cookies[v['prov:entity']] = []
+            for v  in visit_js['wasAttributedTo'].values():
+                if v['prov:agent'] in hosts_cookies.keys():
+                    hosts_cookies[v['prov:agent']].append(v['prov:entity'])
         finally:
-            return hosts
+            return hosts_cookies
 
 
     # def cookie_stats(self, visit_id):

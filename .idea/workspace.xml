@@ -2,6 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a6bf36a-dde9-440a-b1fb-1c0ba3644d5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/json/visit1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/json/visit2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/json/visit3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/png/visit1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/png/visit2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl1/png/visit3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl10/json/visit18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl10/png/visit18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl11/json/visit19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl11/png/visit19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl12/json/visit20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl12/png/visit20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl13/json/visit21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl13/png/visit21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl14/json/visit22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl14/png/visit22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2/json/visit4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2/json/visit5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2/png/visit4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2/png/visit5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2test/json/visit4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2test/json/visit5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2test/png/visit4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl2test/png/visit5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl3/json/visit6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl3/json/visit7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl3/png/visit6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl3/png/visit7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl4/json/visit8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl4/json/visit9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl4/png/visit8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl4/png/visit9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl5/json/.ipynb_checkpoints/visit10-checkpoint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl5/json/visit10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl5/png/visit10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl6/json/visit11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl6/json/visit12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl6/png/visit11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl6/png/visit12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl7/json/visit13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl7/json/visit14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl7/png/visit13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl7/png/visit14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl8/json/visit15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl8/json/visit16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl8/png/visit15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl8/png/visit16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl9/json/visit17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/crawl9/png/visit17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit1.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit3.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl1/json/visit3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl10/json/visit18.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl10/json/visit18.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl11/json/visit19.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl11/json/visit19.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl12/json/visit20.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl12/json/visit20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl13/json/visit21.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl13/json/visit21.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl14/json/visit22.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl14/json/visit22.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl2/json/visit4.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl2/json/visit4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl2/json/visit5.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl2/json/visit5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl3/json/visit6.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl3/json/visit6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl3/json/visit7.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl3/json/visit7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl4/json/visit8.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl4/json/visit8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl4/json/visit9.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl4/json/visit9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl5/json/visit10.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl5/json/visit10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl6/json/visit11.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl6/json/visit11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl6/json/visit12.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl6/json/visit12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl7/json/visit13.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl7/json/visit13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl7/json/visit14.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl7/json/visit14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl8/json/visit15.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl8/json/visit15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl8/json/visit16.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl8/json/visit16.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawls/results/crawl9/json/visit17.json" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/results/crawl9/json/visit17.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" afterDir="false" />
@@ -14,7 +86,7 @@
       <change beforePath="$PROJECT_DIR$/OpenWPM/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawlmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawlmanager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provanalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/provanalyser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/provmanager.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +139,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="9" />
-          <entry key="py" value="9236" />
+          <entry key="py" value="10568" />
           <entry key="testcript" value="222" />
         </counts>
       </usages-collector>
@@ -75,7 +147,7 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="222" />
-          <entry key="Python" value="9236" />
+          <entry key="Python" value="10568" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,7 +155,7 @@
           <entry key="callstacks" value="1" />
           <entry key="http_requests" value="3" />
           <entry key="http_responses" value="1" />
-          <entry key="json" value="2" />
+          <entry key="json" value="4" />
           <entry key="provtest" value="1" />
           <entry key="py" value="11" />
           <entry key="sh" value="1" />
@@ -95,7 +167,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="5" />
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="4" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="11" />
           <entry key="Scratch" value="1" />
@@ -108,47 +180,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="945">
+              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding>
                 <element signature="e#24#48#0" expanded="true" />
-                <marker date="1586695517572" expanded="true" signature="1650:1663" ph="..." />
-                <marker date="1586695517572" expanded="true" signature="1929:2027" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provanalyser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-              <folding>
-                <marker date="1586632219975" expanded="true" signature="177:5536" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="1234:1958" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="2012:2021" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="2410:2560" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="2595:2606" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="2631:2642" ph="..." />
-                <marker date="1586632219975" expanded="true" signature="2668:2679" ph="..." />
+                <marker date="1586798882060" expanded="true" signature="1738:1751" ph="..." />
+                <marker date="1586798882060" expanded="true" signature="2103:2209" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/provanalyser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="829">
+              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1586798882063" expanded="true" signature="177:6556" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="1271:1995" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="2049:2058" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="3162:3580" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="3615:3626" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="3651:3662" ph="..." />
+                <marker date="1586798882063" expanded="true" signature="3688:3699" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawlmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+            <state relative-caret-position="1083">
+              <caret line="146" column="53" lean-forward="true" selection-start-line="146" selection-start-column="53" selection-end-line="146" selection-end-column="53" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1586783499769" expanded="true" signature="236:241" ph="..." />
-                <marker date="1586783499769" expanded="true" signature="288:297" ph="..." />
-                <marker date="1586783499769" expanded="true" signature="846:957" ph="..." />
-                <marker date="1586783499769" expanded="true" signature="996:1228" ph="..." />
-                <marker date="1586783499769" expanded="true" signature="2063:2090" ph="..." />
+                <marker date="1586798882066" expanded="true" signature="236:241" ph="..." />
+                <marker date="1586798882066" expanded="true" signature="288:297" ph="..." />
+                <marker date="1586798882066" expanded="true" signature="906:1030" ph="..." />
+                <marker date="1586798882066" expanded="true" signature="1069:1301" ph="..." />
+                <marker date="1586798882066" expanded="true" signature="2136:2163" ph="..." />
               </folding>
             </state>
           </provider>
@@ -157,8 +230,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="75">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -189,10 +262,10 @@
         <option value="$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json" />
         <option value="$PROJECT_DIR$/testcript" />
         <option value="$PROJECT_DIR$/OpenWPM/prj.py" />
-        <option value="$PROJECT_DIR$/provanalyser.py" />
-        <option value="$PROJECT_DIR$/provmanager.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/crawlmanager.py" />
+        <option value="$PROJECT_DIR$/provmanager.py" />
+        <option value="$PROJECT_DIR$/provanalyser.py" />
       </list>
     </option>
   </component>
@@ -217,7 +290,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-696" />
     <option name="y" value="-1417" />
-    <option name="width" value="1369" />
+    <option name="width" value="1278" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -235,6 +308,11 @@
             <path>
               <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRJ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRJ" type="462c0819:PsiDirectoryNode" />
+              <item name="Crawls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,7 +354,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-696" y="-1417" width="1369" height="1417" extended-state="0" />
+    <frame x="-696" y="-1417" width="1278" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49962264" weight="0.1914092" />
@@ -290,7 +368,7 @@
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Database Console" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32981133" />
       <window_info anchor="bottom" id="Run" order="9" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
@@ -387,52 +465,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crawls/Results/crawl2/json/visit4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="948">
+          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawlmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="146" column="53" lean-forward="true" selection-start-line="146" selection-start-column="53" selection-end-line="146" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1586798882066" expanded="true" signature="236:241" ph="..." />
+            <marker date="1586798882066" expanded="true" signature="288:297" ph="..." />
+            <marker date="1586798882066" expanded="true" signature="906:1030" ph="..." />
+            <marker date="1586798882066" expanded="true" signature="1069:1301" ph="..." />
+            <marker date="1586798882066" expanded="true" signature="2136:2163" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provmanager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="945">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding>
             <element signature="e#24#48#0" expanded="true" />
-            <marker date="1586695517572" expanded="true" signature="1650:1663" ph="..." />
-            <marker date="1586695517572" expanded="true" signature="1929:2027" ph="..." />
+            <marker date="1586798882060" expanded="true" signature="1738:1751" ph="..." />
+            <marker date="1586798882060" expanded="true" signature="2103:2209" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provanalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="829">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
           <folding>
-            <marker date="1586632219975" expanded="true" signature="177:5536" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="1234:1958" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="2012:2021" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="2410:2560" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="2595:2606" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="2631:2642" ph="..." />
-            <marker date="1586632219975" expanded="true" signature="2668:2679" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlmanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1586783499769" expanded="true" signature="236:241" ph="..." />
-            <marker date="1586783499769" expanded="true" signature="288:297" ph="..." />
-            <marker date="1586783499769" expanded="true" signature="846:957" ph="..." />
-            <marker date="1586783499769" expanded="true" signature="996:1228" ph="..." />
-            <marker date="1586783499769" expanded="true" signature="2063:2090" ph="..." />
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1586798882063" expanded="true" signature="177:6556" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="1271:1995" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="2049:2058" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="3162:3580" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="3615:3626" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="3651:3662" ph="..." />
+            <marker date="1586798882063" expanded="true" signature="3688:3699" ph="..." />
           </folding>
         </state>
       </provider>

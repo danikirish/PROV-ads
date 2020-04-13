@@ -19,13 +19,14 @@ class CrawlManager():
 
 
     def main(self):
-        date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
-        date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
-        print("Analysing crawl %d on %s at %s" % (self.crawl_id, date, time))
+        # date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
+        # date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
+        # print("Analysing crawl %d on %s at %s" % (self.crawl_id, date, time))
+        # print("Recording crawl %d" % self.crawl_id)
         self.create_prov()
         self.record_prov()
         self.write_prov()
-        return self.documents
+        return self.documents, self.params
 
     def extract_params(self):
         params_str = self.db_cursor.execute("select browser_params from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
@@ -130,8 +131,8 @@ class CrawlManager():
                 doc.wasAttributedTo(str(cookie), host)
                 doc.hadMember('cookies', str(cookie))
                 # doc.wasGeneratedBy(str(cookie), 'setCookies')
-            print("FOR VISIT %d recorded:" % visit)
-            print(tp_hosts_cookies)
+            # print("FOR VISIT %d recorded:" % visit)
+            # print(tp_hosts_cookies)
 
 
 
@@ -142,11 +143,11 @@ class CrawlManager():
             os.makedirs(self.output_fp)
             os.mkdir(json_fp)
             os.mkdir(png_fp)
-        print("Writing to: ", self.output_fp, "\n")
+        # print("Writing to: ", self.output_fp, "\n")
         for visit, document in self.documents.items():
             print("writing visit%d" % visit)
             dot = prov_to_dot(document)
             dot.write_png(path.join(png_fp, 'visit%d.png'%visit))
-            document.serialize(path.join(json_fp, 'visit%d.json'%visit))
+            document.serialize(path.join(json_fp, 'visit%d.json'%visit), indent=4)
 
 
