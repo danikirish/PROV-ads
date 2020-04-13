@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a6bf36a-dde9-440a-b1fb-1c0ba3644d5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" afterDir="false" />
@@ -14,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/OpenWPM/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawlmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawlmanager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provanalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/provanalyser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/provmanager.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +67,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="9" />
-          <entry key="py" value="7247" />
+          <entry key="py" value="9236" />
           <entry key="testcript" value="222" />
         </counts>
       </usages-collector>
@@ -75,7 +75,7 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="222" />
-          <entry key="Python" value="7247" />
+          <entry key="Python" value="9236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -105,14 +105,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="1110">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
-                <marker date="1586632219988" expanded="true" signature="1608:1621" ph="..." />
-                <marker date="1586632219988" expanded="true" signature="1887:1985" ph="..." />
+                <element signature="e#24#48#0" expanded="true" />
+                <marker date="1586695517572" expanded="true" signature="1650:1663" ph="..." />
+                <marker date="1586695517572" expanded="true" signature="1929:2027" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provanalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-867">
               <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
               <folding>
                 <marker date="1586632219975" expanded="true" signature="177:5536" ph="..." />
@@ -136,14 +137,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crawlmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="1025">
+              <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
               <folding>
-                <marker date="1586632220007" expanded="true" signature="236:241" ph="..." />
-                <marker date="1586632220007" expanded="true" signature="797:908" ph="..." />
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1586783499769" expanded="true" signature="236:241" ph="..." />
+                <marker date="1586783499769" expanded="true" signature="288:297" ph="..." />
+                <marker date="1586783499769" expanded="true" signature="846:957" ph="..." />
+                <marker date="1586783499769" expanded="true" signature="996:1228" ph="..." />
+                <marker date="1586783499769" expanded="true" signature="2063:2090" ph="..." />
               </folding>
             </state>
           </provider>
@@ -152,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="45">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -170,6 +175,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>all_tp</find>
+      <find>setCookies</find>
+      <find>hosts</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,10 +189,10 @@
         <option value="$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json" />
         <option value="$PROJECT_DIR$/testcript" />
         <option value="$PROJECT_DIR$/OpenWPM/prj.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/provanalyser.py" />
-        <option value="$PROJECT_DIR$/crawlmanager.py" />
         <option value="$PROJECT_DIR$/provmanager.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/crawlmanager.py" />
       </list>
     </option>
   </component>
@@ -280,7 +287,7 @@
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32981133" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Database Console" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
@@ -382,14 +389,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="45">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+            <marker date="1586695517572" expanded="true" signature="1650:1663" ph="..." />
+            <marker date="1586695517572" expanded="true" signature="1929:2027" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provanalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-867">
           <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding>
             <marker date="1586632219975" expanded="true" signature="177:5536" ph="..." />
@@ -405,22 +424,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crawlmanager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="1025">
+          <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
           <folding>
-            <marker date="1586632220007" expanded="true" signature="236:241" ph="..." />
-            <marker date="1586632220007" expanded="true" signature="797:908" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provmanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1586632219988" expanded="true" signature="1608:1621" ph="..." />
-            <marker date="1586632219988" expanded="true" signature="1887:1985" ph="..." />
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1586783499769" expanded="true" signature="236:241" ph="..." />
+            <marker date="1586783499769" expanded="true" signature="288:297" ph="..." />
+            <marker date="1586783499769" expanded="true" signature="846:957" ph="..." />
+            <marker date="1586783499769" expanded="true" signature="996:1228" ph="..." />
+            <marker date="1586783499769" expanded="true" signature="2063:2090" ph="..." />
           </folding>
         </state>
       </provider>

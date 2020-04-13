@@ -13,7 +13,7 @@ import matplotlib.image as mpimg
 from crawlmanager import CrawlManager
 from provanalyser import ProvAnalyser
 
-
+# TODO(?): Create a manager abstract class
 class ProvManager():
     def __init__(self, output_fp=path.join(os.getcwd(), "Crawls", "Results"), db_fp="/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite"):
         self.db_fp = db_fp
@@ -71,5 +71,4 @@ class ProvManager():
         return cursor
 
 
-#
 #
