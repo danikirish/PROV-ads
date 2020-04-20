@@ -1,0 +1,369 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "addthis.com": {},
+        "doubleclick.net": {},
+        "bing.com": {},
+        "linkedin.com": {},
+        "ads.linkedin.com": {},
+        "global.siteimproveanalytics.io": {},
+        "facebook.com": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 1,
+                "type": "xsd:int"
+            }
+        },
+        "kcl.ac.uk/people/luc-moreau": {},
+        "crawl": {
+            "id": {
+                "$": 1,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "3": {},
+        "4": {},
+        "5": {},
+        "8": {},
+        "9": {},
+        "10": {},
+        "15": {},
+        "16": {},
+        "17": {},
+        "18": {},
+        "19": {},
+        "20": {},
+        "21": {},
+        "23": {},
+        "24": {},
+        "25": {},
+        "27": {},
+        "28": {},
+        "29": {},
+        "30": {},
+        "31": {},
+        "32": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "addthis.com"
+        },
+        "_:id23": {
+            "prov:activity": "setCookies",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id27": {
+            "prov:activity": "setCookies",
+            "prov:agent": "bing.com"
+        },
+        "_:id35": {
+            "prov:activity": "setCookies",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id39": {
+            "prov:activity": "setCookies",
+            "prov:agent": "ads.linkedin.com"
+        },
+        "_:id49": {
+            "prov:activity": "setCookies",
+            "prov:agent": "global.siteimproveanalytics.io"
+        },
+        "_:id55": {
+            "prov:activity": "setCookies",
+            "prov:agent": "facebook.com"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "kcl.ac.uk/people/luc-moreau",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "kcl.ac.uk/people/luc-moreau",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "3",
+            "prov:agent": "addthis.com"
+        },
+        "_:id16": {
+            "prov:entity": "4",
+            "prov:agent": "addthis.com"
+        },
+        "_:id18": {
+            "prov:entity": "5",
+            "prov:agent": "addthis.com"
+        },
+        "_:id20": {
+            "prov:entity": "8",
+            "prov:agent": "addthis.com"
+        },
+        "_:id24": {
+            "prov:entity": "9",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id28": {
+            "prov:entity": "10",
+            "prov:agent": "bing.com"
+        },
+        "_:id30": {
+            "prov:entity": "15",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id32": {
+            "prov:entity": "16",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id36": {
+            "prov:entity": "17",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id40": {
+            "prov:entity": "18",
+            "prov:agent": "ads.linkedin.com"
+        },
+        "_:id42": {
+            "prov:entity": "19",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id44": {
+            "prov:entity": "20",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id46": {
+            "prov:entity": "21",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id50": {
+            "prov:entity": "23",
+            "prov:agent": "global.siteimproveanalytics.io"
+        },
+        "_:id52": {
+            "prov:entity": "24",
+            "prov:agent": "global.siteimproveanalytics.io"
+        },
+        "_:id56": {
+            "prov:entity": "25",
+            "prov:agent": "facebook.com"
+        },
+        "_:id58": {
+            "prov:entity": "27",
+            "prov:agent": "facebook.com"
+        },
+        "_:id60": {
+            "prov:entity": "28",
+            "prov:agent": "facebook.com"
+        },
+        "_:id62": {
+            "prov:entity": "29",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id64": {
+            "prov:entity": "30",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id66": {
+            "prov:entity": "31",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id68": {
+            "prov:entity": "32",
+            "prov:agent": "linkedin.com"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "kcl.ac.uk/people/luc-moreau"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "kcl.ac.uk/people/luc-moreau"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "addthis.com"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "3"
+        },
+        "_:id17": {
+            "prov:collection": "cookies",
+            "prov:entity": "4"
+        },
+        "_:id19": {
+            "prov:collection": "cookies",
+            "prov:entity": "5"
+        },
+        "_:id21": {
+            "prov:collection": "cookies",
+            "prov:entity": "8"
+        },
+        "_:id22": {
+            "prov:collection": "trackers",
+            "prov:entity": "doubleclick.net"
+        },
+        "_:id25": {
+            "prov:collection": "cookies",
+            "prov:entity": "9"
+        },
+        "_:id26": {
+            "prov:collection": "trackers",
+            "prov:entity": "bing.com"
+        },
+        "_:id29": {
+            "prov:collection": "cookies",
+            "prov:entity": "10"
+        },
+        "_:id31": {
+            "prov:collection": "cookies",
+            "prov:entity": "15"
+        },
+        "_:id33": {
+            "prov:collection": "cookies",
+            "prov:entity": "16"
+        },
+        "_:id34": {
+            "prov:collection": "trackers",
+            "prov:entity": "linkedin.com"
+        },
+        "_:id37": {
+            "prov:collection": "cookies",
+            "prov:entity": "17"
+        },
+        "_:id38": {
+            "prov:collection": "trackers",
+            "prov:entity": "ads.linkedin.com"
+        },
+        "_:id41": {
+            "prov:collection": "cookies",
+            "prov:entity": "18"
+        },
+        "_:id43": {
+            "prov:collection": "cookies",
+            "prov:entity": "19"
+        },
+        "_:id45": {
+            "prov:collection": "cookies",
+            "prov:entity": "20"
+        },
+        "_:id47": {
+            "prov:collection": "cookies",
+            "prov:entity": "21"
+        },
+        "_:id48": {
+            "prov:collection": "trackers",
+            "prov:entity": "global.siteimproveanalytics.io"
+        },
+        "_:id51": {
+            "prov:collection": "cookies",
+            "prov:entity": "23"
+        },
+        "_:id53": {
+            "prov:collection": "cookies",
+            "prov:entity": "24"
+        },
+        "_:id54": {
+            "prov:collection": "trackers",
+            "prov:entity": "facebook.com"
+        },
+        "_:id57": {
+            "prov:collection": "cookies",
+            "prov:entity": "25"
+        },
+        "_:id59": {
+            "prov:collection": "cookies",
+            "prov:entity": "27"
+        },
+        "_:id61": {
+            "prov:collection": "cookies",
+            "prov:entity": "28"
+        },
+        "_:id63": {
+            "prov:collection": "cookies",
+            "prov:entity": "29"
+        },
+        "_:id65": {
+            "prov:collection": "cookies",
+            "prov:entity": "30"
+        },
+        "_:id67": {
+            "prov:collection": "cookies",
+            "prov:entity": "31"
+        },
+        "_:id69": {
+            "prov:collection": "cookies",
+            "prov:entity": "32"
+        }
+    }
+}

@@ -1,0 +1,298 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "fwmrm.net": {},
+        "stickyadstv.com": {},
+        "krxd.net": {},
+        "doubleclick.net": {},
+        "nr-data.net": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 5,
+                "type": "xsd:int"
+            },
+            "url": "crunchyroll.com/en-gb"
+        },
+        "crunchyroll.com/en-gb": {},
+        "crawl": {
+            "id": {
+                "$": 2,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "246": {},
+        "247": {},
+        "248": {},
+        "249": {},
+        "250": {},
+        "251": {},
+        "252": {},
+        "254": {},
+        "255": {},
+        "256": {},
+        "257": {},
+        "258": {},
+        "259": {},
+        "260": {},
+        "261": {},
+        "265": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id31": {
+            "prov:activity": "setCookies",
+            "prov:agent": "stickyadstv.com"
+        },
+        "_:id39": {
+            "prov:activity": "setCookies",
+            "prov:agent": "krxd.net"
+        },
+        "_:id47": {
+            "prov:activity": "setCookies",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id51": {
+            "prov:activity": "setCookies",
+            "prov:agent": "nr-data.net"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "crunchyroll.com/en-gb",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "crunchyroll.com/en-gb",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "246",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id16": {
+            "prov:entity": "247",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id18": {
+            "prov:entity": "248",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id20": {
+            "prov:entity": "249",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id22": {
+            "prov:entity": "250",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id24": {
+            "prov:entity": "251",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id26": {
+            "prov:entity": "252",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id28": {
+            "prov:entity": "254",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id32": {
+            "prov:entity": "255",
+            "prov:agent": "stickyadstv.com"
+        },
+        "_:id34": {
+            "prov:entity": "256",
+            "prov:agent": "stickyadstv.com"
+        },
+        "_:id36": {
+            "prov:entity": "257",
+            "prov:agent": "stickyadstv.com"
+        },
+        "_:id40": {
+            "prov:entity": "258",
+            "prov:agent": "krxd.net"
+        },
+        "_:id42": {
+            "prov:entity": "259",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id44": {
+            "prov:entity": "260",
+            "prov:agent": "fwmrm.net"
+        },
+        "_:id48": {
+            "prov:entity": "261",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id52": {
+            "prov:entity": "265",
+            "prov:agent": "nr-data.net"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "crunchyroll.com/en-gb"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "crunchyroll.com/en-gb"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "fwmrm.net"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "246"
+        },
+        "_:id17": {
+            "prov:collection": "cookies",
+            "prov:entity": "247"
+        },
+        "_:id19": {
+            "prov:collection": "cookies",
+            "prov:entity": "248"
+        },
+        "_:id21": {
+            "prov:collection": "cookies",
+            "prov:entity": "249"
+        },
+        "_:id23": {
+            "prov:collection": "cookies",
+            "prov:entity": "250"
+        },
+        "_:id25": {
+            "prov:collection": "cookies",
+            "prov:entity": "251"
+        },
+        "_:id27": {
+            "prov:collection": "cookies",
+            "prov:entity": "252"
+        },
+        "_:id29": {
+            "prov:collection": "cookies",
+            "prov:entity": "254"
+        },
+        "_:id30": {
+            "prov:collection": "trackers",
+            "prov:entity": "stickyadstv.com"
+        },
+        "_:id33": {
+            "prov:collection": "cookies",
+            "prov:entity": "255"
+        },
+        "_:id35": {
+            "prov:collection": "cookies",
+            "prov:entity": "256"
+        },
+        "_:id37": {
+            "prov:collection": "cookies",
+            "prov:entity": "257"
+        },
+        "_:id38": {
+            "prov:collection": "trackers",
+            "prov:entity": "krxd.net"
+        },
+        "_:id41": {
+            "prov:collection": "cookies",
+            "prov:entity": "258"
+        },
+        "_:id43": {
+            "prov:collection": "cookies",
+            "prov:entity": "259"
+        },
+        "_:id45": {
+            "prov:collection": "cookies",
+            "prov:entity": "260"
+        },
+        "_:id46": {
+            "prov:collection": "trackers",
+            "prov:entity": "doubleclick.net"
+        },
+        "_:id49": {
+            "prov:collection": "cookies",
+            "prov:entity": "261"
+        },
+        "_:id50": {
+            "prov:collection": "trackers",
+            "prov:entity": "nr-data.net"
+        },
+        "_:id53": {
+            "prov:collection": "cookies",
+            "prov:entity": "265"
+        }
+    }
+}

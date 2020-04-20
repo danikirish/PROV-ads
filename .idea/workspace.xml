@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a6bf36a-dde9-440a-b1fb-1c0ba3644d5a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Crawls/dbschema.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/1805.10505.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Figures/Screenshot 2020-04-17 at 18.02.37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Figures/dbschema.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Figures/dbschemavert.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Figures/provmanager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Resources/Figures/template.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawls/crawl-data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/crawl-data.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawls/openwpm.log" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/openwpm.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/algorithm_first-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/algorithm_first-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/.ipynb_checkpoints/testprov-checkpoint.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/algorithm_first.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/algorithm_first.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/testprov.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/visit1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/visit2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/visit3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/visit4.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" afterDir="false" />
@@ -23,17 +23,9 @@
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/FHThesis[1].pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reading/FHThesis[1].pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/the_web_never_forgets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reading/the_web_never_forgets.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/lshort.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/lshort.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourthparty" beforeDir="false" afterPath="$PROJECT_DIR$/fourthparty" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fourthparty/extension/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/fourthparty/extension/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawlmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawlmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provanalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/provanalyser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/provmanager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/visit1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/visit2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/visit3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/visit4.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,39 +44,29 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawl-data.sqlite" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawl-data.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="crawl-data.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-376949911">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="9" />
-          <entry key="py" value="1611" />
+          <entry key="py" value="11325" />
           <entry key="testcript" value="222" />
         </counts>
       </usages-collector>
@@ -92,17 +74,21 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="222" />
-          <entry key="Python" value="1611" />
+          <entry key="Python" value="11325" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="DATABASE/04c78b91-37fc-499e-9c0f-23639ad560c2" value="1" />
+          <entry key="ProvManager" value="3" />
+          <entry key="SCHEMA:main" value="1" />
           <entry key="callstacks" value="1" />
           <entry key="http_requests" value="3" />
           <entry key="http_responses" value="1" />
-          <entry key="json" value="2" />
-          <entry key="provtest" value="1" />
-          <entry key="py" value="6" />
+          <entry key="json" value="8" />
+          <entry key="provtest" value="2" />
+          <entry key="py" value="17" />
+          <entry key="sh" value="1" />
           <entry key="sql" value="1" />
           <entry key="testcript" value="1" />
           <entry key="together" value="1" />
@@ -111,10 +97,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="5" />
-          <entry key="JSON" value="2" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="6" />
+          <entry key="JSON" value="8" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Python" value="15" />
           <entry key="Scratch" value="1" />
+          <entry key="UML" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -124,10 +111,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="-21">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding>
-                <element signature="e#52#76#0" expanded="true" />
+                <marker date="1587313831215" expanded="true" signature="1685:1698" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/provanalyser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <marker date="1587397758172" expanded="true" signature="2002:2903" ph="..." />
+                <marker date="1587397758172" expanded="true" signature="2957:2966" ph="..." />
               </folding>
             </state>
           </provider>
@@ -138,54 +139,76 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcript">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawlmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="204">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1587395860861" expanded="true" signature="236:241" ph="..." />
+                <marker date="1587395860861" expanded="true" signature="288:297" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/together">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="203">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenWPM/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>all_tp</find>
+      <find>setCookies</find>
+      <find>hosts</find>
+      <find>db</find>
+      <find>params</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json" />
-        <option value="$PROJECT_DIR$/provmanager.py" />
         <option value="$PROJECT_DIR$/testcript" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/kite_tutorial.py" />
         <option value="$PROJECT_DIR$/OpenWPM/prj.py" />
+        <option value="$PROJECT_DIR$/provmanager.py" />
+        <option value="$PROJECT_DIR$/crawlmanager.py" />
+        <option value="$PROJECT_DIR$/provanalyser.py" />
       </list>
     </option>
   </component>
@@ -205,15 +228,13 @@
       <path value="$PROJECT_DIR$/OpenWPM/automation/Extension/webext-instrumentation/package.json" />
       <path value="$PROJECT_DIR$/OpenWPM/venv/lib/python3.7/site-packages/localstack/dashboard/web/package.json" />
       <path value="$PROJECT_DIR$/OpenWPM/venv/lib/python3.7/site-packages/localstack/package.json" />
-      <path value="$PROJECT_DIR$/fourthparty/crawling/modal-disable/package.json" />
-      <path value="$PROJECT_DIR$/fourthparty/extension/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-696" />
-    <option name="y" value="-1417" />
-    <option name="width" value="1388" />
-    <option name="height" value="1417" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="143" />
+    <option name="y" value="23" />
+    <option name="width" value="1022" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -223,6 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,16 +252,10 @@
               <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRJ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PRJ" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenWPM" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,6 +265,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -275,32 +292,41 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-696" y="-1417" width="1388" height="1417" extended-state="0" />
+    <frame x="28" y="23" width="1252" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19167905" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49962264" visible="true" weight="0.1214876" />
+      <window_info id="Structure" order="1" sideWeight="0.50037736" side_tool="true" weight="0.19167905" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.32981133" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="3" weight="0.32981133" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32981133" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32981133" />
       <window_info anchor="bottom" id="Database Console" order="6" weight="0.32981133" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32981133" />
       <window_info anchor="bottom" id="Run" order="9" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" auto_hide="true" x="-56" y="-917" width="211" height="416" id="Database" order="14" type="WINDOWED" weight="0.24603774" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32876712" />
       <window_info anchor="right" id="SciView" order="0" weight="0.32988268" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" x="-69" y="-991" width="211" height="416" id="Database" order="4" weight="0.24489796" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,23 +336,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OpenWPM/crawler.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://04c78b91-37fc-499e-9c0f-23639ad560c2/schema/main/table/callstacks">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://04c78b91-37fc-499e-9c0f-23639ad560c2/schema/main/table/http_responses">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://04c78b91-37fc-499e-9c0f-23639ad560c2/schema/main/table/callstacks" />
+    <entry file="das://04c78b91-37fc-499e-9c0f-23639ad560c2/schema/main/table/http_responses" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/04c78b91-37fc-499e-9c0f-23639ad560c2/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -337,35 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provmanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-          <folding>
-            <element signature="e#52#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provtest">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/together">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenWPM/automation/TaskManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -373,20 +355,245 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/together">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/install-dev.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crawls/Results/crawl2/json/visit4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="948">
+          <caret line="136" column="41" lean-forward="true" selection-start-line="136" selection-start-column="41" selection-end-line="136" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/04c78b91-37fc-499e-9c0f-23639ad560c2">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>04c78b91-37fc-499e-9c0f-23639ad560c2</OriginalElement>
+          <nodes>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_responses</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.javascript_cookies</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_redirects</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.sqlite_sequence</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.callstacks</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.sqlite_master</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.navigations</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.flash_cookies</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl_history</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.task</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_requests</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.javascript</node>
+            <node x="" y="">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.site_visits</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.3344947735191638" x="3276.0" y="692.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/kite_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#/Users/Danik/Desktop/KCL/YEAR_3/PRJ/provmanager.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#/Users/Danik/Desktop/KCL/YEAR_3/PRJ/provmanager.py</OriginalElement>
+          <nodes>
+            <node x="318.0" y="0.0">object</node>
+            <node x="0.0" y="542.0">provmanager.ProvManager</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="provmanager.ProvManager" target="object">
+              <point x="0.0" y="-136.0" />
+              <point x="0.0" y="246.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="99.0" y="554.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/#/Users/Danik/Desktop/KCL/YEAR_3/PRJ/crawlmanager.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#/Users/Danik/Desktop/KCL/YEAR_3/PRJ/crawlmanager.py</OriginalElement>
+          <nodes>
+            <node x="" y="">crawlmanager.CrawlManager</node>
+            <node x="" y="">object</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="150.0" y="440.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Python/provmanager.ProvManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>provmanager.ProvManager</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="472.0" y="110.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DATABASE/04c78b91-37fc-499e-9c0f-23639ad560c2.SCHEMA:main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>04c78b91-37fc-499e-9c0f-23639ad560c2.SCHEMA:main</OriginalElement>
+          <nodes>
+            <node x="613.0" y="0.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_responses</node>
+            <node x="335.0" y="0.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.javascript_cookies</node>
+            <node x="992.0" y="0.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl</node>
+            <node x="0.0" y="0.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_requests</node>
+            <node x="1095.0" y="168.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl_history</node>
+            <node x="0.0" y="735.0">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_redirects</node>
+            <node x="891.0" y="222.5">04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.site_visits</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl_history" target="04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl">
+              <point x="0.0" y="-113.5" />
+              <point x="1190.0" y="143.0" />
+              <point x="1133.75" y="143.0" />
+              <point x="47.25" y="59.0" />
+            </edge>
+            <edge source="04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.site_visits" target="04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.crawl">
+              <point x="0.0" y="-59.0" />
+              <point x="983.0" y="143.0" />
+              <point x="1039.25" y="143.0" />
+              <point x="-47.25" y="59.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.367816091954023" x="642.5" y="558.5" />
+          <SelectedNodes>
+            <node>04c78b91-37fc-499e-9c0f-23639ad560c2.TABLE:main.http_responses</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-817">
+          <caret line="48" column="49" lean-forward="true" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="203">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provtest">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding>
-            <element signature="e#0#67#0" expanded="true" />
+            <marker date="1587313831215" expanded="true" signature="1685:1698" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcript">
+    <entry file="file://$PROJECT_DIR$/crawlmanager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1587395860861" expanded="true" signature="236:241" ph="..." />
+            <marker date="1587395860861" expanded="true" signature="288:297" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provanalyser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1587397758172" expanded="true" signature="2002:2903" ph="..." />
+            <marker date="1587397758172" expanded="true" signature="2957:2966" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

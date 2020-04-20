@@ -1,0 +1,153 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "scorecardresearch.com": {},
+        "quantserve.com": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 8,
+                "type": "xsd:int"
+            }
+        },
+        "stackoverflow.com": {},
+        "crawl": {
+            "id": {
+                "$": 4,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "327": {},
+        "328": {},
+        "332": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id19": {
+            "prov:activity": "setCookies",
+            "prov:agent": "quantserve.com"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "stackoverflow.com",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "stackoverflow.com",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "327",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id16": {
+            "prov:entity": "328",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id20": {
+            "prov:entity": "332",
+            "prov:agent": "quantserve.com"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "stackoverflow.com"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "stackoverflow.com"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "scorecardresearch.com"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "327"
+        },
+        "_:id17": {
+            "prov:collection": "cookies",
+            "prov:entity": "328"
+        },
+        "_:id18": {
+            "prov:collection": "trackers",
+            "prov:entity": "quantserve.com"
+        },
+        "_:id21": {
+            "prov:collection": "cookies",
+            "prov:entity": "332"
+        }
+    }
+}

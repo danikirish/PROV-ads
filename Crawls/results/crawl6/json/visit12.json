@@ -1,0 +1,900 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "blueconic.net": {},
+        "bing.com": {},
+        "ml314.com": {},
+        "linkedin.com": {},
+        "ads.linkedin.com": {},
+        "doubleclick.net": {},
+        "demdex.net": {},
+        "rlcdn.com": {},
+        "crwdcntrl.net": {},
+        "eyeota.net": {},
+        "adsrvr.org": {},
+        "facebook.com": {},
+        "dpm.demdex.net": {},
+        "keywee.co": {},
+        "config.parsely.com": {},
+        "twitter.com": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 12,
+                "type": "xsd:int"
+            }
+        },
+        "/www.technologyreview.com/2005/12/01/230006/click-oh-yeah/": {},
+        "crawl": {
+            "id": {
+                "$": 6,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "392": {},
+        "393": {},
+        "394": {},
+        "409": {},
+        "410": {},
+        "411": {},
+        "412": {},
+        "413": {},
+        "416": {},
+        "417": {},
+        "418": {},
+        "419": {},
+        "420": {},
+        "421": {},
+        "422": {},
+        "425": {},
+        "426": {},
+        "427": {},
+        "428": {},
+        "429": {},
+        "430": {},
+        "433": {},
+        "434": {},
+        "435": {},
+        "439": {},
+        "440": {},
+        "441": {},
+        "442": {},
+        "443": {},
+        "445": {},
+        "446": {},
+        "447": {},
+        "448": {},
+        "449": {},
+        "450": {},
+        "451": {},
+        "452": {},
+        "453": {},
+        "454": {},
+        "455": {},
+        "456": {},
+        "466": {},
+        "467": {},
+        "468": {},
+        "469": {},
+        "470": {},
+        "471": {},
+        "472": {},
+        "473": {},
+        "474": {},
+        "475": {},
+        "476": {},
+        "477": {},
+        "478": {},
+        "479": {},
+        "480": {},
+        "481": {},
+        "482": {},
+        "483": {},
+        "484": {},
+        "485": {},
+        "486": {},
+        "487": {},
+        "502": {},
+        "503": {},
+        "504": {},
+        "505": {},
+        "506": {},
+        "507": {},
+        "508": {},
+        "509": {},
+        "510": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id21": {
+            "prov:activity": "setCookies",
+            "prov:agent": "bing.com"
+        },
+        "_:id33": {
+            "prov:activity": "setCookies",
+            "prov:agent": "ml314.com"
+        },
+        "_:id49": {
+            "prov:activity": "setCookies",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id53": {
+            "prov:activity": "setCookies",
+            "prov:agent": "ads.linkedin.com"
+        },
+        "_:id63": {
+            "prov:activity": "setCookies",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id67": {
+            "prov:activity": "setCookies",
+            "prov:agent": "demdex.net"
+        },
+        "_:id71": {
+            "prov:activity": "setCookies",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id77": {
+            "prov:activity": "setCookies",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id81": {
+            "prov:activity": "setCookies",
+            "prov:agent": "eyeota.net"
+        },
+        "_:id85": {
+            "prov:activity": "setCookies",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id91": {
+            "prov:activity": "setCookies",
+            "prov:agent": "facebook.com"
+        },
+        "_:id139": {
+            "prov:activity": "setCookies",
+            "prov:agent": "dpm.demdex.net"
+        },
+        "_:id161": {
+            "prov:activity": "setCookies",
+            "prov:agent": "keywee.co"
+        },
+        "_:id165": {
+            "prov:activity": "setCookies",
+            "prov:agent": "config.parsely.com"
+        },
+        "_:id177": {
+            "prov:activity": "setCookies",
+            "prov:agent": "twitter.com"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "/www.technologyreview.com/2005/12/01/230006/click-oh-yeah/",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "/www.technologyreview.com/2005/12/01/230006/click-oh-yeah/",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "392",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id16": {
+            "prov:entity": "393",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id18": {
+            "prov:entity": "394",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id22": {
+            "prov:entity": "409",
+            "prov:agent": "bing.com"
+        },
+        "_:id24": {
+            "prov:entity": "410",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id26": {
+            "prov:entity": "411",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id28": {
+            "prov:entity": "412",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id30": {
+            "prov:entity": "413",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id34": {
+            "prov:entity": "416",
+            "prov:agent": "ml314.com"
+        },
+        "_:id36": {
+            "prov:entity": "417",
+            "prov:agent": "ml314.com"
+        },
+        "_:id38": {
+            "prov:entity": "418",
+            "prov:agent": "ml314.com"
+        },
+        "_:id40": {
+            "prov:entity": "419",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id42": {
+            "prov:entity": "420",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id44": {
+            "prov:entity": "421",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id46": {
+            "prov:entity": "422",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id50": {
+            "prov:entity": "425",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id54": {
+            "prov:entity": "426",
+            "prov:agent": "ads.linkedin.com"
+        },
+        "_:id56": {
+            "prov:entity": "427",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id58": {
+            "prov:entity": "428",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id60": {
+            "prov:entity": "429",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id64": {
+            "prov:entity": "430",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id68": {
+            "prov:entity": "433",
+            "prov:agent": "demdex.net"
+        },
+        "_:id72": {
+            "prov:entity": "434",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id74": {
+            "prov:entity": "435",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id78": {
+            "prov:entity": "439",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id82": {
+            "prov:entity": "440",
+            "prov:agent": "eyeota.net"
+        },
+        "_:id86": {
+            "prov:entity": "441",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id88": {
+            "prov:entity": "442",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id92": {
+            "prov:entity": "443",
+            "prov:agent": "facebook.com"
+        },
+        "_:id94": {
+            "prov:entity": "445",
+            "prov:agent": "facebook.com"
+        },
+        "_:id96": {
+            "prov:entity": "446",
+            "prov:agent": "facebook.com"
+        },
+        "_:id98": {
+            "prov:entity": "447",
+            "prov:agent": "facebook.com"
+        },
+        "_:id100": {
+            "prov:entity": "448",
+            "prov:agent": "facebook.com"
+        },
+        "_:id102": {
+            "prov:entity": "449",
+            "prov:agent": "facebook.com"
+        },
+        "_:id104": {
+            "prov:entity": "450",
+            "prov:agent": "facebook.com"
+        },
+        "_:id106": {
+            "prov:entity": "451",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id108": {
+            "prov:entity": "452",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id110": {
+            "prov:entity": "453",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id112": {
+            "prov:entity": "454",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id114": {
+            "prov:entity": "455",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id116": {
+            "prov:entity": "456",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id118": {
+            "prov:entity": "466",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id120": {
+            "prov:entity": "467",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id122": {
+            "prov:entity": "468",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id124": {
+            "prov:entity": "469",
+            "prov:agent": "linkedin.com"
+        },
+        "_:id126": {
+            "prov:entity": "470",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id128": {
+            "prov:entity": "471",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id130": {
+            "prov:entity": "472",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id132": {
+            "prov:entity": "473",
+            "prov:agent": "adsrvr.org"
+        },
+        "_:id134": {
+            "prov:entity": "474",
+            "prov:agent": "demdex.net"
+        },
+        "_:id136": {
+            "prov:entity": "475",
+            "prov:agent": "demdex.net"
+        },
+        "_:id140": {
+            "prov:entity": "476",
+            "prov:agent": "dpm.demdex.net"
+        },
+        "_:id142": {
+            "prov:entity": "477",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id144": {
+            "prov:entity": "478",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id146": {
+            "prov:entity": "479",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id148": {
+            "prov:entity": "480",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id150": {
+            "prov:entity": "481",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id152": {
+            "prov:entity": "482",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id154": {
+            "prov:entity": "483",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id156": {
+            "prov:entity": "484",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id158": {
+            "prov:entity": "485",
+            "prov:agent": "rlcdn.com"
+        },
+        "_:id162": {
+            "prov:entity": "486",
+            "prov:agent": "keywee.co"
+        },
+        "_:id166": {
+            "prov:entity": "487",
+            "prov:agent": "config.parsely.com"
+        },
+        "_:id168": {
+            "prov:entity": "502",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id170": {
+            "prov:entity": "503",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id172": {
+            "prov:entity": "504",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id174": {
+            "prov:entity": "505",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id178": {
+            "prov:entity": "506",
+            "prov:agent": "twitter.com"
+        },
+        "_:id180": {
+            "prov:entity": "507",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id182": {
+            "prov:entity": "508",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id184": {
+            "prov:entity": "509",
+            "prov:agent": "blueconic.net"
+        },
+        "_:id186": {
+            "prov:entity": "510",
+            "prov:agent": "blueconic.net"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "/www.technologyreview.com/2005/12/01/230006/click-oh-yeah/"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "/www.technologyreview.com/2005/12/01/230006/click-oh-yeah/"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "blueconic.net"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "392"
+        },
+        "_:id17": {
+            "prov:collection": "cookies",
+            "prov:entity": "393"
+        },
+        "_:id19": {
+            "prov:collection": "cookies",
+            "prov:entity": "394"
+        },
+        "_:id20": {
+            "prov:collection": "trackers",
+            "prov:entity": "bing.com"
+        },
+        "_:id23": {
+            "prov:collection": "cookies",
+            "prov:entity": "409"
+        },
+        "_:id25": {
+            "prov:collection": "cookies",
+            "prov:entity": "410"
+        },
+        "_:id27": {
+            "prov:collection": "cookies",
+            "prov:entity": "411"
+        },
+        "_:id29": {
+            "prov:collection": "cookies",
+            "prov:entity": "412"
+        },
+        "_:id31": {
+            "prov:collection": "cookies",
+            "prov:entity": "413"
+        },
+        "_:id32": {
+            "prov:collection": "trackers",
+            "prov:entity": "ml314.com"
+        },
+        "_:id35": {
+            "prov:collection": "cookies",
+            "prov:entity": "416"
+        },
+        "_:id37": {
+            "prov:collection": "cookies",
+            "prov:entity": "417"
+        },
+        "_:id39": {
+            "prov:collection": "cookies",
+            "prov:entity": "418"
+        },
+        "_:id41": {
+            "prov:collection": "cookies",
+            "prov:entity": "419"
+        },
+        "_:id43": {
+            "prov:collection": "cookies",
+            "prov:entity": "420"
+        },
+        "_:id45": {
+            "prov:collection": "cookies",
+            "prov:entity": "421"
+        },
+        "_:id47": {
+            "prov:collection": "cookies",
+            "prov:entity": "422"
+        },
+        "_:id48": {
+            "prov:collection": "trackers",
+            "prov:entity": "linkedin.com"
+        },
+        "_:id51": {
+            "prov:collection": "cookies",
+            "prov:entity": "425"
+        },
+        "_:id52": {
+            "prov:collection": "trackers",
+            "prov:entity": "ads.linkedin.com"
+        },
+        "_:id55": {
+            "prov:collection": "cookies",
+            "prov:entity": "426"
+        },
+        "_:id57": {
+            "prov:collection": "cookies",
+            "prov:entity": "427"
+        },
+        "_:id59": {
+            "prov:collection": "cookies",
+            "prov:entity": "428"
+        },
+        "_:id61": {
+            "prov:collection": "cookies",
+            "prov:entity": "429"
+        },
+        "_:id62": {
+            "prov:collection": "trackers",
+            "prov:entity": "doubleclick.net"
+        },
+        "_:id65": {
+            "prov:collection": "cookies",
+            "prov:entity": "430"
+        },
+        "_:id66": {
+            "prov:collection": "trackers",
+            "prov:entity": "demdex.net"
+        },
+        "_:id69": {
+            "prov:collection": "cookies",
+            "prov:entity": "433"
+        },
+        "_:id70": {
+            "prov:collection": "trackers",
+            "prov:entity": "rlcdn.com"
+        },
+        "_:id73": {
+            "prov:collection": "cookies",
+            "prov:entity": "434"
+        },
+        "_:id75": {
+            "prov:collection": "cookies",
+            "prov:entity": "435"
+        },
+        "_:id76": {
+            "prov:collection": "trackers",
+            "prov:entity": "crwdcntrl.net"
+        },
+        "_:id79": {
+            "prov:collection": "cookies",
+            "prov:entity": "439"
+        },
+        "_:id80": {
+            "prov:collection": "trackers",
+            "prov:entity": "eyeota.net"
+        },
+        "_:id83": {
+            "prov:collection": "cookies",
+            "prov:entity": "440"
+        },
+        "_:id84": {
+            "prov:collection": "trackers",
+            "prov:entity": "adsrvr.org"
+        },
+        "_:id87": {
+            "prov:collection": "cookies",
+            "prov:entity": "441"
+        },
+        "_:id89": {
+            "prov:collection": "cookies",
+            "prov:entity": "442"
+        },
+        "_:id90": {
+            "prov:collection": "trackers",
+            "prov:entity": "facebook.com"
+        },
+        "_:id93": {
+            "prov:collection": "cookies",
+            "prov:entity": "443"
+        },
+        "_:id95": {
+            "prov:collection": "cookies",
+            "prov:entity": "445"
+        },
+        "_:id97": {
+            "prov:collection": "cookies",
+            "prov:entity": "446"
+        },
+        "_:id99": {
+            "prov:collection": "cookies",
+            "prov:entity": "447"
+        },
+        "_:id101": {
+            "prov:collection": "cookies",
+            "prov:entity": "448"
+        },
+        "_:id103": {
+            "prov:collection": "cookies",
+            "prov:entity": "449"
+        },
+        "_:id105": {
+            "prov:collection": "cookies",
+            "prov:entity": "450"
+        },
+        "_:id107": {
+            "prov:collection": "cookies",
+            "prov:entity": "451"
+        },
+        "_:id109": {
+            "prov:collection": "cookies",
+            "prov:entity": "452"
+        },
+        "_:id111": {
+            "prov:collection": "cookies",
+            "prov:entity": "453"
+        },
+        "_:id113": {
+            "prov:collection": "cookies",
+            "prov:entity": "454"
+        },
+        "_:id115": {
+            "prov:collection": "cookies",
+            "prov:entity": "455"
+        },
+        "_:id117": {
+            "prov:collection": "cookies",
+            "prov:entity": "456"
+        },
+        "_:id119": {
+            "prov:collection": "cookies",
+            "prov:entity": "466"
+        },
+        "_:id121": {
+            "prov:collection": "cookies",
+            "prov:entity": "467"
+        },
+        "_:id123": {
+            "prov:collection": "cookies",
+            "prov:entity": "468"
+        },
+        "_:id125": {
+            "prov:collection": "cookies",
+            "prov:entity": "469"
+        },
+        "_:id127": {
+            "prov:collection": "cookies",
+            "prov:entity": "470"
+        },
+        "_:id129": {
+            "prov:collection": "cookies",
+            "prov:entity": "471"
+        },
+        "_:id131": {
+            "prov:collection": "cookies",
+            "prov:entity": "472"
+        },
+        "_:id133": {
+            "prov:collection": "cookies",
+            "prov:entity": "473"
+        },
+        "_:id135": {
+            "prov:collection": "cookies",
+            "prov:entity": "474"
+        },
+        "_:id137": {
+            "prov:collection": "cookies",
+            "prov:entity": "475"
+        },
+        "_:id138": {
+            "prov:collection": "trackers",
+            "prov:entity": "dpm.demdex.net"
+        },
+        "_:id141": {
+            "prov:collection": "cookies",
+            "prov:entity": "476"
+        },
+        "_:id143": {
+            "prov:collection": "cookies",
+            "prov:entity": "477"
+        },
+        "_:id145": {
+            "prov:collection": "cookies",
+            "prov:entity": "478"
+        },
+        "_:id147": {
+            "prov:collection": "cookies",
+            "prov:entity": "479"
+        },
+        "_:id149": {
+            "prov:collection": "cookies",
+            "prov:entity": "480"
+        },
+        "_:id151": {
+            "prov:collection": "cookies",
+            "prov:entity": "481"
+        },
+        "_:id153": {
+            "prov:collection": "cookies",
+            "prov:entity": "482"
+        },
+        "_:id155": {
+            "prov:collection": "cookies",
+            "prov:entity": "483"
+        },
+        "_:id157": {
+            "prov:collection": "cookies",
+            "prov:entity": "484"
+        },
+        "_:id159": {
+            "prov:collection": "cookies",
+            "prov:entity": "485"
+        },
+        "_:id160": {
+            "prov:collection": "trackers",
+            "prov:entity": "keywee.co"
+        },
+        "_:id163": {
+            "prov:collection": "cookies",
+            "prov:entity": "486"
+        },
+        "_:id164": {
+            "prov:collection": "trackers",
+            "prov:entity": "config.parsely.com"
+        },
+        "_:id167": {
+            "prov:collection": "cookies",
+            "prov:entity": "487"
+        },
+        "_:id169": {
+            "prov:collection": "cookies",
+            "prov:entity": "502"
+        },
+        "_:id171": {
+            "prov:collection": "cookies",
+            "prov:entity": "503"
+        },
+        "_:id173": {
+            "prov:collection": "cookies",
+            "prov:entity": "504"
+        },
+        "_:id175": {
+            "prov:collection": "cookies",
+            "prov:entity": "505"
+        },
+        "_:id176": {
+            "prov:collection": "trackers",
+            "prov:entity": "twitter.com"
+        },
+        "_:id179": {
+            "prov:collection": "cookies",
+            "prov:entity": "506"
+        },
+        "_:id181": {
+            "prov:collection": "cookies",
+            "prov:entity": "507"
+        },
+        "_:id183": {
+            "prov:collection": "cookies",
+            "prov:entity": "508"
+        },
+        "_:id185": {
+            "prov:collection": "cookies",
+            "prov:entity": "509"
+        },
+        "_:id187": {
+            "prov:collection": "cookies",
+            "prov:entity": "510"
+        }
+    }
+}
