@@ -9,9 +9,11 @@ import os
 import matplotlib.pyplot as plt
 from prov.dot import prov_to_dot
 import matplotlib.image as mpimg
+import json
 
 from crawlmanager import CrawlManager
 from provanalyser import ProvAnalyser
+
 
 # TODO(?): Create a manager abstract class
 class ProvManager():
@@ -22,9 +24,7 @@ class ProvManager():
         self.documents = {}
         self.all_tp_hosts = {}
         self.cur = None
-        self.last_crawl = None
-        self.tester = None
-        
+
     def main(self):
         self.cur = self.db_connect()
         recorded = False
@@ -74,6 +74,3 @@ class ProvManager():
         cursor = connection.cursor()
         print("Reading data from: ", self.db_fp)
         return cursor
-
-
-#

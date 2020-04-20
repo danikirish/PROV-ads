@@ -19,7 +19,8 @@
             "id": {
                 "$": 5,
                 "type": "xsd:int"
-            }
+            },
+            "url": "crunchyroll.com/en-gb"
         },
         "crunchyroll.com/en-gb": {},
         "crawl": {

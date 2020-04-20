@@ -6,18 +6,30 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import json
 
-class ProvAnalyser():
-    def __init__(self, crawls, output_fp, db_fp, params):
+
+class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers?
+    def __init__(self, crawls, output_fp, params):
         self.crawls = crawls
         self.output_fp = output_fp
-        self.db_fp = db_fp
-        self.db_cursor = lite.connect(db_fp).cursor()
         self.visits = {}
         self.params = params
-        for crawl in crawls:
-            self.visits[crawl] = {site_visit[0]: None for site_visit in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(crawl)])}
+        # for crawl in crawls: # TODO: Refactor so that it doesnt need to access the database.
+        #     self.visits[crawl] = {site_visit[0]: None for site_visit in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(crawl)])}
 
     def main(self):
+        for crawl in sorted(os.listdir(self.output_fp)):
+            if 'crawl' in crawl:
+                crawl_fp = path.join(self.output_fp, crawl)
+                crawl_id = crawl.split('crawl')[1]
+                self.visits[crawl_id] = None
+                for directory in os.listdir(crawl_fp):
+                    if 'json' in directory:
+                        json_fp = path.join(crawl_fp, directory)
+                        visits = []
+                        for visit in sorted(os.listdir(json_fp)):
+                            visits.append(int(visit.split('visit')[1].split('.')[0]))
+                            self.visits[int(crawl_id)] = {visit: None for visit in visits}
+
         # print("Analysis for crawls")
         for crawl in self.crawls:
             self.load_data(crawl)
@@ -36,13 +48,15 @@ class ProvAnalyser():
     def analyse_crawl(self, crawl_id):
         crawl = self.visits[crawl_id]
 
-        date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(crawl_id)]).fetchone()[0]
-        date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
-        print("\nAnalysing crawl %d on %s at %s" % (crawl_id, date, time))
+        # date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(crawl_id)]).fetchone()[0]
+        # date, time = date_time.split(" ")[0], date_time.split(" ")[1][:-3:]
+        # print("\nAnalysing crawl %d on %s at %s" % (crawl_id, date, time))
+        print("\nAnalysing crawl %d..." % crawl_id)
         urls = []
-
-        for site_url in self.db_cursor.execute("select site_url from site_visits where crawl_id=?", [str(crawl_id)]):
-            urls.append(site_url[0])
+        for visit_js in self.visits[crawl_id].values():
+            urls.append(visit_js['entity']['visit']['url'])
+        # for site_url in self.db_cursor.execute("select site_url from site_visits where crawl_id=?", [str(crawl_id)]):
+        #     urls.append(site_url[0])
         print("Made %d visits" % len(list(crawl.keys())))
         print("Visited sites: ", urls)
 
@@ -59,7 +73,7 @@ class ProvAnalyser():
             for val in hosts_cookies.values():
                 cookies_num += len(val)
             print("Visit %d resulted in %d third-party trackers " % (visit_id, len(hosts_cookies.keys())))
-            print("And total %d third-party cookies " % cookies_num)
+            print("Out of total %d cookies " % cookies_num)
             print("Number of cookies for every tracker: ")
             most_cookies = 0
             most_tracker = None

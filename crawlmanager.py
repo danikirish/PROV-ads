@@ -40,6 +40,7 @@ class CrawlManager():
             self.documents[visit_id[0]] = document
 
     def retrieve_tp_hosts(self, visit_id, site_url):
+        # TODO: Change this to retrieve hosts from 'headers' in http_requests
         hosts_ids = []
         for host, cookie_id in self.db_cursor.execute("select host, id from javascript_cookies where visit_id=?", [str(visit_id)]):
             split = host.split('.')
@@ -51,11 +52,10 @@ class CrawlManager():
                 hosts_ids.append((host, cookie_id))
         return hosts_ids
 
-
     def cookie_sync(self):
         return False
 
-    def record_prov(self):
+    def record_prov(self): # TODO: Cookie syncing.
         for visit, doc in self.documents.items():
             self.db_cursor.execute("select site_url from site_visits where visit_id=?", [str(visit)])
             site_url = self.db_cursor.fetchone()[0][7:]
@@ -71,7 +71,7 @@ class CrawlManager():
                 doc.agent('tracker2')
 
             # Entities
-            doc.entity('visit', {'id': visit})
+            doc.entity('visit', {'id': visit, 'url': site_url})
             doc.entity(site_url)
             # doc.entity('syncing_algorithm')
             doc.entity('crawl', {'id': self.crawl_id,
@@ -133,8 +133,6 @@ class CrawlManager():
                 # doc.wasGeneratedBy(str(cookie), 'setCookies')
             # print("FOR VISIT %d recorded:" % visit)
             # print(tp_hosts_cookies)
-
-
 
     def write_prov(self):
         json_fp = path.join(self.output_fp, "json")

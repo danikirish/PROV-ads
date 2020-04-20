@@ -16,7 +16,8 @@
             "id": {
                 "$": 4,
                 "type": "xsd:int"
-            }
+            },
+            "url": "stackoverflow.com"
         },
         "stackoverflow.com": {},
         "crawl": {
