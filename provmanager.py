@@ -65,7 +65,7 @@ class ProvManager():
         print("\n\nCreating analyser...")
         print("Crawls: ", crawls)
         # print("Output fp: ", self.output_fp)
-        analyser = ProvAnalyser(crawls, self.output_fp, self.db_fp, params)
+        analyser = ProvAnalyser(crawls, self.output_fp, params)
         analyser.main()
         print("Finished analysis.")
 
