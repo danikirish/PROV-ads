@@ -62,7 +62,7 @@ class ProvManager():
                 self.documents[crawl], params = returned[0], returned[1]
                 all_params.append(params)
                 recorded_crawls.append(crawl)
-        print("Finished recording.")
+        # print("Finished recording.")
         return recorded_crawls, all_params
 
     def analyse_crawls(self, crawls, params):

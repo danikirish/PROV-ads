@@ -38,13 +38,23 @@ class CrawlManager():
         return params
 
     def create_prov(self):
+        visits = []
+
         for visit_id in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(self.crawl_id)]):
-            self.db_cursor.execute("select command_status from crawl_history where visit_id=?", [str(visit_id[0])])
-            if self.db_cursor.fetchone()[0] != 'ok':
+            visits.append(visit_id[0])
+
+        for visit_id in visits:
+            self.db_cursor.execute("select command_status from crawl_history where visit_id=?", [str(visit_id)])
+            # print(self.db_cursor.fetchone()[0])
+            # print(visit_id)
+            if self.db_cursor.fetchone()[0] == 'error':
+                print('ERROR')
                 continue
+            # else:
+            # print(visit_id)
             document = ProvDocument()
             document.set_default_namespace('http://danik.com')
-            self.documents[visit_id[0]] = document
+            self.documents[visit_id] = document
 
     def retrieve_tp_hosts(self, visit_id, site_url):
         # TODO: Change this to retrieve hosts from 'headers' in http_requests

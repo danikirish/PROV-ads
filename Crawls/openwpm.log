@@ -4548,3 +4548,181 @@ Keys:
 2020-04-21 13:31:51,489 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
 2020-04-21 13:31:52,219 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
 2020-04-21 13:31:55,224 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 3.7335522174835205 seconds to close.
+2020-04-21 13:40:46,315 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 27: Launching browser...
+2020-04-21 13:40:46,322 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Spawn attempt 0 
+2020-04-21 13:40:46,346 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 27: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpq0c0dz8z/browser_params.json
+2020-04-21 13:40:51,318 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:40:56,330 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:01,334 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:06,339 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:11,344 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:16,348 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:21,352 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:26,355 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:31,360 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:36,364 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:41,369 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:46,374 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:51,380 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:41:56,384 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:01,388 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:06,394 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:11,399 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:16,404 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:21,409 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:26,414 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:31,420 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:36,427 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:41,433 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:46,353 - MainProcess[MainThread]- BrowserManager       - ERROR   : BROWSER 27: Spawn unsuccessful  | Proxy Ready: False  | Profile Created: True  | Profile Tar: True  | Display: False  | Launch Attempted: True  | Browser Launched: False  | Browser Ready: False 
+2020-04-21 13:42:46,355 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Closing browser...
+2020-04-21 13:42:46,438 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:51,444 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:42:56,448 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:01,453 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:06,458 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:11,463 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:16,359 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Status queue timeout while closing browser.
+2020-04-21 13:43:16,361 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Attempting to kill BrowserManager with pid 12403. Browser PID: None
+2020-04-21 13:43:16,362 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Spawn attempt 1 
+2020-04-21 13:43:16,384 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 27: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpw3ug_3_k/browser_params.json
+2020-04-21 13:43:16,469 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:21,475 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:26,481 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:31,486 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:36,492 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:41,497 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:46,504 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:51,510 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:43:56,516 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:01,522 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:06,526 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:11,530 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:16,535 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:21,541 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:26,547 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:31,552 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:36,558 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:41,565 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:46,572 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:51,577 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:44:56,584 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:01,591 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:06,597 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:11,606 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:16,402 - MainProcess[MainThread]- BrowserManager       - ERROR   : BROWSER 27: Spawn unsuccessful  | Proxy Ready: False  | Profile Created: True  | Profile Tar: True  | Display: False  | Launch Attempted: True  | Browser Launched: False  | Browser Ready: False 
+2020-04-21 13:45:16,404 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Closing browser...
+2020-04-21 13:45:16,611 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:21,615 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:26,623 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:31,629 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:36,636 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:41,641 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:46,412 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Status queue timeout while closing browser.
+2020-04-21 13:45:46,413 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Attempting to kill BrowserManager with pid 12404. Browser PID: None
+2020-04-21 13:45:46,416 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Spawn attempt 2 
+2020-04-21 13:45:46,429 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 27: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpydpei19e/browser_params.json
+2020-04-21 13:45:46,647 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:47,489 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473147489	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilel5xDMR"
+2020-04-21 13:45:48,388 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473148387	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-21 13:45:48,428 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473148428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-21 13:45:48,429 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473148428	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-21 13:45:48,430 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473148429	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-21 13:45:48,430 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473148429	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-21 13:45:51,652 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-21 13:45:51,681 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473151681	Marionette	INFO	Listening on port 61775
+2020-04-21 13:45:51,758 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473151758	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-21 13:45:51,883 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 27: OpenWPM Firefox extension loaded
+2020-04-21 13:45:51,888 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-21 13:45:51,891 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-21 13:45:52,186 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilel5xDMR/extension_port.txt
+2020-04-21 13:45:52,206 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilel5xDMR/
+2020-04-21 13:45:52,206 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Connecting to extension on port 61824
+2020-04-21 13:45:52,207 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: BrowserManager ready.
+2020-04-21 13:45:52,208 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Browser spawn sucessful!
+2020-04-21 13:45:52,413 - MainProcess[MainThread]- TaskManager          - INFO    : 
+
+OpenWPM Version: b'009dff9'
+Firefox Version: b'72.0.2'
+
+========== Manager Configuration ==========
+{
+  "aggregator_address": [
+    "127.0.0.1",
+    61758
+  ],
+  "data_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "database_name": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite",
+  "failure_limit": null,
+  "log_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "log_file": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    61757
+  ],
+  "num_browsers": 1,
+  "output_format": "local",
+  "s3_bucket": null,
+  "s3_directory": null,
+  "screenshot_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/screenshots",
+  "source_dump_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/sources",
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "crawl_id": 0,
+  "adblock-plus": 1,
+  "bot_mitigation": 2,
+  "browser": 3,
+  "callstack_instrument": 4,
+  "cookie_instrument": 5,
+  "disable_flash": 6,
+  "disconnect": 7,
+  "donottrack": 8,
+  "extension_enabled": 9,
+  "ghostery": 10,
+  "headless": 11,
+  "http_instrument": 12,
+  "https-everywhere": 13,
+  "js_instrument": 14,
+  "js_instrument_modules": 15,
+  "navigation_instrument": 16,
+  "prefs": 17,
+  "random_attributes": 18,
+  "save_content": 19,
+  "tp_cookies": 20,
+  "tracking-protection": 21,
+  "ublock-origin": 22
+}
+
+  0  1      2      3        4      5     6     7      8     9     10     11     12    13     14     15              16     17    18     19     20      21     22
+---  -----  -----  -------  -----  ----  ----  -----  ----  ----  -----  -----  ----  -----  -----  --------------  -----  ----  -----  -----  ------  -----  -----
+ 27  False  False  firefox  False  True  True  False  True  True  False  False  True  False  False  fingerprinting  False  {}    False  False  always  False  False
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2020-04-21 13:45:52,419 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-21 13:45:52,525 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Closing browser manager...
+2020-04-21 13:45:52,525 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Closing browser...
+2020-04-21 13:45:52,527 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Joining command thread
+2020-04-21 13:45:52,527 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 27: EXECUTING COMMAND: ('GET', 'http://google.com', 2, 40)
+2020-04-21 13:45:52,624 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 40
+2020-04-21 13:45:56,671 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2020-04-21 13:45:58,956 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: 6.428571 seconds to join command thread
+2020-04-21 13:45:58,962 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 1587473158962	Marionette	INFO	Stopped listening on port 61775
+2020-04-21 13:45:59,187 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: console.error: WebExtensions:
+2020-04-21 13:45:59,188 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-21 13:45:59,188 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: Stack:
+2020-04-21 13:45:59,189 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-21 13:45:59,189 - MainProcess[log-interceptor-27]- selenium_firefox     - DEBUG   : BROWSER 27: driver: 
+2020-04-21 13:45:59,830 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 27: Browser manager closed successfully.
+2020-04-21 13:45:59,831 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
+2020-04-21 13:46:00,679 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
+2020-04-21 13:46:03,690 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 3.8576748371124268 seconds to close.
