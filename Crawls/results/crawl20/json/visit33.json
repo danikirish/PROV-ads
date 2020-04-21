@@ -1,0 +1,460 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "bbc.co.uk": {},
+        "co.uk": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 33,
+                "type": "xsd:int"
+            },
+            "url": "bbc.com"
+        },
+        "bbc.com": {},
+        "crawl": {
+            "id": {
+                "$": 20,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "1794": {},
+        "1795": {},
+        "1796": {},
+        "1797": {},
+        "1798": {},
+        "1799": {},
+        "1800": {},
+        "1801": {},
+        "1802": {},
+        "1803": {},
+        "1804": {},
+        "1805": {},
+        "1806": {},
+        "1807": {},
+        "1808": {},
+        "1809": {},
+        "1810": {},
+        "1811": {},
+        "1812": {},
+        "1813": {},
+        "1814": {},
+        "1815": {},
+        "1816": {},
+        "1817": {},
+        "1818": {},
+        "1819": {},
+        "1820": {},
+        "1821": {},
+        "1822": {},
+        "1823": {},
+        "1824": {},
+        "1825": {},
+        "1826": {},
+        "1827": {},
+        "1828": {},
+        "1829": {},
+        "1830": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id25": {
+            "prov:activity": "setCookies",
+            "prov:agent": "co.uk"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "bbc.com",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "bbc.com",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "1794",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id16": {
+            "prov:entity": "1795",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id18": {
+            "prov:entity": "1796",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id20": {
+            "prov:entity": "1797",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id22": {
+            "prov:entity": "1798",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id26": {
+            "prov:entity": "1799",
+            "prov:agent": "co.uk"
+        },
+        "_:id28": {
+            "prov:entity": "1800",
+            "prov:agent": "co.uk"
+        },
+        "_:id30": {
+            "prov:entity": "1801",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id32": {
+            "prov:entity": "1802",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id34": {
+            "prov:entity": "1803",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id36": {
+            "prov:entity": "1804",
+            "prov:agent": "co.uk"
+        },
+        "_:id38": {
+            "prov:entity": "1805",
+            "prov:agent": "co.uk"
+        },
+        "_:id40": {
+            "prov:entity": "1806",
+            "prov:agent": "co.uk"
+        },
+        "_:id42": {
+            "prov:entity": "1807",
+            "prov:agent": "co.uk"
+        },
+        "_:id44": {
+            "prov:entity": "1808",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id46": {
+            "prov:entity": "1809",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id48": {
+            "prov:entity": "1810",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id50": {
+            "prov:entity": "1811",
+            "prov:agent": "co.uk"
+        },
+        "_:id52": {
+            "prov:entity": "1812",
+            "prov:agent": "co.uk"
+        },
+        "_:id54": {
+            "prov:entity": "1813",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id56": {
+            "prov:entity": "1814",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id58": {
+            "prov:entity": "1815",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id60": {
+            "prov:entity": "1816",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id62": {
+            "prov:entity": "1817",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id64": {
+            "prov:entity": "1818",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id66": {
+            "prov:entity": "1819",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id68": {
+            "prov:entity": "1820",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id70": {
+            "prov:entity": "1821",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id72": {
+            "prov:entity": "1822",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id74": {
+            "prov:entity": "1823",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id76": {
+            "prov:entity": "1824",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id78": {
+            "prov:entity": "1825",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id80": {
+            "prov:entity": "1826",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id82": {
+            "prov:entity": "1827",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id84": {
+            "prov:entity": "1828",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id86": {
+            "prov:entity": "1829",
+            "prov:agent": "bbc.co.uk"
+        },
+        "_:id88": {
+            "prov:entity": "1830",
+            "prov:agent": "bbc.co.uk"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "bbc.com"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "bbc.com"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "bbc.co.uk"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "1794"
+        },
+        "_:id17": {
+            "prov:collection": "cookies",
+            "prov:entity": "1795"
+        },
+        "_:id19": {
+            "prov:collection": "cookies",
+            "prov:entity": "1796"
+        },
+        "_:id21": {
+            "prov:collection": "cookies",
+            "prov:entity": "1797"
+        },
+        "_:id23": {
+            "prov:collection": "cookies",
+            "prov:entity": "1798"
+        },
+        "_:id24": {
+            "prov:collection": "trackers",
+            "prov:entity": "co.uk"
+        },
+        "_:id27": {
+            "prov:collection": "cookies",
+            "prov:entity": "1799"
+        },
+        "_:id29": {
+            "prov:collection": "cookies",
+            "prov:entity": "1800"
+        },
+        "_:id31": {
+            "prov:collection": "cookies",
+            "prov:entity": "1801"
+        },
+        "_:id33": {
+            "prov:collection": "cookies",
+            "prov:entity": "1802"
+        },
+        "_:id35": {
+            "prov:collection": "cookies",
+            "prov:entity": "1803"
+        },
+        "_:id37": {
+            "prov:collection": "cookies",
+            "prov:entity": "1804"
+        },
+        "_:id39": {
+            "prov:collection": "cookies",
+            "prov:entity": "1805"
+        },
+        "_:id41": {
+            "prov:collection": "cookies",
+            "prov:entity": "1806"
+        },
+        "_:id43": {
+            "prov:collection": "cookies",
+            "prov:entity": "1807"
+        },
+        "_:id45": {
+            "prov:collection": "cookies",
+            "prov:entity": "1808"
+        },
+        "_:id47": {
+            "prov:collection": "cookies",
+            "prov:entity": "1809"
+        },
+        "_:id49": {
+            "prov:collection": "cookies",
+            "prov:entity": "1810"
+        },
+        "_:id51": {
+            "prov:collection": "cookies",
+            "prov:entity": "1811"
+        },
+        "_:id53": {
+            "prov:collection": "cookies",
+            "prov:entity": "1812"
+        },
+        "_:id55": {
+            "prov:collection": "cookies",
+            "prov:entity": "1813"
+        },
+        "_:id57": {
+            "prov:collection": "cookies",
+            "prov:entity": "1814"
+        },
+        "_:id59": {
+            "prov:collection": "cookies",
+            "prov:entity": "1815"
+        },
+        "_:id61": {
+            "prov:collection": "cookies",
+            "prov:entity": "1816"
+        },
+        "_:id63": {
+            "prov:collection": "cookies",
+            "prov:entity": "1817"
+        },
+        "_:id65": {
+            "prov:collection": "cookies",
+            "prov:entity": "1818"
+        },
+        "_:id67": {
+            "prov:collection": "cookies",
+            "prov:entity": "1819"
+        },
+        "_:id69": {
+            "prov:collection": "cookies",
+            "prov:entity": "1820"
+        },
+        "_:id71": {
+            "prov:collection": "cookies",
+            "prov:entity": "1821"
+        },
+        "_:id73": {
+            "prov:collection": "cookies",
+            "prov:entity": "1822"
+        },
+        "_:id75": {
+            "prov:collection": "cookies",
+            "prov:entity": "1823"
+        },
+        "_:id77": {
+            "prov:collection": "cookies",
+            "prov:entity": "1824"
+        },
+        "_:id79": {
+            "prov:collection": "cookies",
+            "prov:entity": "1825"
+        },
+        "_:id81": {
+            "prov:collection": "cookies",
+            "prov:entity": "1826"
+        },
+        "_:id83": {
+            "prov:collection": "cookies",
+            "prov:entity": "1827"
+        },
+        "_:id85": {
+            "prov:collection": "cookies",
+            "prov:entity": "1828"
+        },
+        "_:id87": {
+            "prov:collection": "cookies",
+            "prov:entity": "1829"
+        },
+        "_:id89": {
+            "prov:collection": "cookies",
+            "prov:entity": "1830"
+        }
+    }
+}

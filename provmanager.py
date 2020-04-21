@@ -35,13 +35,13 @@ class ProvManager():
                 recorded = True
                 crawls_queue.append(crawl[0])
 
-        params = self.record_crawls(crawls_queue)
+        analyse_queue, params = self.record_crawls(crawls_queue)
         if not recorded:
             print("No crawls to record")
         else:
             print("Finished recording")
 
-        self.analyse_crawls(crawls_queue, params)
+        self.analyse_crawls(analyse_queue, params)
         # self.create_prov()
         # self.record_prov()
         # self.write_prov()
@@ -53,13 +53,17 @@ class ProvManager():
     def record_crawls(self, crawls):
         print("Writing to: ", self.output_fp)
         all_params = []
+        recorded_crawls = []
         for crawl in crawls:
             print("\nRECORDING CRAWL %d" % crawl)
             crawlman = CrawlManager(crawl, self.output_fp, self.db_fp)
-            self.documents[crawl], params = crawlman.main()
-            all_params.append(params)
+            returned = crawlman.main()
+            if returned is not False:
+                self.documents[crawl], params = returned[0], returned[1]
+                all_params.append(params)
+                recorded_crawls.append(crawl)
         print("Finished recording.")
-        return all_params
+        return recorded_crawls, all_params
 
     def analyse_crawls(self, crawls, params):
         print("\n\nCreating analyser...")

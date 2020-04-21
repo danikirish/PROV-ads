@@ -26,8 +26,11 @@ class CrawlManager():
         # print("Recording crawl %d" % self.crawl_id)
         self.create_prov()
         self.record_prov()
-        self.write_prov()
-        return self.documents, self.params
+        if len(self.documents.values()) == 0:
+            return False
+        else:
+            self.write_prov()
+            return self.documents, self.params
 
     def extract_params(self):
         params_str = self.db_cursor.execute("select browser_params from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
@@ -36,6 +39,9 @@ class CrawlManager():
 
     def create_prov(self):
         for visit_id in self.db_cursor.execute("select visit_id from site_visits where crawl_id=?", [str(self.crawl_id)]):
+            self.db_cursor.execute("select command_status from crawl_history where visit_id=?", [str(visit_id[0])])
+            if self.db_cursor.fetchone()[0] != 'ok':
+                continue
             document = ProvDocument()
             document.set_default_namespace('http://danik.com')
             self.documents[visit_id[0]] = document
@@ -73,7 +79,7 @@ class CrawlManager():
 
     def record_prov(self): # TODO: Cookie syncing.
         cookies_syncs = self.cookie_sync()
-        print(cookies_syncs)
+        # print(cookies_syncs)
         for visit, doc in self.documents.items():
             self.db_cursor.execute("select site_url from site_visits where visit_id=?", [str(visit)])
             site_url = self.db_cursor.fetchone()[0][7:]

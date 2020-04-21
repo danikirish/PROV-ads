@@ -73,6 +73,7 @@ class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers
             for val in hosts_cookies.values():
                 cookies_num += len(val)
             # TODO: Check if tracker was encountered in other visits
+            # TODO: Respected DNT?
             print("Visit %d resulted in %d third-party trackers " % (visit_id, len(hosts_cookies.keys())))
             print("And a total %d third-party cookies " % cookies_num)
             print("Number of cookies for every tracker: ")
