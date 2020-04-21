@@ -2899,3 +2899,266 @@ Keys:
 2020-04-11 20:01:37,011 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
 2020-04-11 20:01:37,841 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
 2020-04-11 20:01:40,852 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 3.836782693862915 seconds to close.
+2020-04-20 18:31:10,376 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 15: Launching browser...
+2020-04-20 18:31:10,383 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Spawn attempt 0 
+2020-04-20 18:31:10,400 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 15: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpw7n7ag5z/browser_params.json
+2020-04-20 18:31:11,566 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403871565	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofileXbzShD"
+2020-04-20 18:31:12,482 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403872482	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-20 18:31:12,519 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403872519	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-20 18:31:12,521 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403872519	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-20 18:31:12,521 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403872520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-20 18:31:12,522 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403872520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-20 18:31:15,102 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403875102	Marionette	INFO	Listening on port 54014
+2020-04-20 18:31:15,121 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403875121	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-20 18:31:15,319 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 15: OpenWPM Firefox extension loaded
+2020-04-20 18:31:15,327 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-20 18:31:15,334 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-20 18:31:15,381 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2020-04-20 18:31:15,610 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofileXbzShD/extension_port.txt
+2020-04-20 18:31:15,624 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofileXbzShD/
+2020-04-20 18:31:15,625 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Connecting to extension on port 54056
+2020-04-20 18:31:15,626 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: BrowserManager ready.
+2020-04-20 18:31:15,627 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Browser spawn sucessful!
+2020-04-20 18:31:15,781 - MainProcess[MainThread]- TaskManager          - INFO    : 
+
+OpenWPM Version: b'f4eecc0'
+Firefox Version: b'72.0.2'
+
+========== Manager Configuration ==========
+{
+  "aggregator_address": [
+    "127.0.0.1",
+    53999
+  ],
+  "data_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "database_name": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite",
+  "failure_limit": null,
+  "log_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "log_file": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    53998
+  ],
+  "num_browsers": 1,
+  "output_format": "local",
+  "s3_bucket": null,
+  "s3_directory": null,
+  "screenshot_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/screenshots",
+  "source_dump_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/sources",
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "crawl_id": 0,
+  "adblock-plus": 1,
+  "bot_mitigation": 2,
+  "browser": 3,
+  "callstack_instrument": 4,
+  "cookie_instrument": 5,
+  "disable_flash": 6,
+  "disconnect": 7,
+  "donottrack": 8,
+  "extension_enabled": 9,
+  "ghostery": 10,
+  "headless": 11,
+  "http_instrument": 12,
+  "https-everywhere": 13,
+  "js_instrument": 14,
+  "js_instrument_modules": 15,
+  "navigation_instrument": 16,
+  "prefs": 17,
+  "random_attributes": 18,
+  "save_content": 19,
+  "tp_cookies": 20,
+  "tracking-protection": 21,
+  "ublock-origin": 22
+}
+
+  0  1      2      3        4      5     6     7      8      9     10     11     12    13     14     15              16     17    18     19     20      21     22
+---  -----  -----  -------  -----  ----  ----  -----  -----  ----  -----  -----  ----  -----  -----  --------------  -----  ----  -----  -----  ------  -----  -----
+ 15  False  False  firefox  False  True  True  False  False  True  False  False  True  False  False  fingerprinting  False  {}    False  False  always  False  False
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2020-04-20 18:31:15,784 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-20 18:31:15,892 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 15: EXECUTING COMMAND: ('GET', 'https://www.thesun.co.uk/', 2, 23)
+2020-04-20 18:31:15,981 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 23
+2020-04-20 18:31:20,805 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 100. current number of threads: 5.
+2020-04-20 18:31:25,871 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 57. current number of threads: 5.
+2020-04-20 18:31:27,552 - MainProcess[Thread-7  ]- BrowserManager       - INFO    : BROWSER 15: BrowserManager restart initiated. Clear profile? True
+2020-04-20 18:31:27,552 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser...
+2020-04-20 18:31:27,561 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403887558	Marionette	INFO	Stopped listening on port 54014
+2020-04-20 18:31:27,959 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.error: WebExtensions:
+2020-04-20 18:31:27,960 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-20 18:31:27,960 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Stack:
+2020-04-20 18:31:27,961 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-20 18:31:27,961 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:31:30,580 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Browser manager closed successfully.
+2020-04-20 18:31:30,581 - MainProcess[Thread-7  ]- BrowserManager       - INFO    : BROWSER 15: Launching browser...
+2020-04-20 18:31:30,581 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Spawn attempt 0 
+2020-04-20 18:31:30,597 - MainProcess[Thread-7  ]- deploy_firefox       - DEBUG   : BROWSER 15: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpiq31qdxj/browser_params.json
+2020-04-20 18:31:30,914 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-20 18:31:31,645 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403891644	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilemuqzAB"
+2020-04-20 18:31:32,440 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403892440	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-20 18:31:32,504 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403892504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-20 18:31:32,505 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403892504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-20 18:31:32,506 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403892505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-20 18:31:32,506 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403892505	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-20 18:31:34,931 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403894931	Marionette	INFO	Listening on port 54212
+2020-04-20 18:31:34,963 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403894962	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-20 18:31:35,112 - MainProcess[Thread-7  ]- deploy_firefox       - DEBUG   : BROWSER 15: OpenWPM Firefox extension loaded
+2020-04-20 18:31:35,130 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-20 18:31:35,132 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-20 18:31:35,138 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilemuqzAB/extension_port.txt
+2020-04-20 18:31:35,420 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilemuqzAB/
+2020-04-20 18:31:35,421 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Connecting to extension on port 54251
+2020-04-20 18:31:35,422 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: BrowserManager ready.
+2020-04-20 18:31:35,423 - MainProcess[Thread-7  ]- BrowserManager       - DEBUG   : BROWSER 15: Browser spawn sucessful!
+2020-04-20 18:31:35,484 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-20 18:31:35,590 - MainProcess[Thread-7  ]- BrowserManager       - INFO    : BROWSER 15: EXECUTING COMMAND: ('GET', 'https://www.wired.co.uk/', 2, 24)
+2020-04-20 18:31:35,679 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 24
+2020-04-20 18:31:35,920 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 22. current number of threads: 5.
+2020-04-20 18:31:40,645 - MainProcess[Thread-9  ]- BrowserManager       - INFO    : BROWSER 15: BrowserManager restart initiated. Clear profile? True
+2020-04-20 18:31:40,645 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser...
+2020-04-20 18:31:40,650 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403900649	Marionette	INFO	Stopped listening on port 54212
+2020-04-20 18:31:40,791 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.error: WebExtensions:
+2020-04-20 18:31:40,791 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-20 18:31:40,792 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Stack:
+2020-04-20 18:31:40,792 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-20 18:31:40,793 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:31:40,948 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-20 18:31:44,410 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Browser manager closed successfully.
+2020-04-20 18:31:44,411 - MainProcess[Thread-9  ]- BrowserManager       - INFO    : BROWSER 15: Launching browser...
+2020-04-20 18:31:44,412 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Spawn attempt 0 
+2020-04-20 18:31:44,425 - MainProcess[Thread-9  ]- deploy_firefox       - DEBUG   : BROWSER 15: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpzeg0yn5v/browser_params.json
+2020-04-20 18:31:45,466 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403905465	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilecyUhQA"
+2020-04-20 18:31:45,953 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-20 18:31:46,007 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403906006	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-20 18:31:46,037 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403906037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-20 18:31:46,038 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403906037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-20 18:31:46,038 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403906037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-20 18:31:46,039 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403906037	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-20 18:31:48,367 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403908367	Marionette	INFO	Listening on port 54276
+2020-04-20 18:31:48,451 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403908451	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-20 18:31:48,598 - MainProcess[Thread-9  ]- deploy_firefox       - DEBUG   : BROWSER 15: OpenWPM Firefox extension loaded
+2020-04-20 18:31:48,880 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-20 18:31:48,882 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-20 18:31:48,891 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilecyUhQA/
+2020-04-20 18:31:48,893 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilecyUhQA/extension_port.txt
+2020-04-20 18:31:48,894 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Connecting to extension on port 54313
+2020-04-20 18:31:48,895 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: BrowserManager ready.
+2020-04-20 18:31:48,896 - MainProcess[Thread-9  ]- BrowserManager       - DEBUG   : BROWSER 15: Browser spawn sucessful!
+2020-04-20 18:31:48,967 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-20 18:31:49,073 - MainProcess[Thread-9  ]- BrowserManager       - INFO    : BROWSER 15: EXECUTING COMMAND: ('GET', 'https://www.independent.co.uk/news/health/coronavirus-news-live-update-uk-cases-deaths-today-latest-covid-19-nhs-a9473491.html', 2, 25)
+2020-04-20 18:31:49,146 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 25
+2020-04-20 18:31:50,978 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 149. current number of threads: 5.
+2020-04-20 18:31:56,062 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 75. current number of threads: 5.
+2020-04-20 18:31:58,905 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: , line 0: uncaught exception: undefined
+2020-04-20 18:32:01,117 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 90. current number of threads: 5.
+2020-04-20 18:32:05,419 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: https://www.independent.co.uk/amp/v0.js, line 24: Error: Element "[id^='reply-']" not found: null​​​
+2020-04-20 18:32:05,420 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: https://www.independent.co.uk/amp/v0.js, line 24: Error: Element "[id^='subscription-reply-']" not found: null​​​
+2020-04-20 18:32:06,172 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 95. current number of threads: 5.
+2020-04-20 18:32:07,525 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+2020-04-20 18:32:11,220 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 6. current number of threads: 5.
+2020-04-20 18:32:16,237 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 10. current number of threads: 5.
+2020-04-20 18:32:21,256 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 8. current number of threads: 5.
+2020-04-20 18:32:26,267 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 4. current number of threads: 5.
+2020-04-20 18:32:31,278 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 4. current number of threads: 5.
+2020-04-20 18:32:34,076 - MainProcess[Thread-11 ]- TaskManager          - INFO    : BROWSER 15: Timeout while executing command, GET, killing browser manager
+2020-04-20 18:32:34,079 - MainProcess[Thread-11 ]- TaskManager          - DEBUG   : BROWSER 15: Browser restart required
+2020-04-20 18:32:36,083 - MainProcess[Thread-11 ]- BrowserManager       - INFO    : BROWSER 15: BrowserManager restart initiated. Clear profile? True
+2020-04-20 18:32:36,085 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser...
+2020-04-20 18:32:36,094 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403956093	Marionette	INFO	Stopped listening on port 54276
+2020-04-20 18:32:36,294 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 9. current number of threads: 5.
+2020-04-20 18:32:36,447 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.error: WebExtensions:
+2020-04-20 18:32:36,448 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-20 18:32:36,449 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Stack:
+2020-04-20 18:32:36,450 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-20 18:32:36,451 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:32:36,480 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: IPDL protocol error: Handler returned error code!
+2020-04-20 18:32:36,482 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:32:36,482 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: ###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+2020-04-20 18:32:36,486 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:32:39,116 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Browser manager closed successfully.
+2020-04-20 18:32:39,117 - MainProcess[Thread-11 ]- BrowserManager       - INFO    : BROWSER 15: Launching browser...
+2020-04-20 18:32:39,117 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Spawn attempt 0 
+2020-04-20 18:32:39,131 - MainProcess[Thread-11 ]- deploy_firefox       - DEBUG   : BROWSER 15: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpcwlmyrg7/browser_params.json
+2020-04-20 18:32:40,172 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960171	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexOghEd"
+2020-04-20 18:32:40,901 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960901	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-20 18:32:40,951 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960951	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-20 18:32:40,952 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960951	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-20 18:32:40,953 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960952	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-20 18:32:40,953 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403960952	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-20 18:32:41,303 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-20 18:32:43,745 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403963744	Marionette	INFO	Listening on port 54594
+2020-04-20 18:32:43,820 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403963819	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-20 18:32:43,961 - MainProcess[Thread-11 ]- deploy_firefox       - DEBUG   : BROWSER 15: OpenWPM Firefox extension loaded
+2020-04-20 18:32:43,969 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-20 18:32:43,973 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-20 18:32:43,979 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexOghEd/extension_port.txt
+2020-04-20 18:32:44,259 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexOghEd/
+2020-04-20 18:32:44,260 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Connecting to extension on port 54637
+2020-04-20 18:32:44,261 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: BrowserManager ready.
+2020-04-20 18:32:44,262 - MainProcess[Thread-11 ]- BrowserManager       - DEBUG   : BROWSER 15: Browser spawn sucessful!
+2020-04-20 18:32:44,340 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-20 18:32:44,448 - MainProcess[Thread-11 ]- BrowserManager       - INFO    : BROWSER 15: EXECUTING COMMAND: ('GET', 'https://www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854', 2, 26)
+2020-04-20 18:32:44,553 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 26
+2020-04-20 18:32:46,332 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 47. current number of threads: 5.
+2020-04-20 18:32:47,839 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: https://quantcast.mgr.consensu.org/v30/cmp.js, line 1: TypeError: (intermediate value)[e] is undefined
+2020-04-20 18:32:51,379 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 53. current number of threads: 5.
+2020-04-20 18:32:52,486 - MainProcess[Thread-13 ]- BrowserManager       - INFO    : BROWSER 15: BrowserManager restart initiated. Clear profile? True
+2020-04-20 18:32:52,488 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser...
+2020-04-20 18:32:52,588 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403972588	Marionette	INFO	Stopped listening on port 54594
+2020-04-20 18:32:53,676 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.error: WebExtensions:
+2020-04-20 18:32:53,677 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-20 18:32:53,678 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Stack:
+2020-04-20 18:32:53,679 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-20 18:32:53,679 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:32:55,366 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Browser manager closed successfully.
+2020-04-20 18:32:55,367 - MainProcess[Thread-13 ]- BrowserManager       - INFO    : BROWSER 15: Launching browser...
+2020-04-20 18:32:55,368 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Spawn attempt 0 
+2020-04-20 18:32:55,380 - MainProcess[Thread-13 ]- deploy_firefox       - DEBUG   : BROWSER 15: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmp0e3bnak9/browser_params.json
+2020-04-20 18:32:56,400 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-20 18:32:56,432 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403976432	mozrunner::runner	INFO	Running command: "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/Nightly.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexDjWdS"
+2020-04-20 18:32:57,128 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403977128	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+2020-04-20 18:32:57,162 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403977162	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+2020-04-20 18:32:57,163 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403977162	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+2020-04-20 18:32:57,163 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403977163	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+2020-04-20 18:32:57,164 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403977163	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2020-04-20 18:32:59,422 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403979422	Marionette	INFO	Listening on port 54790
+2020-04-20 18:32:59,477 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403979472	Marionette	WARN	TLS certificate errors will be ignored for this session
+2020-04-20 18:32:59,620 - MainProcess[Thread-13 ]- deploy_firefox       - DEBUG   : BROWSER 15: OpenWPM Firefox extension loaded
+2020-04-20 18:32:59,888 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-20 18:32:59,890 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-20 18:32:59,901 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexDjWdS/
+2020-04-20 18:32:59,903 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.log: WebExtensions: Wrote to /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofilexDjWdS/extension_port.txt
+2020-04-20 18:32:59,905 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Connecting to extension on port 54826
+2020-04-20 18:32:59,905 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: BrowserManager ready.
+2020-04-20 18:32:59,907 - MainProcess[Thread-13 ]- BrowserManager       - DEBUG   : BROWSER 15: Browser spawn sucessful!
+2020-04-20 18:32:59,977 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-20 18:33:00,083 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser manager...
+2020-04-20 18:33:00,084 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Closing browser...
+2020-04-20 18:33:00,084 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Joining command thread
+2020-04-20 18:33:00,086 - MainProcess[Thread-13 ]- BrowserManager       - INFO    : BROWSER 15: EXECUTING COMMAND: ('GET', 'https://www.bbc.co.uk/news/business-52354865', 2, 27)
+2020-04-20 18:33:00,175 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 27
+2020-04-20 18:33:01,014 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: JavaScript error: https://nav.files.bbci.co.uk/orbit/1b2e292884201dd13064a9204e177864/js/require.min.js, line 1: TypeError: e.slice is not a function
+2020-04-20 18:33:01,410 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 131. current number of threads: 5.
+2020-04-20 18:33:05,417 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: 5.331891 seconds to join command thread
+2020-04-20 18:33:05,422 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 1587403985422	Marionette	INFO	Stopped listening on port 54790
+2020-04-20 18:33:05,585 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: console.error: WebExtensions:
+2020-04-20 18:33:05,586 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Message: [Exception... "Component returned failure code: 0x804b0010 (NS_ERROR_OFFLINE) [nsIInputStream.available]"  nsresult: "0x804b0010 (NS_ERROR_OFFLINE)"  location: "JS frame :: jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js :: onInputStreamReady :: line 51"  data: no]
+2020-04-20 18:33:05,586 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: Stack:
+2020-04-20 18:33:05,587 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: onInputStreamReady@jar:file:///Users/Danik/Desktop/KCL/YEAR_3/PRJ/OpenWPM/automation/Extension/firefox/openwpm.xpi!/privileged/sockets/api.js:51:33
+2020-04-20 18:33:05,588 - MainProcess[log-interceptor-15]- selenium_firefox     - DEBUG   : BROWSER 15: driver: 
+2020-04-20 18:33:06,443 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 2. current number of threads: 4.
+2020-04-20 18:33:07,145 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 15: Browser manager closed successfully.
+2020-04-20 18:33:07,146 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
+2020-04-20 18:33:07,445 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
+2020-04-20 18:33:10,454 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 3.306989908218384 seconds to close.

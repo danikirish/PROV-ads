@@ -16,7 +16,8 @@ class CrawlManager():
         self.db_fp = db_fp
         self.db_cursor = lite.connect(db_fp).cursor()
         self.params = self.extract_params()
-
+        self.google_sync_id = 'google_gid='
+        self.google_dmp = 'doubleclick'
 
     def main(self):
         # date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
@@ -53,12 +54,35 @@ class CrawlManager():
         return hosts_ids
 
     def cookie_sync(self):
-        return False
+        redirects = []
+        cookie_synced = {}
+        for old_url, new_url, visit_id in self.db_cursor.execute("select old_request_url, new_request_url, visit_id from http_redirects where crawl_id=?", [str(self.crawl_id)]):
+            redirects.append((int(visit_id), old_url, new_url))
+        for redirect in redirects:
+            # visit_id = redirect[0]
+            # old_url = redirect[1]
+            # new_url = redirect[2]
+            if 'google_gid=' in redirect[2] and 'doubleclick' in redirect[1].split('/')[2]:
+                if redirect[0] not in cookie_synced.keys():
+                    cookie_synced[redirect[0]] = []
+                # print("YEYEYEYEYE")
+                # print(redirect[0], redirect[1], redirect[2])
+                cookie_synced[redirect[0]].append((redirect[1], redirect[2]))
+                # cookie_synced.append(redirect)
+        return cookie_synced
 
     def record_prov(self): # TODO: Cookie syncing.
+        cookies_syncs = self.cookie_sync()
+        print(cookies_syncs)
         for visit, doc in self.documents.items():
             self.db_cursor.execute("select site_url from site_visits where visit_id=?", [str(visit)])
             site_url = self.db_cursor.fetchone()[0][7:]
+            synced = False
+            if visit in cookies_syncs.keys():
+                # print("IN SYNCED")
+                if cookies_syncs[visit]:
+                    print("CHANGING SYNCED")
+                    synced = True
 
             # TYPES
             # Agents
@@ -66,9 +90,6 @@ class CrawlManager():
             doc.agent('user')
             # doc.agent('tracker1')
             doc.agent('publisher')
-            if self.cookie_sync():
-                print("There's cookie sync")
-                doc.agent('tracker2')
 
             # Entities
             doc.entity('visit', {'id': visit, 'url': site_url})
@@ -117,6 +138,7 @@ class CrawlManager():
             doc.used('setCookies', site_url)
             doc.used('performCrawl', self.params['browser'].capitalize())
 
+            # Third-party cookies
             tp_hosts_cookies = self.retrieve_tp_hosts(visit, site_url)
 
             added_hosts = set()
@@ -130,6 +152,20 @@ class CrawlManager():
                 doc.entity(str(cookie))
                 doc.wasAttributedTo(str(cookie), host)
                 doc.hadMember('cookies', str(cookie))
+
+            # Cookie syncing
+            if synced:
+                sync_counter = 1
+                # print("MAKING SYNC RECORDS")
+                for sync in cookies_syncs[visit]:
+                    sync_name = 'syncCookies%d' % sync_counter
+                    dmp, dsp = sync[0].split('/')[2], sync[1].split('/')[2]
+                    # print("DMP: ", dmp)
+                    # print("DSP: ", dsp)
+                    doc.activity(sync_name, None, None, {'DSP': dsp, 'DMP': dmp})
+                    doc.wasAssociatedWith(sync_name, dmp)
+                    doc.wasAssociatedWith(sync_name, dsp)
+                    sync_counter += 1
                 # doc.wasGeneratedBy(str(cookie), 'setCookies')
             # print("FOR VISIT %d recorded:" % visit)
             # print(tp_hosts_cookies)

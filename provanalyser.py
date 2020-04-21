@@ -63,7 +63,7 @@ class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers
         for (visit_id, visit_js), site_url in zip(crawl.items(), urls):
             self.analyse_visit(visit_id, visit_js, site_url)
 
-    def analyse_visit(self, visit_id, visit_js, site_url):
+    def analyse_visit(self, visit_id, visit_js, site_url): # TODO: first time visiting?
         print("Analysing visit %d to %s " % (visit_id, site_url))
         hosts_cookies = self.retrieve_hosts_cookies(visit_js)
         if not hosts_cookies.keys():
@@ -72,8 +72,9 @@ class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers
             cookies_num = 0
             for val in hosts_cookies.values():
                 cookies_num += len(val)
+            # TODO: Check if tracker was encountered in other visits
             print("Visit %d resulted in %d third-party trackers " % (visit_id, len(hosts_cookies.keys())))
-            print("Out of total %d cookies " % cookies_num)
+            print("And a total %d third-party cookies " % cookies_num)
             print("Number of cookies for every tracker: ")
             most_cookies = 0
             most_tracker = None
@@ -83,6 +84,15 @@ class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers
                     most_tracker = tracker
                     most_cookies = len(cookies)
             print("Tracker with most cookies – %s with %d cookies" % (most_tracker, most_cookies))
+        syncs = []
+        for activity, params in visit_js['activity'].items():
+            if 'syncCookies' in activity:
+                syncs.append(params)
+        if syncs: print("There have been %d instances of cookie syncing during this visit" % len(syncs))
+        for sync in syncs:
+            dsp = sync['DSP']
+            dmp = sync['DMP']
+            print("DSP – %s and DMP – %s" % (dsp, dmp))
 
     def retrieve_hosts_cookies(self, visit_js):
         hosts_cookies = {}

@@ -1,0 +1,1306 @@
+{
+    "prefix": {
+        "default": "http://danik.com"
+    },
+    "agent": {
+        "OpenWPM": {
+            "prov:type": "prov:SoftwareAgent"
+        },
+        "user": {},
+        "publisher": {},
+        "facebook.com": {},
+        "id5-sync.com": {},
+        "scorecardresearch.com": {},
+        "postrelease.com": {},
+        "krxd.net": {},
+        "bluekai.com": {},
+        "adnxs.com": {},
+        "newscgp.com": {},
+        "mathtag.com": {},
+        "skimresources.com": {},
+        "adform.net": {},
+        "crwdcntrl.net": {},
+        "creative-serving.com": {},
+        "exelator.com": {},
+        "openx.net": {},
+        "tapad.com": {},
+        "doubleclick.net": {},
+        "brandmetrics.com": {},
+        "dnacdn.net": {}
+    },
+    "entity": {
+        "visit": {
+            "id": {
+                "$": 23,
+                "type": "xsd:int"
+            },
+            "url": "/www.thesun.co.uk/"
+        },
+        "/www.thesun.co.uk/": {},
+        "crawl": {
+            "id": {
+                "$": 15,
+                "type": "xsd:int"
+            },
+            "DNT": false
+        },
+        "Firefox": {},
+        "trackers": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "cookies": {
+            "prov:type": {
+                "$": "prov:Collection",
+                "type": "prov:QUALIFIED_NAME"
+            }
+        },
+        "795": {},
+        "806": {},
+        "807": {},
+        "808": {},
+        "809": {},
+        "810": {},
+        "811": {},
+        "812": {},
+        "822": {},
+        "823": {},
+        "824": {},
+        "825": {},
+        "826": {},
+        "827": {},
+        "828": {},
+        "830": {},
+        "831": {},
+        "832": {},
+        "833": {},
+        "836": {},
+        "837": {},
+        "838": {},
+        "839": {},
+        "843": {},
+        "851": {},
+        "852": {},
+        "853": {},
+        "854": {},
+        "855": {},
+        "856": {},
+        "857": {},
+        "858": {},
+        "859": {},
+        "860": {},
+        "861": {},
+        "862": {},
+        "863": {},
+        "864": {},
+        "865": {},
+        "866": {},
+        "872": {},
+        "873": {},
+        "874": {},
+        "875": {},
+        "876": {},
+        "877": {},
+        "887": {},
+        "888": {},
+        "889": {},
+        "890": {},
+        "891": {},
+        "892": {},
+        "893": {},
+        "894": {},
+        "895": {},
+        "896": {},
+        "897": {},
+        "898": {},
+        "899": {},
+        "900": {},
+        "901": {},
+        "902": {},
+        "903": {},
+        "904": {},
+        "905": {},
+        "907": {},
+        "908": {},
+        "913": {},
+        "914": {},
+        "915": {},
+        "930": {},
+        "931": {},
+        "932": {},
+        "933": {},
+        "934": {},
+        "935": {},
+        "936": {},
+        "937": {},
+        "938": {},
+        "943": {},
+        "944": {},
+        "945": {},
+        "948": {},
+        "949": {},
+        "950": {},
+        "951": {},
+        "952": {},
+        "953": {},
+        "954": {},
+        "955": {},
+        "956": {},
+        "957": {},
+        "958": {},
+        "959": {},
+        "960": {},
+        "961": {},
+        "962": {},
+        "963": {},
+        "964": {},
+        "965": {},
+        "966": {},
+        "967": {},
+        "968": {},
+        "969": {},
+        "976": {},
+        "977": {},
+        "980": {},
+        "981": {},
+        "982": {},
+        "983": {},
+        "984": {},
+        "989": {},
+        "990": {},
+        "991": {}
+    },
+    "activity": {
+        "performCrawl": {},
+        "setCookies": {},
+        "visitSite": {}
+    },
+    "actedOnBehalfOf": {
+        "_:id1": {
+            "prov:delegate": "OpenWPM",
+            "prov:responsible": "user"
+        }
+    },
+    "wasAssociatedWith": {
+        "_:id2": {
+            "prov:activity": "performCrawl",
+            "prov:agent": "OpenWPM"
+        },
+        "_:id13": {
+            "prov:activity": "setCookies",
+            "prov:agent": "facebook.com"
+        },
+        "_:id17": {
+            "prov:activity": "setCookies",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id39": {
+            "prov:activity": "setCookies",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id45": {
+            "prov:activity": "setCookies",
+            "prov:agent": "postrelease.com"
+        },
+        "_:id49": {
+            "prov:activity": "setCookies",
+            "prov:agent": "krxd.net"
+        },
+        "_:id53": {
+            "prov:activity": "setCookies",
+            "prov:agent": "bluekai.com"
+        },
+        "_:id61": {
+            "prov:activity": "setCookies",
+            "prov:agent": "adnxs.com"
+        },
+        "_:id69": {
+            "prov:activity": "setCookies",
+            "prov:agent": "newscgp.com"
+        },
+        "_:id75": {
+            "prov:activity": "setCookies",
+            "prov:agent": "mathtag.com"
+        },
+        "_:id107": {
+            "prov:activity": "setCookies",
+            "prov:agent": "skimresources.com"
+        },
+        "_:id113": {
+            "prov:activity": "setCookies",
+            "prov:agent": "adform.net"
+        },
+        "_:id125": {
+            "prov:activity": "setCookies",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id171": {
+            "prov:activity": "setCookies",
+            "prov:agent": "creative-serving.com"
+        },
+        "_:id193": {
+            "prov:activity": "setCookies",
+            "prov:agent": "exelator.com"
+        },
+        "_:id199": {
+            "prov:activity": "setCookies",
+            "prov:agent": "openx.net"
+        },
+        "_:id235": {
+            "prov:activity": "setCookies",
+            "prov:agent": "tapad.com"
+        },
+        "_:id251": {
+            "prov:activity": "setCookies",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id267": {
+            "prov:activity": "setCookies",
+            "prov:agent": "brandmetrics.com"
+        },
+        "_:id275": {
+            "prov:activity": "setCookies",
+            "prov:agent": "dnacdn.net"
+        }
+    },
+    "wasGeneratedBy": {
+        "_:id3": {
+            "prov:entity": "cookies",
+            "prov:activity": "setCookies"
+        },
+        "_:id4": {
+            "prov:entity": "visit",
+            "prov:activity": "visitSite"
+        },
+        "_:id5": {
+            "prov:entity": "crawl",
+            "prov:activity": "performCrawl"
+        }
+    },
+    "wasDerivedFrom": {
+        "_:id6": {
+            "prov:generatedEntity": "visit",
+            "prov:usedEntity": "/www.thesun.co.uk/",
+            "prov:activity": "visitSite"
+        }
+    },
+    "wasStartedBy": {
+        "_:id7": {
+            "prov:activity": "visitSite",
+            "prov:trigger": "crawl",
+            "prov:starter": "performCrawl"
+        }
+    },
+    "wasAttributedTo": {
+        "_:id8": {
+            "prov:entity": "/www.thesun.co.uk/",
+            "prov:agent": "publisher"
+        },
+        "_:id14": {
+            "prov:entity": "795",
+            "prov:agent": "facebook.com"
+        },
+        "_:id18": {
+            "prov:entity": "806",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id20": {
+            "prov:entity": "807",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id22": {
+            "prov:entity": "808",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id24": {
+            "prov:entity": "809",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id26": {
+            "prov:entity": "810",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id28": {
+            "prov:entity": "811",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id30": {
+            "prov:entity": "812",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id32": {
+            "prov:entity": "822",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id34": {
+            "prov:entity": "823",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id36": {
+            "prov:entity": "824",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id40": {
+            "prov:entity": "825",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id42": {
+            "prov:entity": "826",
+            "prov:agent": "scorecardresearch.com"
+        },
+        "_:id46": {
+            "prov:entity": "827",
+            "prov:agent": "postrelease.com"
+        },
+        "_:id50": {
+            "prov:entity": "828",
+            "prov:agent": "krxd.net"
+        },
+        "_:id54": {
+            "prov:entity": "830",
+            "prov:agent": "bluekai.com"
+        },
+        "_:id56": {
+            "prov:entity": "831",
+            "prov:agent": "bluekai.com"
+        },
+        "_:id58": {
+            "prov:entity": "832",
+            "prov:agent": "bluekai.com"
+        },
+        "_:id62": {
+            "prov:entity": "833",
+            "prov:agent": "adnxs.com"
+        },
+        "_:id64": {
+            "prov:entity": "836",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id66": {
+            "prov:entity": "837",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id70": {
+            "prov:entity": "838",
+            "prov:agent": "newscgp.com"
+        },
+        "_:id72": {
+            "prov:entity": "839",
+            "prov:agent": "adnxs.com"
+        },
+        "_:id76": {
+            "prov:entity": "843",
+            "prov:agent": "mathtag.com"
+        },
+        "_:id78": {
+            "prov:entity": "851",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id80": {
+            "prov:entity": "852",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id82": {
+            "prov:entity": "853",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id84": {
+            "prov:entity": "854",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id86": {
+            "prov:entity": "855",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id88": {
+            "prov:entity": "856",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id90": {
+            "prov:entity": "857",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id92": {
+            "prov:entity": "858",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id94": {
+            "prov:entity": "859",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id96": {
+            "prov:entity": "860",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id98": {
+            "prov:entity": "861",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id100": {
+            "prov:entity": "862",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id102": {
+            "prov:entity": "863",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id104": {
+            "prov:entity": "864",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id108": {
+            "prov:entity": "865",
+            "prov:agent": "skimresources.com"
+        },
+        "_:id110": {
+            "prov:entity": "866",
+            "prov:agent": "skimresources.com"
+        },
+        "_:id114": {
+            "prov:entity": "872",
+            "prov:agent": "adform.net"
+        },
+        "_:id116": {
+            "prov:entity": "873",
+            "prov:agent": "newscgp.com"
+        },
+        "_:id118": {
+            "prov:entity": "874",
+            "prov:agent": "newscgp.com"
+        },
+        "_:id120": {
+            "prov:entity": "875",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id122": {
+            "prov:entity": "876",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id126": {
+            "prov:entity": "877",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id128": {
+            "prov:entity": "887",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id130": {
+            "prov:entity": "888",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id132": {
+            "prov:entity": "889",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id134": {
+            "prov:entity": "890",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id136": {
+            "prov:entity": "891",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id138": {
+            "prov:entity": "892",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id140": {
+            "prov:entity": "893",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id142": {
+            "prov:entity": "894",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id144": {
+            "prov:entity": "895",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id146": {
+            "prov:entity": "896",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id148": {
+            "prov:entity": "897",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id150": {
+            "prov:entity": "898",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id152": {
+            "prov:entity": "899",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id154": {
+            "prov:entity": "900",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id156": {
+            "prov:entity": "901",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id158": {
+            "prov:entity": "902",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id160": {
+            "prov:entity": "903",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id162": {
+            "prov:entity": "904",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id164": {
+            "prov:entity": "905",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id166": {
+            "prov:entity": "907",
+            "prov:agent": "postrelease.com"
+        },
+        "_:id168": {
+            "prov:entity": "908",
+            "prov:agent": "postrelease.com"
+        },
+        "_:id172": {
+            "prov:entity": "913",
+            "prov:agent": "creative-serving.com"
+        },
+        "_:id174": {
+            "prov:entity": "914",
+            "prov:agent": "creative-serving.com"
+        },
+        "_:id176": {
+            "prov:entity": "915",
+            "prov:agent": "creative-serving.com"
+        },
+        "_:id178": {
+            "prov:entity": "930",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id180": {
+            "prov:entity": "931",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id182": {
+            "prov:entity": "932",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id184": {
+            "prov:entity": "933",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id186": {
+            "prov:entity": "934",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id188": {
+            "prov:entity": "935",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id190": {
+            "prov:entity": "936",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id194": {
+            "prov:entity": "937",
+            "prov:agent": "exelator.com"
+        },
+        "_:id196": {
+            "prov:entity": "938",
+            "prov:agent": "exelator.com"
+        },
+        "_:id200": {
+            "prov:entity": "943",
+            "prov:agent": "openx.net"
+        },
+        "_:id202": {
+            "prov:entity": "944",
+            "prov:agent": "exelator.com"
+        },
+        "_:id204": {
+            "prov:entity": "945",
+            "prov:agent": "exelator.com"
+        },
+        "_:id206": {
+            "prov:entity": "948",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id208": {
+            "prov:entity": "949",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id210": {
+            "prov:entity": "950",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id212": {
+            "prov:entity": "951",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id214": {
+            "prov:entity": "952",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id216": {
+            "prov:entity": "953",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id218": {
+            "prov:entity": "954",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id220": {
+            "prov:entity": "955",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id222": {
+            "prov:entity": "956",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id224": {
+            "prov:entity": "957",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id226": {
+            "prov:entity": "958",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id228": {
+            "prov:entity": "959",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id230": {
+            "prov:entity": "960",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id232": {
+            "prov:entity": "961",
+            "prov:agent": "id5-sync.com"
+        },
+        "_:id236": {
+            "prov:entity": "962",
+            "prov:agent": "tapad.com"
+        },
+        "_:id238": {
+            "prov:entity": "963",
+            "prov:agent": "tapad.com"
+        },
+        "_:id240": {
+            "prov:entity": "964",
+            "prov:agent": "tapad.com"
+        },
+        "_:id242": {
+            "prov:entity": "965",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id244": {
+            "prov:entity": "966",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id246": {
+            "prov:entity": "967",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id248": {
+            "prov:entity": "968",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id252": {
+            "prov:entity": "969",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id254": {
+            "prov:entity": "976",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id256": {
+            "prov:entity": "977",
+            "prov:agent": "doubleclick.net"
+        },
+        "_:id258": {
+            "prov:entity": "980",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id260": {
+            "prov:entity": "981",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id262": {
+            "prov:entity": "982",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id264": {
+            "prov:entity": "983",
+            "prov:agent": "crwdcntrl.net"
+        },
+        "_:id268": {
+            "prov:entity": "984",
+            "prov:agent": "brandmetrics.com"
+        },
+        "_:id270": {
+            "prov:entity": "989",
+            "prov:agent": "krxd.net"
+        },
+        "_:id272": {
+            "prov:entity": "990",
+            "prov:agent": "krxd.net"
+        },
+        "_:id276": {
+            "prov:entity": "991",
+            "prov:agent": "dnacdn.net"
+        }
+    },
+    "used": {
+        "_:id9": {
+            "prov:activity": "visitSite",
+            "prov:entity": "/www.thesun.co.uk/"
+        },
+        "_:id10": {
+            "prov:activity": "setCookies",
+            "prov:entity": "/www.thesun.co.uk/"
+        },
+        "_:id11": {
+            "prov:activity": "performCrawl",
+            "prov:entity": "Firefox"
+        }
+    },
+    "hadMember": {
+        "_:id12": {
+            "prov:collection": "trackers",
+            "prov:entity": "facebook.com"
+        },
+        "_:id15": {
+            "prov:collection": "cookies",
+            "prov:entity": "795"
+        },
+        "_:id16": {
+            "prov:collection": "trackers",
+            "prov:entity": "id5-sync.com"
+        },
+        "_:id19": {
+            "prov:collection": "cookies",
+            "prov:entity": "806"
+        },
+        "_:id21": {
+            "prov:collection": "cookies",
+            "prov:entity": "807"
+        },
+        "_:id23": {
+            "prov:collection": "cookies",
+            "prov:entity": "808"
+        },
+        "_:id25": {
+            "prov:collection": "cookies",
+            "prov:entity": "809"
+        },
+        "_:id27": {
+            "prov:collection": "cookies",
+            "prov:entity": "810"
+        },
+        "_:id29": {
+            "prov:collection": "cookies",
+            "prov:entity": "811"
+        },
+        "_:id31": {
+            "prov:collection": "cookies",
+            "prov:entity": "812"
+        },
+        "_:id33": {
+            "prov:collection": "cookies",
+            "prov:entity": "822"
+        },
+        "_:id35": {
+            "prov:collection": "cookies",
+            "prov:entity": "823"
+        },
+        "_:id37": {
+            "prov:collection": "cookies",
+            "prov:entity": "824"
+        },
+        "_:id38": {
+            "prov:collection": "trackers",
+            "prov:entity": "scorecardresearch.com"
+        },
+        "_:id41": {
+            "prov:collection": "cookies",
+            "prov:entity": "825"
+        },
+        "_:id43": {
+            "prov:collection": "cookies",
+            "prov:entity": "826"
+        },
+        "_:id44": {
+            "prov:collection": "trackers",
+            "prov:entity": "postrelease.com"
+        },
+        "_:id47": {
+            "prov:collection": "cookies",
+            "prov:entity": "827"
+        },
+        "_:id48": {
+            "prov:collection": "trackers",
+            "prov:entity": "krxd.net"
+        },
+        "_:id51": {
+            "prov:collection": "cookies",
+            "prov:entity": "828"
+        },
+        "_:id52": {
+            "prov:collection": "trackers",
+            "prov:entity": "bluekai.com"
+        },
+        "_:id55": {
+            "prov:collection": "cookies",
+            "prov:entity": "830"
+        },
+        "_:id57": {
+            "prov:collection": "cookies",
+            "prov:entity": "831"
+        },
+        "_:id59": {
+            "prov:collection": "cookies",
+            "prov:entity": "832"
+        },
+        "_:id60": {
+            "prov:collection": "trackers",
+            "prov:entity": "adnxs.com"
+        },
+        "_:id63": {
+            "prov:collection": "cookies",
+            "prov:entity": "833"
+        },
+        "_:id65": {
+            "prov:collection": "cookies",
+            "prov:entity": "836"
+        },
+        "_:id67": {
+            "prov:collection": "cookies",
+            "prov:entity": "837"
+        },
+        "_:id68": {
+            "prov:collection": "trackers",
+            "prov:entity": "newscgp.com"
+        },
+        "_:id71": {
+            "prov:collection": "cookies",
+            "prov:entity": "838"
+        },
+        "_:id73": {
+            "prov:collection": "cookies",
+            "prov:entity": "839"
+        },
+        "_:id74": {
+            "prov:collection": "trackers",
+            "prov:entity": "mathtag.com"
+        },
+        "_:id77": {
+            "prov:collection": "cookies",
+            "prov:entity": "843"
+        },
+        "_:id79": {
+            "prov:collection": "cookies",
+            "prov:entity": "851"
+        },
+        "_:id81": {
+            "prov:collection": "cookies",
+            "prov:entity": "852"
+        },
+        "_:id83": {
+            "prov:collection": "cookies",
+            "prov:entity": "853"
+        },
+        "_:id85": {
+            "prov:collection": "cookies",
+            "prov:entity": "854"
+        },
+        "_:id87": {
+            "prov:collection": "cookies",
+            "prov:entity": "855"
+        },
+        "_:id89": {
+            "prov:collection": "cookies",
+            "prov:entity": "856"
+        },
+        "_:id91": {
+            "prov:collection": "cookies",
+            "prov:entity": "857"
+        },
+        "_:id93": {
+            "prov:collection": "cookies",
+            "prov:entity": "858"
+        },
+        "_:id95": {
+            "prov:collection": "cookies",
+            "prov:entity": "859"
+        },
+        "_:id97": {
+            "prov:collection": "cookies",
+            "prov:entity": "860"
+        },
+        "_:id99": {
+            "prov:collection": "cookies",
+            "prov:entity": "861"
+        },
+        "_:id101": {
+            "prov:collection": "cookies",
+            "prov:entity": "862"
+        },
+        "_:id103": {
+            "prov:collection": "cookies",
+            "prov:entity": "863"
+        },
+        "_:id105": {
+            "prov:collection": "cookies",
+            "prov:entity": "864"
+        },
+        "_:id106": {
+            "prov:collection": "trackers",
+            "prov:entity": "skimresources.com"
+        },
+        "_:id109": {
+            "prov:collection": "cookies",
+            "prov:entity": "865"
+        },
+        "_:id111": {
+            "prov:collection": "cookies",
+            "prov:entity": "866"
+        },
+        "_:id112": {
+            "prov:collection": "trackers",
+            "prov:entity": "adform.net"
+        },
+        "_:id115": {
+            "prov:collection": "cookies",
+            "prov:entity": "872"
+        },
+        "_:id117": {
+            "prov:collection": "cookies",
+            "prov:entity": "873"
+        },
+        "_:id119": {
+            "prov:collection": "cookies",
+            "prov:entity": "874"
+        },
+        "_:id121": {
+            "prov:collection": "cookies",
+            "prov:entity": "875"
+        },
+        "_:id123": {
+            "prov:collection": "cookies",
+            "prov:entity": "876"
+        },
+        "_:id124": {
+            "prov:collection": "trackers",
+            "prov:entity": "crwdcntrl.net"
+        },
+        "_:id127": {
+            "prov:collection": "cookies",
+            "prov:entity": "877"
+        },
+        "_:id129": {
+            "prov:collection": "cookies",
+            "prov:entity": "887"
+        },
+        "_:id131": {
+            "prov:collection": "cookies",
+            "prov:entity": "888"
+        },
+        "_:id133": {
+            "prov:collection": "cookies",
+            "prov:entity": "889"
+        },
+        "_:id135": {
+            "prov:collection": "cookies",
+            "prov:entity": "890"
+        },
+        "_:id137": {
+            "prov:collection": "cookies",
+            "prov:entity": "891"
+        },
+        "_:id139": {
+            "prov:collection": "cookies",
+            "prov:entity": "892"
+        },
+        "_:id141": {
+            "prov:collection": "cookies",
+            "prov:entity": "893"
+        },
+        "_:id143": {
+            "prov:collection": "cookies",
+            "prov:entity": "894"
+        },
+        "_:id145": {
+            "prov:collection": "cookies",
+            "prov:entity": "895"
+        },
+        "_:id147": {
+            "prov:collection": "cookies",
+            "prov:entity": "896"
+        },
+        "_:id149": {
+            "prov:collection": "cookies",
+            "prov:entity": "897"
+        },
+        "_:id151": {
+            "prov:collection": "cookies",
+            "prov:entity": "898"
+        },
+        "_:id153": {
+            "prov:collection": "cookies",
+            "prov:entity": "899"
+        },
+        "_:id155": {
+            "prov:collection": "cookies",
+            "prov:entity": "900"
+        },
+        "_:id157": {
+            "prov:collection": "cookies",
+            "prov:entity": "901"
+        },
+        "_:id159": {
+            "prov:collection": "cookies",
+            "prov:entity": "902"
+        },
+        "_:id161": {
+            "prov:collection": "cookies",
+            "prov:entity": "903"
+        },
+        "_:id163": {
+            "prov:collection": "cookies",
+            "prov:entity": "904"
+        },
+        "_:id165": {
+            "prov:collection": "cookies",
+            "prov:entity": "905"
+        },
+        "_:id167": {
+            "prov:collection": "cookies",
+            "prov:entity": "907"
+        },
+        "_:id169": {
+            "prov:collection": "cookies",
+            "prov:entity": "908"
+        },
+        "_:id170": {
+            "prov:collection": "trackers",
+            "prov:entity": "creative-serving.com"
+        },
+        "_:id173": {
+            "prov:collection": "cookies",
+            "prov:entity": "913"
+        },
+        "_:id175": {
+            "prov:collection": "cookies",
+            "prov:entity": "914"
+        },
+        "_:id177": {
+            "prov:collection": "cookies",
+            "prov:entity": "915"
+        },
+        "_:id179": {
+            "prov:collection": "cookies",
+            "prov:entity": "930"
+        },
+        "_:id181": {
+            "prov:collection": "cookies",
+            "prov:entity": "931"
+        },
+        "_:id183": {
+            "prov:collection": "cookies",
+            "prov:entity": "932"
+        },
+        "_:id185": {
+            "prov:collection": "cookies",
+            "prov:entity": "933"
+        },
+        "_:id187": {
+            "prov:collection": "cookies",
+            "prov:entity": "934"
+        },
+        "_:id189": {
+            "prov:collection": "cookies",
+            "prov:entity": "935"
+        },
+        "_:id191": {
+            "prov:collection": "cookies",
+            "prov:entity": "936"
+        },
+        "_:id192": {
+            "prov:collection": "trackers",
+            "prov:entity": "exelator.com"
+        },
+        "_:id195": {
+            "prov:collection": "cookies",
+            "prov:entity": "937"
+        },
+        "_:id197": {
+            "prov:collection": "cookies",
+            "prov:entity": "938"
+        },
+        "_:id198": {
+            "prov:collection": "trackers",
+            "prov:entity": "openx.net"
+        },
+        "_:id201": {
+            "prov:collection": "cookies",
+            "prov:entity": "943"
+        },
+        "_:id203": {
+            "prov:collection": "cookies",
+            "prov:entity": "944"
+        },
+        "_:id205": {
+            "prov:collection": "cookies",
+            "prov:entity": "945"
+        },
+        "_:id207": {
+            "prov:collection": "cookies",
+            "prov:entity": "948"
+        },
+        "_:id209": {
+            "prov:collection": "cookies",
+            "prov:entity": "949"
+        },
+        "_:id211": {
+            "prov:collection": "cookies",
+            "prov:entity": "950"
+        },
+        "_:id213": {
+            "prov:collection": "cookies",
+            "prov:entity": "951"
+        },
+        "_:id215": {
+            "prov:collection": "cookies",
+            "prov:entity": "952"
+        },
+        "_:id217": {
+            "prov:collection": "cookies",
+            "prov:entity": "953"
+        },
+        "_:id219": {
+            "prov:collection": "cookies",
+            "prov:entity": "954"
+        },
+        "_:id221": {
+            "prov:collection": "cookies",
+            "prov:entity": "955"
+        },
+        "_:id223": {
+            "prov:collection": "cookies",
+            "prov:entity": "956"
+        },
+        "_:id225": {
+            "prov:collection": "cookies",
+            "prov:entity": "957"
+        },
+        "_:id227": {
+            "prov:collection": "cookies",
+            "prov:entity": "958"
+        },
+        "_:id229": {
+            "prov:collection": "cookies",
+            "prov:entity": "959"
+        },
+        "_:id231": {
+            "prov:collection": "cookies",
+            "prov:entity": "960"
+        },
+        "_:id233": {
+            "prov:collection": "cookies",
+            "prov:entity": "961"
+        },
+        "_:id234": {
+            "prov:collection": "trackers",
+            "prov:entity": "tapad.com"
+        },
+        "_:id237": {
+            "prov:collection": "cookies",
+            "prov:entity": "962"
+        },
+        "_:id239": {
+            "prov:collection": "cookies",
+            "prov:entity": "963"
+        },
+        "_:id241": {
+            "prov:collection": "cookies",
+            "prov:entity": "964"
+        },
+        "_:id243": {
+            "prov:collection": "cookies",
+            "prov:entity": "965"
+        },
+        "_:id245": {
+            "prov:collection": "cookies",
+            "prov:entity": "966"
+        },
+        "_:id247": {
+            "prov:collection": "cookies",
+            "prov:entity": "967"
+        },
+        "_:id249": {
+            "prov:collection": "cookies",
+            "prov:entity": "968"
+        },
+        "_:id250": {
+            "prov:collection": "trackers",
+            "prov:entity": "doubleclick.net"
+        },
+        "_:id253": {
+            "prov:collection": "cookies",
+            "prov:entity": "969"
+        },
+        "_:id255": {
+            "prov:collection": "cookies",
+            "prov:entity": "976"
+        },
+        "_:id257": {
+            "prov:collection": "cookies",
+            "prov:entity": "977"
+        },
+        "_:id259": {
+            "prov:collection": "cookies",
+            "prov:entity": "980"
+        },
+        "_:id261": {
+            "prov:collection": "cookies",
+            "prov:entity": "981"
+        },
+        "_:id263": {
+            "prov:collection": "cookies",
+            "prov:entity": "982"
+        },
+        "_:id265": {
+            "prov:collection": "cookies",
+            "prov:entity": "983"
+        },
+        "_:id266": {
+            "prov:collection": "trackers",
+            "prov:entity": "brandmetrics.com"
+        },
+        "_:id269": {
+            "prov:collection": "cookies",
+            "prov:entity": "984"
+        },
+        "_:id271": {
+            "prov:collection": "cookies",
+            "prov:entity": "989"
+        },
+        "_:id273": {
+            "prov:collection": "cookies",
+            "prov:entity": "990"
+        },
+        "_:id274": {
+            "prov:collection": "trackers",
+            "prov:entity": "dnacdn.net"
+        },
+        "_:id277": {
+            "prov:collection": "cookies",
+            "prov:entity": "991"
+        }
+    }
+}

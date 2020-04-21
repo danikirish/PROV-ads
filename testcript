@@ -10,7 +10,7 @@ done
 
 echo "STARTING CRAWL"
 source OpenWPM/venv/bin/activate
-python OpenWPM/prj.py $dnt
+python OpenWPM/prj.py
 deactivate
 #python provmanager.py
 
