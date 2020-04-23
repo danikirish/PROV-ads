@@ -4,14 +4,15 @@ __Student ID: 1747175
 Supervisor: Luc Moreau__
 
 ## Installation
-1. Clone this repository
+1. Navigate to the root directory of this project
+2. Clone the OpenWPM repository: `git clone https://github.com/mozilla/OpenWPM`
 2. Run install scripts
 Run `install_pypackages.sh`
 Run `conda activate prjprov`
 __NOTE:__ Due to restrictions by OpenWPM, this software can only be run on Ubuntu and MacOS.
-Navigate the OpenWPM directory
-Ubuntu: run `./install.sh` 
-MacOS: run `./install-mac-dev.sh`
+3. Navigate to the OpenWPM directory and run:
+Ubuntu: `./install.sh` 
+MacOS: `./install-mac-dev.sh`
 
 ## Running the program
 1. Make sure the current conda environment is set to `prjprov`
