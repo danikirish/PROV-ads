@@ -1,16 +1,18 @@
 #!/bin/bash
 
-while getopts d: option
+while getopts d:s: option
 do
 case "${option}"
 in
 d) dnt=${OPTARG};;
+s) sites=${OPTARG};;
 esac
 done
 
 echo "STARTING CRAWL"
+echo $sites
 source OpenWPM/venv/bin/activate
-python OpenWPM/prj.py $dnt
+python OpenWPM/prj.py $dnt -s $sites
 deactivate
 #python provmanager.py
 

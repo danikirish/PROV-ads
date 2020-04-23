@@ -6,66 +6,57 @@ import prov.model as prov
 import sqlite3 as lite
 from os import path
 import os
-import matplotlib.pyplot as plt
-from prov.dot import prov_to_dot
-import matplotlib.image as mpimg
-import json
-
 from crawlmanager import CrawlManager
 from provanalyser import ProvAnalyser
 
 
-# TODO(?): Create a manager abstract class
-class ProvManager():
-    def __init__(self, output_fp=path.join(os.getcwd(), "Crawls", "Results"), db_fp="/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite"):
+# ProvManager class gives out commands and passes parameters to other classes
+class ProvManager:
+    def __init__(self, output_fp=path.join(os.getcwd(), "Crawls", "Results"), db_fp=path.join(os.getcwd(),"Crawls","crawl-data.sqlite")):
         self.db_fp = db_fp
         self.output_fp = output_fp
-        self.crawls = {}
-        self.documents = {}
-        self.all_tp_hosts = {}
-        self.cur = None
+        self.cur = None  # Database cursor
 
     def main(self):
         self.cur = self.db_connect()
-        recorded = False
-        crawls_queue = []
+        recorded = False  # Indicates whether there were any crawls recorded so far
+        crawls_queue = []  # Queue of crawls that need to be recorded
         for crawl in self.cur.execute("select crawl_id from crawl"):
             crawl_fp = path.join(self.output_fp, "crawl%d" % crawl[0])
-            if not path.isdir(crawl_fp):
+            if not path.isdir(crawl_fp):  # Check if records for this crawl exist
                 recorded = True
                 crawls_queue.append(crawl[0])
 
-        params = self.record_crawls(crawls_queue)
+        analyse_queue, params = self.record_crawls(crawls_queue)  # Create provenance for crawls
         if not recorded:
             print("No crawls to record")
         else:
             print("Finished recording")
 
-        self.analyse_crawls(crawls_queue, params)
-        # self.create_prov()
-        # self.record_prov()
-        # self.write_prov()
-        # img = mpimg.imread(self.tester)
-        # impgplot = plt.imshow(img)
-        # plt.show()
-        # input('...')
+        if analyse_queue:
+            self.analyse_crawls(analyse_queue)  # Analyse provenance
+        else:
+            print("No crawls to analyse")
+
 
     def record_crawls(self, crawls):
         print("Writing to: ", self.output_fp)
         all_params = []
+        recorded_crawls = []  # Crawls that provenance was recorded for
         for crawl in crawls:
             print("\nRECORDING CRAWL %d" % crawl)
-            crawlman = CrawlManager(crawl, self.output_fp, self.db_fp)
-            self.documents[crawl], params = crawlman.main()
-            all_params.append(params)
-        print("Finished recording.")
-        return all_params
+            crawlman = CrawlManager(crawl, self.output_fp, self.db_fp)  # Create a CrawlManager object for every crawl
+            returned = crawlman.main()
+            if returned is not False:  # Check if was successfully recorded
+                params = returned[1]  # Browser parameters
+                all_params.append(params)
+                recorded_crawls.append(crawl)
+        return recorded_crawls, all_params  # Return the list of crawls recorded
 
-    def analyse_crawls(self, crawls, params):
+    def analyse_crawls(self, crawls):
         print("\n\nCreating analyser...")
         print("Crawls: ", crawls)
-        # print("Output fp: ", self.output_fp)
-        analyser = ProvAnalyser(crawls, self.output_fp, params)
+        analyser = ProvAnalyser(crawls, self.output_fp)  # Create one ProvAnalyser object for all crawls
         analyser.main()
         print("Finished analysis.")
 
