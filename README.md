@@ -17,7 +17,7 @@ MacOS: run `./install-mac-dev.sh`
 1. Make sure the current conda environment is set to `prjprov`
 2. Run `main_script.sh` with following parameters:
 * `-s` followed by either a website URL or a filepath to a .txt file with the list of websites to visit separated by lines.
-* `-d` foolowed by either 1 or 0. This indicates the DNT header value.   
+* `-d` followed by either 1 or 0. This indicates the DNT header value.   
 
 __Example__: `./main_script.sh -s http://google.com -d 1`
 
