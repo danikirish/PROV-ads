@@ -10,7 +10,7 @@ esac
 done
 
 echo "STARTING CRAWL"
-echo $dnt
+echo $sites
 source OpenWPM/venv/bin/activate
 python OpenWPM/prj.py $dnt -s $sites
 deactivate

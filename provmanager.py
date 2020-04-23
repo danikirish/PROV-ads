@@ -6,10 +6,6 @@ import prov.model as prov
 import sqlite3 as lite
 from os import path
 import os
-import matplotlib.pyplot as plt
-from prov.dot import prov_to_dot
-import matplotlib.image as mpimg
-import json
 
 from crawlmanager import CrawlManager
 from provanalyser import ProvAnalyser

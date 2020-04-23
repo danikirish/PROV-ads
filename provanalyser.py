@@ -1,5 +1,4 @@
 from prov.model import *
-import sqlite3 as lite
 from os import path
 import os
 import matplotlib.pyplot as plt
@@ -92,8 +91,8 @@ class ProvAnalyser(): # TODO: Pie charts for cookies and bar charts for trackers
         if syncs: print("There have been %d instances of cookie syncing during this visit" % len(syncs))
         for sync in syncs:
             dsp = sync['DSP']
-            dmp = sync['DMP']
-            print("DSP – %s and DMP – %s" % (dsp, dmp))
+            ssp = sync['SSP']
+            print("DSP – %s and SSP – %s" % (dsp, ssp))
 
     def retrieve_hosts_cookies(self, visit_js):
         hosts_cookies = {}

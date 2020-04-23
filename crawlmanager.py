@@ -3,9 +3,7 @@ import prov.model as prov
 import sqlite3 as lite
 from os import path
 import os
-import matplotlib.pyplot as plt
 from prov.dot import prov_to_dot
-import matplotlib.image as mpimg
 
 
 class CrawlManager():
@@ -17,7 +15,8 @@ class CrawlManager():
         self.db_cursor = lite.connect(db_fp).cursor()
         self.params = self.extract_params()
         self.google_sync_id = 'google_gid='
-        self.google_dmp = 'doubleclick'
+        self.google_ssp = 'doubleclick'
+        self.google_pixel_id = 'google_push='
 
     def main(self):
         # date_time = self.db_cursor.execute("select start_time from crawl where crawl_id=?", [str(self.crawl_id)]).fetchone()[0]
@@ -59,7 +58,9 @@ class CrawlManager():
     def retrieve_tp_hosts(self, visit_id, site_url):
         # TODO: Change this to retrieve hosts from 'headers' in http_requests
         hosts_ids = []
-        for host, cookie_id in self.db_cursor.execute("select host, id from javascript_cookies where visit_id=?", [str(visit_id)]):
+        for host, cookie_id, type in self.db_cursor.execute("select host, id, record_type from javascript_cookies where visit_id=?", [str(visit_id)]):
+            if type == 'deleted':
+                continue
             split = host.split('.')
             if 'www' in split: split.remove('www')
             host = split[1]
@@ -69,7 +70,7 @@ class CrawlManager():
                 hosts_ids.append((host, cookie_id))
         return hosts_ids
 
-    def cookie_sync(self):
+    def cookie_sync(self): # TODO: Change DMP to SSP
         redirects = []
         cookie_synced = {}
         for old_url, new_url, visit_id in self.db_cursor.execute("select old_request_url, new_request_url, visit_id from http_redirects where crawl_id=?", [str(self.crawl_id)]):
@@ -87,7 +88,7 @@ class CrawlManager():
                 # cookie_synced.append(redirect)
         return cookie_synced
 
-    def record_prov(self): # TODO: Cookie syncing.
+    def record_prov(self): # TODO: Pixel matching.
         cookies_syncs = self.cookie_sync()
         # print(cookies_syncs)
         for visit, doc in self.documents.items():
@@ -175,11 +176,11 @@ class CrawlManager():
                 # print("MAKING SYNC RECORDS")
                 for sync in cookies_syncs[visit]:
                     sync_name = 'syncCookies%d' % sync_counter
-                    dmp, dsp = sync[0].split('/')[2], sync[1].split('/')[2]
-                    # print("DMP: ", dmp)
+                    ssp, dsp = sync[0].split('/')[2], sync[1].split('/')[2]
+                    # print("SSP: ", ssp)
                     # print("DSP: ", dsp)
-                    doc.activity(sync_name, None, None, {'DSP': dsp, 'DMP': dmp})
-                    doc.wasAssociatedWith(sync_name, dmp)
+                    doc.activity(sync_name, None, None, {'DSP': dsp, 'SSP': ssp})
+                    doc.wasAssociatedWith(sync_name, ssp)
                     doc.wasAssociatedWith(sync_name, dsp)
                     sync_counter += 1
                 # doc.wasGeneratedBy(str(cookie), 'setCookies')

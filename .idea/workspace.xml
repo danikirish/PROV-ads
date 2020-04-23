@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a6bf36a-dde9-440a-b1fb-1c0ba3644d5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawls/crawl-data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/crawl-data.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawls/openwpm.log" beforeDir="false" afterPath="$PROJECT_DIR$/Crawls/openwpm.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notebooks/algorithm_first.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebooks/algorithm_first.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" afterDir="false" />
@@ -17,7 +18,9 @@
       <change beforePath="$PROJECT_DIR$/OpenWPM/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawlmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawlmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provanalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/provanalyser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/provmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/provmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcript" beforeDir="false" afterPath="$PROJECT_DIR$/testcript" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,35 +46,35 @@
     <session id="-376949911">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="9" />
+          <entry key="json" value="11" />
           <entry key="main_script" value="34" />
           <entry key="provtest" value="2" />
-          <entry key="py" value="14410" />
+          <entry key="py" value="14580" />
           <entry key="sh" value="177" />
-          <entry key="testcript" value="354" />
+          <entry key="testcript" value="359" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="276" />
-          <entry key="JSON" value="9" />
+          <entry key="Bash" value="281" />
+          <entry key="JSON" value="11" />
           <entry key="PLAIN_TEXT" value="291" />
-          <entry key="Python" value="14410" />
+          <entry key="Python" value="14580" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,7 +85,7 @@
           <entry key="callstacks" value="1" />
           <entry key="http_requests" value="3" />
           <entry key="http_responses" value="1" />
-          <entry key="json" value="8" />
+          <entry key="json" value="10" />
           <entry key="provtest" value="3" />
           <entry key="py" value="19" />
           <entry key="sh" value="1" />
@@ -94,7 +97,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="5" />
-          <entry key="JSON" value="8" />
+          <entry key="JSON" value="10" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="17" />
           <entry key="Scratch" value="1" />
@@ -108,11 +111,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding>
-                <element signature="e#24#48#0" expanded="true" />
-                <marker date="1587472824072" expanded="true" signature="1730:1743" ph="..." />
+                <marker date="1587600824384" expanded="true" signature="1620:1633" ph="..." />
               </folding>
             </state>
           </provider>
@@ -121,27 +123,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/provanalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1571">
-              <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1587465639914" expanded="true" signature="2002:2903" ph="..." />
-                <marker date="1587465639914" expanded="true" signature="2986:2995" ph="..." />
+                <marker date="1587600824399" expanded="true" signature="1979:2880" ph="..." />
+                <marker date="1587600824399" expanded="true" signature="2963:2972" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crawlmanager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="66" column="32" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="66" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1587487053107" expanded="true" signature="236:241" ph="..." />
-                <marker date="1587487053107" expanded="true" signature="288:297" ph="..." />
+                <marker date="1587600824411" expanded="true" signature="171:176" ph="..." />
+                <marker date="1587600824411" expanded="true" signature="223:232" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -149,17 +159,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_script.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -176,8 +189,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcript">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -209,7 +222,12 @@
       <find>params</find>
       <find>recording</find>
       <find>finished</find>
+      <find>dmp</find>
+      <find>sync</find>
     </findStrings>
+    <replaceStrings>
+      <replace>ssp</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -218,16 +236,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json" />
         <option value="/var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/kite_tutorial.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/provanalyser.py" />
         <option value="$PROJECT_DIR$/provtest" />
         <option value="$PROJECT_DIR$/main_script" />
-        <option value="$PROJECT_DIR$/OpenWPM/prj.py" />
-        <option value="$PROJECT_DIR$/testcript" />
         <option value="$PROJECT_DIR$/main_script.sh" />
+        <option value="$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json" />
+        <option value="$PROJECT_DIR$/testcript" />
+        <option value="$PROJECT_DIR$/OpenWPM/prj.py" />
         <option value="$PROJECT_DIR$/provmanager.py" />
+        <option value="$PROJECT_DIR$/provanalyser.py" />
         <option value="$PROJECT_DIR$/crawlmanager.py" />
       </list>
     </option>
@@ -251,9 +269,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="763" />
+    <option name="x" value="-696" />
     <option name="y" value="-1417" />
-    <option name="width" value="1409" />
+    <option name="width" value="1500" />
     <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -271,11 +289,6 @@
             <path>
               <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PRJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PRJ" type="462c0819:PsiDirectoryNode" />
-              <item name="OpenWPM" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,10 +340,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="763" y="-1417" width="1409" height="1417" extended-state="0" />
+    <frame x="-696" y="-1417" width="1500" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49962264" weight="0.11997074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49962264" visible="true" weight="0.113854595" />
       <window_info id="Structure" order="1" sideWeight="0.50037736" side_tool="true" weight="0.19167905" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
@@ -491,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="uml://DATABASE/04c78b91-37fc-499e-9c0f-23639ad560c2.SCHEMA:main">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -556,17 +559,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/provtest">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
+    <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -579,50 +578,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcript">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_script.sh">
+    <entry file="file://$PROJECT_DIR$/provtest">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provmanager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="e#24#48#0" expanded="true" />
-            <marker date="1587472824072" expanded="true" signature="1730:1743" ph="..." />
+            <marker date="1587600824384" expanded="true" signature="1620:1633" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/provanalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1571">
-          <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1587465639914" expanded="true" signature="2002:2903" ph="..." />
-            <marker date="1587465639914" expanded="true" signature="2986:2995" ph="..." />
+            <marker date="1587600824399" expanded="true" signature="1979:2880" ph="..." />
+            <marker date="1587600824399" expanded="true" signature="2963:2972" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crawlmanager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="66" selection-end-column="32" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1587487053107" expanded="true" signature="236:241" ph="..." />
-            <marker date="1587487053107" expanded="true" signature="288:297" ph="..." />
+            <marker date="1587600824411" expanded="true" signature="171:176" ph="..." />
+            <marker date="1587600824411" expanded="true" signature="223:232" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
