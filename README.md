@@ -25,3 +25,6 @@ __Example__: `./main_script.sh -s http://google.com -d 1`
 3. OpenWPM will open a browser instance and visit the specified websites
 4. `main.py` is executed which records provenance and outputs an analysis
 5. Recorded files are located in the `Crawls/Results/` directory
+
+## ERRROS
+If installation of OpenWPM or a crawl fails, please run `./no_crawl.sh` that will record provenance and perform analysis on sample data included in the repository. Due to OpenWPM being an open source software that it frequently updated, it cannot be guaranteed that it will run with the current version of this project.
