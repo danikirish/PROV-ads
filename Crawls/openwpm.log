@@ -822,3 +822,95 @@ Keys:
 2020-04-23 11:45:41,918 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
 2020-04-23 11:45:41,981 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
 2020-04-23 11:45:44,996 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 3.0763139724731445 seconds to close.
+2020-04-23 11:59:14,371 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 7: Launching browser...
+2020-04-23 11:59:14,380 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Spawn attempt 0 
+2020-04-23 11:59:14,392 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 7: Saved extension config file to: /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/tmpz00p_w7m/browser_params.json
+2020-04-23 11:59:19,395 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 4.
+2020-04-23 11:59:19,903 - MainProcess[MainThread]- deploy_firefox       - DEBUG   : BROWSER 7: OpenWPM Firefox extension loaded
+2020-04-23 11:59:20,194 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Cookie instrumentation enabled
+2020-04-23 11:59:20,195 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : HTTP Instrumentation enabled
+2020-04-23 11:59:20,242 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Looking for extension port information in /var/folders/qy/z4vjh7m95g10pqrb3md6gy8m0000gn/T/rust_mozprofileADEDDn/
+2020-04-23 11:59:20,243 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Connecting to extension on port 58584
+2020-04-23 11:59:20,243 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: BrowserManager ready.
+2020-04-23 11:59:20,245 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Browser spawn sucessful!
+2020-04-23 11:59:20,421 - MainProcess[MainThread]- TaskManager          - INFO    : 
+
+OpenWPM Version: b'5d59a80'
+Firefox Version: b'72.0.2'
+
+========== Manager Configuration ==========
+{
+  "aggregator_address": [
+    "127.0.0.1",
+    58523
+  ],
+  "data_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "database_name": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/crawl-data.sqlite",
+  "failure_limit": null,
+  "log_directory": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/",
+  "log_file": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/openwpm.log",
+  "logger_address": [
+    "127.0.0.1",
+    58522
+  ],
+  "num_browsers": 1,
+  "output_format": "local",
+  "s3_bucket": null,
+  "s3_directory": null,
+  "screenshot_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/screenshots",
+  "source_dump_path": "/Users/Danik/Desktop/KCL/YEAR_3/PRJ/Crawls/sources",
+  "testing": false
+}
+
+========== Browser Configuration ==========
+Keys:
+{
+  "crawl_id": 0,
+  "adblock-plus": 1,
+  "bot_mitigation": 2,
+  "browser": 3,
+  "callstack_instrument": 4,
+  "cookie_instrument": 5,
+  "disable_flash": 6,
+  "disconnect": 7,
+  "donottrack": 8,
+  "extension_enabled": 9,
+  "ghostery": 10,
+  "headless": 11,
+  "http_instrument": 12,
+  "https-everywhere": 13,
+  "js_instrument": 14,
+  "js_instrument_modules": 15,
+  "navigation_instrument": 16,
+  "prefs": 17,
+  "random_attributes": 18,
+  "save_content": 19,
+  "tp_cookies": 20,
+  "tracking-protection": 21,
+  "ublock-origin": 22
+}
+
+  0  1      2      3        4      5     6     7      8     9     10     11     12    13     14     15              16     17    18     19     20      21     22
+---  -----  -----  -------  -----  ----  ----  -----  ----  ----  -----  -----  ----  -----  -----  --------------  -----  ----  -----  -----  ------  -----  -----
+  7  False  False  firefox  False  True  True  False  True  True  False  False  True  False  False  fingerprinting  False  {}    False  False  always  False  False
+
+========== Input profile tar files ==========
+  No profile tar files specified
+
+========== Output (archive) profile dirs ==========
+  No profile archive directories specified
+
+
+2020-04-23 11:59:20,424 - MainProcess[MainThread]- TaskManager          - DEBUG   : Checking command failure status indicator...
+2020-04-23 11:59:20,532 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Closing browser manager...
+2020-04-23 11:59:20,532 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Closing browser...
+2020-04-23 11:59:20,533 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Joining command thread
+2020-04-23 11:59:20,534 - MainProcess[MainThread]- BrowserManager       - INFO    : BROWSER 7: EXECUTING COMMAND: ('GET', 'https://github.com/danikirish', 2, 10)
+2020-04-23 11:59:20,634 - MainProcess[Thread-1  ]- FirefoxExtension     - DEBUG   : Visit Id: 10
+2020-04-23 11:59:24,520 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 5.
+2020-04-23 11:59:26,618 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: 6.084320 seconds to join command thread
+2020-04-23 11:59:28,532 - MainProcess[MainThread]- BrowserManager       - DEBUG   : BROWSER 7: Browser manager closed successfully.
+2020-04-23 11:59:28,534 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Sending the shutdown signal to the LocalAggregator listener process...
+2020-04-23 11:59:29,528 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : Status update; current record queue size: 0. current number of threads: 3.
+2020-04-23 11:59:29,529 - MainProcess[MainThread]- BaseAggregator       - INFO    : Received shutdown signal!
+2020-04-23 11:59:32,536 - MainProcess[MainThread]- BaseAggregator       - DEBUG   : LocalAggregator took 4.00127100944519 seconds to close.
