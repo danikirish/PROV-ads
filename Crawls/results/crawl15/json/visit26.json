@@ -1,13 +1,13 @@
 {
     "prefix": {
-        "default": "http://danik.com"
+        "default": "http://prj.com"
     },
     "agent": {
         "OpenWPM": {
             "prov:type": "prov:SoftwareAgent"
         },
         "user": {},
-        "publisher": {},
+        "www.mirror.co.uk": {},
         "stmg-prod.mirror.co.uk": {},
         "crwdcntrl.net": {},
         "doubleclick.net": {},
@@ -31,9 +31,9 @@
                 "$": 26,
                 "type": "xsd:int"
             },
-            "url": "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
+            "url": "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
         },
-        "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854": {},
+        "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854": {},
         "crawl": {
             "id": {
                 "$": 15,
@@ -62,13 +62,11 @@
         "1453": {},
         "1454": {},
         "1455": {},
-        "1458": {},
         "1459": {},
         "1462": {},
         "1463": {},
         "1468": {},
         "1469": {},
-        "1470": {},
         "1471": {},
         "1476": {},
         "1477": {},
@@ -77,28 +75,20 @@
         "1484": {},
         "1485": {},
         "1486": {},
-        "1487": {},
         "1491": {},
         "1492": {},
-        "1493": {},
         "1494": {},
-        "1495": {},
         "1496": {},
-        "1497": {},
         "1498": {},
         "1499": {},
-        "1500": {},
         "1501": {},
-        "1502": {},
         "1503": {},
         "1504": {},
         "1505": {},
         "1506": {},
         "1507": {},
         "1508": {},
-        "1509": {},
         "1510": {},
-        "1511": {},
         "1512": {},
         "1519": {},
         "1520": {},
@@ -113,7 +103,7 @@
         "visitSite": {},
         "syncCookies1": {
             "DSP": "loadm.exelator.com",
-            "DMP": "cm.g.doubleclick.net"
+            "SSP": "cm.g.doubleclick.net"
         }
     },
     "actedOnBehalfOf": {
@@ -143,59 +133,59 @@
             "prov:activity": "setCookies",
             "prov:agent": "quantcast.mgr.consensu.org"
         },
-        "_:id41": {
+        "_:id39": {
             "prov:activity": "setCookies",
             "prov:agent": "scorecardresearch.com"
         },
-        "_:id47": {
+        "_:id45": {
             "prov:activity": "setCookies",
             "prov:agent": "exelator.com"
         },
-        "_:id57": {
+        "_:id53": {
             "prov:activity": "setCookies",
             "prov:agent": "google.com"
         },
-        "_:id65": {
+        "_:id61": {
             "prov:activity": "setCookies",
             "prov:agent": "adnxs.com"
         },
-        "_:id69": {
+        "_:id65": {
             "prov:activity": "setCookies",
             "prov:agent": "adsrvr.org"
         },
-        "_:id79": {
+        "_:id73": {
             "prov:activity": "setCookies",
             "prov:agent": "tapad.com"
         },
-        "_:id97": {
+        "_:id85": {
             "prov:activity": "setCookies",
             "prov:agent": "twitter.com"
         },
-        "_:id109": {
+        "_:id93": {
             "prov:activity": "setCookies",
             "prov:agent": "convrse.media"
         },
-        "_:id115": {
+        "_:id99": {
             "prov:activity": "setCookies",
             "prov:agent": "lijit.com"
         },
-        "_:id131": {
+        "_:id111": {
             "prov:activity": "setCookies",
             "prov:agent": "casalemedia.com"
         },
-        "_:id141": {
+        "_:id121": {
             "prov:activity": "setCookies",
             "prov:agent": "spotxchange.com"
         },
-        "_:id145": {
+        "_:id125": {
             "prov:activity": "setCookies",
             "prov:agent": "justpremium.com"
         },
-        "_:id148": {
+        "_:id128": {
             "prov:activity": "syncCookies1",
             "prov:agent": "cm.g.doubleclick.net"
         },
-        "_:id149": {
+        "_:id129": {
             "prov:activity": "syncCookies1",
             "prov:agent": "loadm.exelator.com"
         }
@@ -217,7 +207,7 @@
     "wasDerivedFrom": {
         "_:id6": {
             "prov:generatedEntity": "visit",
-            "prov:usedEntity": "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854",
+            "prov:usedEntity": "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854",
             "prov:activity": "visitSite"
         }
     },
@@ -230,7 +220,7 @@
     },
     "wasAttributedTo": {
         "_:id8": {
-            "prov:entity": "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854",
+            "prov:entity": "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854",
             "prov:agent": "publisher"
         },
         "_:id14": {
@@ -266,178 +256,138 @@
             "prov:agent": "quantcast.mgr.consensu.org"
         },
         "_:id36": {
-            "prov:entity": "1458",
-            "prov:agent": "quantcast.mgr.consensu.org"
-        },
-        "_:id38": {
             "prov:entity": "1459",
             "prov:agent": "quantcast.mgr.consensu.org"
         },
-        "_:id42": {
+        "_:id40": {
             "prov:entity": "1462",
             "prov:agent": "scorecardresearch.com"
         },
-        "_:id44": {
+        "_:id42": {
             "prov:entity": "1463",
             "prov:agent": "scorecardresearch.com"
         },
-        "_:id48": {
+        "_:id46": {
             "prov:entity": "1468",
             "prov:agent": "exelator.com"
         },
-        "_:id50": {
+        "_:id48": {
             "prov:entity": "1469",
             "prov:agent": "exelator.com"
         },
-        "_:id52": {
-            "prov:entity": "1470",
-            "prov:agent": "exelator.com"
-        },
-        "_:id54": {
+        "_:id50": {
             "prov:entity": "1471",
             "prov:agent": "exelator.com"
         },
-        "_:id58": {
+        "_:id54": {
             "prov:entity": "1476",
             "prov:agent": "google.com"
         },
-        "_:id60": {
+        "_:id56": {
             "prov:entity": "1477",
             "prov:agent": "google.com"
         },
-        "_:id62": {
+        "_:id58": {
             "prov:entity": "1478",
             "prov:agent": "google.com"
         },
-        "_:id66": {
+        "_:id62": {
             "prov:entity": "1483",
             "prov:agent": "adnxs.com"
         },
-        "_:id70": {
+        "_:id66": {
             "prov:entity": "1484",
             "prov:agent": "adsrvr.org"
         },
-        "_:id72": {
+        "_:id68": {
             "prov:entity": "1485",
             "prov:agent": "adsrvr.org"
         },
-        "_:id74": {
+        "_:id70": {
             "prov:entity": "1486",
             "prov:agent": "doubleclick.net"
         },
-        "_:id76": {
-            "prov:entity": "1487",
-            "prov:agent": "doubleclick.net"
-        },
-        "_:id80": {
+        "_:id74": {
             "prov:entity": "1491",
             "prov:agent": "tapad.com"
         },
-        "_:id82": {
+        "_:id76": {
             "prov:entity": "1492",
             "prov:agent": "tapad.com"
         },
-        "_:id84": {
-            "prov:entity": "1493",
-            "prov:agent": "adsrvr.org"
-        },
-        "_:id86": {
+        "_:id78": {
             "prov:entity": "1494",
             "prov:agent": "adsrvr.org"
         },
-        "_:id88": {
-            "prov:entity": "1495",
-            "prov:agent": "adsrvr.org"
-        },
-        "_:id90": {
+        "_:id80": {
             "prov:entity": "1496",
             "prov:agent": "adsrvr.org"
         },
-        "_:id92": {
-            "prov:entity": "1497",
-            "prov:agent": "adnxs.com"
-        },
-        "_:id94": {
+        "_:id82": {
             "prov:entity": "1498",
             "prov:agent": "adnxs.com"
         },
-        "_:id98": {
+        "_:id86": {
             "prov:entity": "1499",
             "prov:agent": "twitter.com"
         },
-        "_:id100": {
-            "prov:entity": "1500",
-            "prov:agent": "exelator.com"
-        },
-        "_:id102": {
+        "_:id88": {
             "prov:entity": "1501",
             "prov:agent": "exelator.com"
         },
-        "_:id104": {
-            "prov:entity": "1502",
-            "prov:agent": "exelator.com"
-        },
-        "_:id106": {
+        "_:id90": {
             "prov:entity": "1503",
             "prov:agent": "exelator.com"
         },
-        "_:id110": {
+        "_:id94": {
             "prov:entity": "1504",
             "prov:agent": "convrse.media"
         },
-        "_:id112": {
+        "_:id96": {
             "prov:entity": "1505",
             "prov:agent": "exelator.com"
         },
-        "_:id116": {
+        "_:id100": {
             "prov:entity": "1506",
             "prov:agent": "lijit.com"
         },
-        "_:id118": {
+        "_:id102": {
             "prov:entity": "1507",
             "prov:agent": "exelator.com"
         },
-        "_:id120": {
+        "_:id104": {
             "prov:entity": "1508",
             "prov:agent": "exelator.com"
         },
-        "_:id122": {
-            "prov:entity": "1509",
-            "prov:agent": "crwdcntrl.net"
-        },
-        "_:id124": {
+        "_:id106": {
             "prov:entity": "1510",
             "prov:agent": "crwdcntrl.net"
         },
-        "_:id126": {
-            "prov:entity": "1511",
-            "prov:agent": "crwdcntrl.net"
-        },
-        "_:id128": {
+        "_:id108": {
             "prov:entity": "1512",
             "prov:agent": "crwdcntrl.net"
         },
-        "_:id132": {
+        "_:id112": {
             "prov:entity": "1519",
             "prov:agent": "casalemedia.com"
         },
-        "_:id134": {
+        "_:id114": {
             "prov:entity": "1520",
             "prov:agent": "casalemedia.com"
         },
-        "_:id136": {
+        "_:id116": {
             "prov:entity": "1521",
             "prov:agent": "casalemedia.com"
         },
-        "_:id138": {
+        "_:id118": {
             "prov:entity": "1522",
             "prov:agent": "casalemedia.com"
         },
-        "_:id142": {
+        "_:id122": {
             "prov:entity": "1523",
             "prov:agent": "spotxchange.com"
         },
-        "_:id146": {
+        "_:id126": {
             "prov:entity": "1529",
             "prov:agent": "justpremium.com"
         }
@@ -445,11 +395,11 @@
     "used": {
         "_:id9": {
             "prov:activity": "visitSite",
-            "prov:entity": "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
+            "prov:entity": "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
         },
         "_:id10": {
             "prov:activity": "setCookies",
-            "prov:entity": "/www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
+            "prov:entity": "www.mirror.co.uk/news/uk-news/coronavirus-live-updates-pandemic-uk-21893854"
         },
         "_:id11": {
             "prov:activity": "performCrawl",
@@ -507,225 +457,185 @@
         },
         "_:id37": {
             "prov:collection": "cookies",
-            "prov:entity": "1458"
-        },
-        "_:id39": {
-            "prov:collection": "cookies",
             "prov:entity": "1459"
         },
-        "_:id40": {
+        "_:id38": {
             "prov:collection": "trackers",
             "prov:entity": "scorecardresearch.com"
         },
-        "_:id43": {
+        "_:id41": {
             "prov:collection": "cookies",
             "prov:entity": "1462"
         },
-        "_:id45": {
+        "_:id43": {
             "prov:collection": "cookies",
             "prov:entity": "1463"
         },
-        "_:id46": {
+        "_:id44": {
             "prov:collection": "trackers",
             "prov:entity": "exelator.com"
         },
-        "_:id49": {
+        "_:id47": {
             "prov:collection": "cookies",
             "prov:entity": "1468"
         },
-        "_:id51": {
+        "_:id49": {
             "prov:collection": "cookies",
             "prov:entity": "1469"
         },
-        "_:id53": {
-            "prov:collection": "cookies",
-            "prov:entity": "1470"
-        },
-        "_:id55": {
+        "_:id51": {
             "prov:collection": "cookies",
             "prov:entity": "1471"
         },
-        "_:id56": {
+        "_:id52": {
             "prov:collection": "trackers",
             "prov:entity": "google.com"
         },
-        "_:id59": {
+        "_:id55": {
             "prov:collection": "cookies",
             "prov:entity": "1476"
         },
-        "_:id61": {
+        "_:id57": {
             "prov:collection": "cookies",
             "prov:entity": "1477"
         },
-        "_:id63": {
+        "_:id59": {
             "prov:collection": "cookies",
             "prov:entity": "1478"
         },
-        "_:id64": {
+        "_:id60": {
             "prov:collection": "trackers",
             "prov:entity": "adnxs.com"
         },
-        "_:id67": {
+        "_:id63": {
             "prov:collection": "cookies",
             "prov:entity": "1483"
         },
-        "_:id68": {
+        "_:id64": {
             "prov:collection": "trackers",
             "prov:entity": "adsrvr.org"
         },
-        "_:id71": {
+        "_:id67": {
             "prov:collection": "cookies",
             "prov:entity": "1484"
         },
-        "_:id73": {
+        "_:id69": {
             "prov:collection": "cookies",
             "prov:entity": "1485"
         },
-        "_:id75": {
+        "_:id71": {
             "prov:collection": "cookies",
             "prov:entity": "1486"
         },
-        "_:id77": {
-            "prov:collection": "cookies",
-            "prov:entity": "1487"
-        },
-        "_:id78": {
+        "_:id72": {
             "prov:collection": "trackers",
             "prov:entity": "tapad.com"
         },
-        "_:id81": {
+        "_:id75": {
             "prov:collection": "cookies",
             "prov:entity": "1491"
         },
-        "_:id83": {
+        "_:id77": {
             "prov:collection": "cookies",
             "prov:entity": "1492"
         },
-        "_:id85": {
-            "prov:collection": "cookies",
-            "prov:entity": "1493"
-        },
-        "_:id87": {
+        "_:id79": {
             "prov:collection": "cookies",
             "prov:entity": "1494"
         },
-        "_:id89": {
-            "prov:collection": "cookies",
-            "prov:entity": "1495"
-        },
-        "_:id91": {
+        "_:id81": {
             "prov:collection": "cookies",
             "prov:entity": "1496"
         },
-        "_:id93": {
-            "prov:collection": "cookies",
-            "prov:entity": "1497"
-        },
-        "_:id95": {
+        "_:id83": {
             "prov:collection": "cookies",
             "prov:entity": "1498"
         },
-        "_:id96": {
+        "_:id84": {
             "prov:collection": "trackers",
             "prov:entity": "twitter.com"
         },
-        "_:id99": {
+        "_:id87": {
             "prov:collection": "cookies",
             "prov:entity": "1499"
         },
-        "_:id101": {
-            "prov:collection": "cookies",
-            "prov:entity": "1500"
-        },
-        "_:id103": {
+        "_:id89": {
             "prov:collection": "cookies",
             "prov:entity": "1501"
         },
-        "_:id105": {
-            "prov:collection": "cookies",
-            "prov:entity": "1502"
-        },
-        "_:id107": {
+        "_:id91": {
             "prov:collection": "cookies",
             "prov:entity": "1503"
         },
-        "_:id108": {
+        "_:id92": {
             "prov:collection": "trackers",
             "prov:entity": "convrse.media"
         },
-        "_:id111": {
+        "_:id95": {
             "prov:collection": "cookies",
             "prov:entity": "1504"
         },
-        "_:id113": {
+        "_:id97": {
             "prov:collection": "cookies",
             "prov:entity": "1505"
         },
-        "_:id114": {
+        "_:id98": {
             "prov:collection": "trackers",
             "prov:entity": "lijit.com"
         },
-        "_:id117": {
+        "_:id101": {
             "prov:collection": "cookies",
             "prov:entity": "1506"
         },
-        "_:id119": {
+        "_:id103": {
             "prov:collection": "cookies",
             "prov:entity": "1507"
         },
-        "_:id121": {
+        "_:id105": {
             "prov:collection": "cookies",
             "prov:entity": "1508"
         },
-        "_:id123": {
-            "prov:collection": "cookies",
-            "prov:entity": "1509"
-        },
-        "_:id125": {
+        "_:id107": {
             "prov:collection": "cookies",
             "prov:entity": "1510"
         },
-        "_:id127": {
-            "prov:collection": "cookies",
-            "prov:entity": "1511"
-        },
-        "_:id129": {
+        "_:id109": {
             "prov:collection": "cookies",
             "prov:entity": "1512"
         },
-        "_:id130": {
+        "_:id110": {
             "prov:collection": "trackers",
             "prov:entity": "casalemedia.com"
         },
-        "_:id133": {
+        "_:id113": {
             "prov:collection": "cookies",
             "prov:entity": "1519"
         },
-        "_:id135": {
+        "_:id115": {
             "prov:collection": "cookies",
             "prov:entity": "1520"
         },
-        "_:id137": {
+        "_:id117": {
             "prov:collection": "cookies",
             "prov:entity": "1521"
         },
-        "_:id139": {
+        "_:id119": {
             "prov:collection": "cookies",
             "prov:entity": "1522"
         },
-        "_:id140": {
+        "_:id120": {
             "prov:collection": "trackers",
             "prov:entity": "spotxchange.com"
         },
-        "_:id143": {
+        "_:id123": {
             "prov:collection": "cookies",
             "prov:entity": "1523"
         },
-        "_:id144": {
+        "_:id124": {
             "prov:collection": "trackers",
             "prov:entity": "justpremium.com"
         },
-        "_:id147": {
+        "_:id127": {
             "prov:collection": "cookies",
             "prov:entity": "1529"
         }

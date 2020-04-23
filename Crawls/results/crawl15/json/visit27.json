@@ -1,13 +1,13 @@
 {
     "prefix": {
-        "default": "http://danik.com"
+        "default": "http://prj.com"
     },
     "agent": {
         "OpenWPM": {
             "prov:type": "prov:SoftwareAgent"
         },
         "user": {},
-        "publisher": {}
+        "www.bbc.co.uk": {}
     },
     "entity": {
         "visit": {
@@ -15,9 +15,9 @@
                 "$": 27,
                 "type": "xsd:int"
             },
-            "url": "/www.bbc.co.uk/news/business-52354865"
+            "url": "www.bbc.co.uk/news/business-52354865"
         },
-        "/www.bbc.co.uk/news/business-52354865": {},
+        "www.bbc.co.uk/news/business-52354865": {},
         "crawl": {
             "id": {
                 "$": 15,
@@ -73,7 +73,7 @@
     "wasDerivedFrom": {
         "_:id6": {
             "prov:generatedEntity": "visit",
-            "prov:usedEntity": "/www.bbc.co.uk/news/business-52354865",
+            "prov:usedEntity": "www.bbc.co.uk/news/business-52354865",
             "prov:activity": "visitSite"
         }
     },
@@ -86,18 +86,18 @@
     },
     "wasAttributedTo": {
         "_:id8": {
-            "prov:entity": "/www.bbc.co.uk/news/business-52354865",
+            "prov:entity": "www.bbc.co.uk/news/business-52354865",
             "prov:agent": "publisher"
         }
     },
     "used": {
         "_:id9": {
             "prov:activity": "visitSite",
-            "prov:entity": "/www.bbc.co.uk/news/business-52354865"
+            "prov:entity": "www.bbc.co.uk/news/business-52354865"
         },
         "_:id10": {
             "prov:activity": "setCookies",
-            "prov:entity": "/www.bbc.co.uk/news/business-52354865"
+            "prov:entity": "www.bbc.co.uk/news/business-52354865"
         },
         "_:id11": {
             "prov:activity": "performCrawl",
