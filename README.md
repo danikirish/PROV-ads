@@ -9,10 +9,10 @@ Supervisor: Luc Moreau__
 2. Run install scripts
 Run `install_pypackages.sh`
 Run `conda activate prjprov`
-__NOTE:__ Due to restrictions by OpenWPM, this software can only be run on Ubuntu and MacOS.
+__NOTE:__ Due to restrictions by OpenWPM, this software can only be run on Ubuntu and macOS (Homebrew required for macOS).
 3. Navigate to the OpenWPM directory and run:
 Ubuntu: `./install.sh` 
-MacOS: `./install-mac-dev.sh`
+macOS: `./install-mac-dev.sh` 
 
 ## Running the program
 1. Make sure the current conda environment is set to `prjprov`
