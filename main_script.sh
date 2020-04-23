@@ -9,5 +9,11 @@ s) sites=${OPTARG};;
 esac
 done
 
-./testcript -d $dnt -s $sites
-./provtest
+echo "STARTING CRAWL"
+echo $sites
+echo $dnt
+source OpenWPM/venv/bin/activate
+python OpenWPM/prj.py --dnt $dnt --sites $sites
+deactivate
+python main.py
+
