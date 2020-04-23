@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a6bf36a-dde9-440a-b1fb-1c0ba3644d5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSRP/BSRP.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSRP/Final report draft.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSRP/bspr.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BSRP/bspr.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/algorithm_first.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/buttons.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/buttons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/for_latex.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebooks/provmanager.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/CommandSequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/automation/Commands/browser_commands.py" afterDir="false" />
@@ -24,68 +14,6 @@
       <change beforePath="$PROJECT_DIR$/OpenWPM/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWPM/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWPM/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/ .pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/Progress meeting 2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/Progress meeting 3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/Progress meeting 3.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/Progress meeting 4.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/Progress6.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/progress6.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Progress meetings/timeline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/06173007.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/1070-6009-1-PB.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/1805.10505.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/Accenture-ICC-UK-Cookie-Guide.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/FHThesis[1].pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/Luc reading list/PROV Model Primer.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/Luc reading list/PROV book.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/The hidden perils of cookie syncing.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/Tracking the Trackers_ Self-Help Tools _ Center for Internet and Society.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/rfc2965.txt.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reading/the_web_never_forgets.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/79fa5b6b03d50d5a0f320921589ee251d623.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/analysis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/crawl19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/fps.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/google.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/launch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/recording.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Execution/sync_db.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/Screenshot 2020-04-17 at 18.02.37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/cookie-matching-schematic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/cookie_chart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/cookie_sync.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/dbschema.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/dbschemavert.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/pixel matching.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/prov-dm-essentials.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/provmanager.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Figures/template.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/PROV tutorial.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Project Schedule.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/lshort.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/natnotes2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/prov-tutorial.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Appendices/Appendix.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Appendices/SourceCode.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Appendices/UserGuide.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/Background.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/Body.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/Conclusion.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/DesignSpecification.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/Evaluation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/Implementation.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/Chapters/ProfessionalIssues.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/FrontMatter/abstract.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/FrontMatter/acknowledgements.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/FrontMatter/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/informatics-report.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/report.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ug_fyp_report_templates-master/report.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/default.profraw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/provtest" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +39,7 @@
     <session id="-376949911">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
@@ -153,8 +81,9 @@
           <entry key="http_requests" value="3" />
           <entry key="http_responses" value="1" />
           <entry key="json" value="10" />
+          <entry key="md" value="1" />
           <entry key="provtest" value="4" />
-          <entry key="py" value="23" />
+          <entry key="py" value="24" />
           <entry key="sh" value="2" />
           <entry key="sql" value="1" />
           <entry key="testcript" value="2" />
@@ -167,8 +96,9 @@
           <entry key="Bash" value="1" />
           <entry key="Database Element" value="5" />
           <entry key="JSON" value="10" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="22" />
           <entry key="Scratch" value="1" />
           <entry key="UML" value="7" />
           <entry key="YAML" value="1" />
@@ -177,110 +107,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provmanager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#24#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/provanalyser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1587632239735" expanded="true" signature="1710:2201" ph="..." />
-                <marker date="1587632239735" expanded="true" signature="2255:2264" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crawlmanager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1587632239733" expanded="true" signature="230:235" ph="..." />
-                <marker date="1587632239733" expanded="true" signature="282:291" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/install_pypackages.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/environment.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenWPM/crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_script.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenWPM/install-pip-and-packages.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenWPM/install-dev.sh">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -351,7 +178,7 @@
       <path value="$PROJECT_DIR$/OpenWPM/venv/lib/python3.7/site-packages/localstack/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-696" />
     <option name="y" value="-1417" />
     <option name="width" value="1500" />
@@ -371,11 +198,6 @@
             <path>
               <item name="PRJ" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="PRJ" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="OpenWPM" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -438,8 +260,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-696" y="-1417" width="1500" height="1417" extended-state="1" />
-    <editor active="true" />
+    <frame x="-696" y="-1417" width="1500" height="1417" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49962264" visible="true" weight="0.113854595" />
       <window_info id="Structure" order="1" sideWeight="0.50037736" side_tool="true" weight="0.19167905" />
@@ -650,13 +471,6 @@
     <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_manager_params.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenWPM/automation/default_browser_params.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -680,13 +494,6 @@
     <entry file="file://$PROJECT_DIR$/OpenWPM/install-dev.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/install-pip-and-packages.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenWPM/install.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -708,39 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/environment.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install_pypackages.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crawlmanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1587632239733" expanded="true" signature="230:235" ph="..." />
-            <marker date="1587632239733" expanded="true" signature="282:291" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_script.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/provanalyser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -750,13 +524,6 @@
             <marker date="1587632239735" expanded="true" signature="1710:2201" ph="..." />
             <marker date="1587632239735" expanded="true" signature="2255:2264" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWPM/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -772,11 +539,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenWPM/prj.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="840">
+          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawlmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1587632239733" expanded="true" signature="230:235" ph="..." />
+            <marker date="1587632239733" expanded="true" signature="282:291" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/install_pypackages.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWPM/install-pip-and-packages.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
