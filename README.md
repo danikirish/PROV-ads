@@ -16,8 +16,8 @@ MacOS: run `./install-mac-dev.sh`
 ## Running the program
 1. Make sure the current conda environment is set to `prjprov`
 1. Run `main_script.sh` with following parameters:
-..* `-s` followed by either a website URL or a filepath to a .txt file with the list of websites to visit separated by lines.
-..* `-d` foolowed by either 1 or 0. This indicates the DNT header value.
+* `-s` followed by either a website URL or a filepath to a .txt file with the list of websites to visit separated by lines.
+* `-d` foolowed by either 1 or 0. This indicates the DNT header value.
 __Example__: `./main_script.sh -s http://google.com -d`
 2. OpenWPM will open a browser instance and visit the specified websites
 3. `main.py` is executed which records provenance and outputs an analysis
