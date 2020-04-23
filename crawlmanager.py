@@ -39,13 +39,16 @@ class CrawlManager:
             visits.append(visit_id[0])
 
         for visit_id in visits:
-            self.db_cursor.execute("select command_status from crawl_history where visit_id=?", [str(visit_id)])
-            if self.db_cursor.fetchone()[0] == 'error':  # Check if visit had an error
-                print('Error in visit %s' % visit_id)
-                continue
-            document = ProvDocument()
-            document.set_default_namespace('http://prj.com')
-            self.documents[visit_id] = document  # Save a blank document for this visit
+            try:
+                self.db_cursor.execute("select command_status from crawl_history where visit_id=?", [str(visit_id)])
+                if self.db_cursor.fetchone()[0] == 'error':  # Check if visit had an error
+                    print('Error in visit %s' % visit_id)
+                    continue
+                document = ProvDocument()
+                document.set_default_namespace('http://prj.com')
+                self.documents[visit_id] = document  # Save a blank document for this visit
+            except:
+                pass
 
     # Get third-party cookies
     def retrieve_tp_hosts(self, visit_id, site_url):

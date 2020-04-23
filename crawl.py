@@ -34,26 +34,29 @@ for argument, value in arguments:
 
 
 if len(sites) == 0:
-    # sites = ['http://kcl.ac.uk/people/luc-moreau', 'http://theguardian.com', 'http://thesaurus.com']
     sites = ['https://github.com/']
 
 print("SITES: %s" % sites)
 print("DNT: %s" % str(dnt))
 manager_params, browser_params = TaskManager.load_default_params(NUM_BROWSERS)
 
+manager_params["data_directory"] = os.path.join(os.getcwd(), "Results/Crawls")
+manager_params["log_directory"] = os.path.join(os.getcwd(), "Results/Crawls")
+
+
 for i in range(NUM_BROWSERS):
     browser_params[i]['donottrack'] = dnt
-    # browser_params[i]['http_instrument'] = True
-    # # Record cookie changes
-    # browser_params[i]['cookie_instrument'] = True
+    browser_params[i]['http_instrument'] = True
+    # Record cookie changes
+    browser_params[i]['cookie_instrument'] = True
     # # Record Navigations
-    # browser_params[i]['navigation_instrument'] = True
+    browser_params[i]['navigation_instrument'] = True
     # # Record JS Web API calls
     # browser_params[i]['js_instrument'] = True
     # # Enable flash for all three browsers
     # browser_params[i]['disable_flash'] = True
     # # Record the callstack of all WebRequests made
-    # browser_params[i]['callstack_instrument'] = True
+    browser_params[i]['callstack_instrument'] = True
     # browser_params[0]['headless'] = True
 
 manager = TaskManager.TaskManager(manager_params, browser_params)

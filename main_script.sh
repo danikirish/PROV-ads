@@ -16,4 +16,3 @@ source OpenWPM/venv/bin/activate
 python crawl.py --dnt $dnt --sites $sites
 deactivate
 python main.py
-
